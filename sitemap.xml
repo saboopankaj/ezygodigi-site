@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://ezygodigi.in</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://ezygodigi.in/about</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/contact</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/services</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/pricing</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/free-tools</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Service Pages -->
+  <url>
+    <loc>https://ezygodigi.in/website-design</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/ui-ux-design</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/graphics-design</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/ecommerce-website</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/cloud-kitchen-website</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/consultant-website</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/real-estate-website</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Tools -->
+  <url>
+    <loc>https://ezygodigi.in/all-in-one-image-tools</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/linkedin-photo-editor</loc>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/linkedin-banner-generator</loc>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/ad-landing-pages</loc>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://ezygodigi.in/terms-conditions-scope-of-service</loc>
+    <priority>0.65</priority>
+  </url>
+
+    <url>
+    <loc>https://ezygodigi.in/seo-tracking</loc>
+    <priority>0.65</priority>
+  </url>
+
+    <url>
+    <loc>https://ezygodigi.in/ai-chatbot</loc>
+    <priority>0.65</priority>
+  </url>
+
+    <url>
+    <loc>https://ezygodigi.in/blog</loc>
+    <priority>0.5</priority>
+  </url>
+
+    <url>
+    <loc>https://ezygodigi.in/blog/2026-website-makeover-small-indian-businesses</loc>
+    <priority>0.2</priority>
+  </url>
+
+      <url>
+    <loc>https://ezygodigi.in/blog/free-website-chatbot-3x-leads-indian-small-business</loc>
+    <priority>0.2</priority>
+  </url>
+
+      <url>
+    <loc>https://ezygodigi.in/blog/local-seo-checklist-indian-small-businesses</loc>
+    <priority>0.2</priority>
+  </url>
+
+      <url>
+    <loc>https://ezygodigi.in/blog/professional-website-india-cloud-kitchen-shop-service</loc>
+    <priority>0.2</priority>
+  </url>
+
+      <url>
+    <loc>https://ezygodigi.in/faq</loc>
+    <priority>0.5</priority>
+  </url>
+
+      <url>
+    <loc>https://ezygodigi.in/website-cost-calculator</loc>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://ezygodigi.in/blog/website-development-cost-india</loc>
+    <priority>0.2</priority>
+  </url>
+
+   <url>
+    <loc>https://ezygodigi.in/blog/how-to-build-website-using-ai-is-it-useful</loc>
+    <priority>0.2</priority>
+  </url>
+
+   <url>
+    <loc>https://ezygodigi.in/refer</loc>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://ezygodigi.in/blog/geo-checklist-google-ai-summaries-india</loc>
+    <priority>0.2</priority>
+  </url>
+
+
+   <url>
+    <loc>https://ezygodigi.in/privacy-first-analytics</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

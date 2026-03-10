@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>EzyGo Analytics Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 10px; }
+        .tab-btn { padding: 12px 20px; font-weight: 600; border-bottom: 3px solid transparent; color: #64748b; transition: 0.2s; cursor: pointer; }
+        .tab-btn.active { border-color: #6366f1; color: #4f46e5; background: #eef2ff; }
+        .card { background: white; border: 1px solid #e2e8f0; border-radius: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <div id="auth-overlay" class="fixed inset-0 bg-slate-900/95 flex items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm mx-4">
+            <h2 class="text-xl font-bold mb-4 text-center">Admin API Token</h2>
+            <input type="password" id="admin-token-input" placeholder="Bearer Token..." 
+                class="w-full p-3 border rounded-xl mb-4 text-center focus:ring-2 focus:ring-indigo-500 outline-none">
+            <button onclick="saveAuth()" class="w-full bg-indigo-600 text-white p-3 rounded-xl font-bold hover:bg-indigo-700">Access Dashboard</button>
+        </div>
+    </div>
+
+    <nav class="bg-white border-b sticky top-0 z-40 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                <h1 class="text-xl font-bold text-slate-800">EzyGo <span class="text-indigo-600">Admin</span></h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <select id="site-key-select" onchange="onSiteChange()" class="p-2 border rounded-lg text-sm bg-slate-50 min-w-[200px]">
+                    <option value="">Select Site...</option>
+                </select>
+                <button onclick="fetchData()" class="bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-indigo-700">Load Data</button>
+                <button onclick="logout()" class="text-slate-400 hover:text-red-500 ml-2">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 mt-6">
+        <div class="flex gap-2 border-b border-slate-200">
+            <button id="btn-events" onclick="switchTab('events')" class="tab-btn active">📊 Events</button>
+            <button id="btn-config" onclick="switchTab('config')" class="tab-btn">⚙️ Edit Configuration</button>
+            <button id="btn-new" onclick="switchTab('new')" class="tab-btn">➕ Create Site</button>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        
+        <div id="view-events">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="card p-6"><p class="text-slate-400 text-xs font-bold uppercase mb-1">Total Hits</p><h3 class="text-3xl font-bold" id="stat-total">0</h3></div>
+                <div class="card p-6"><p class="text-slate-400 text-xs font-bold uppercase mb-1">Unique Users</p><h3 class="text-3xl font-bold text-indigo-600" id="stat-users">0</h3></div>
+                <div class="card p-6"><p class="text-slate-400 text-xs font-bold uppercase mb-1">Top City</p><h3 class="text-2xl font-bold" id="stat-city">—</h3></div>
+            </div>
+
+            <div class="card overflow-hidden">
+                <div class="bg-slate-900 p-4 text-white font-bold text-lg flex justify-between items-center">
+    <span>👥 Unique Visitors</span>
+    <button onclick="deleteAllEvents()" class="px-4 py-1 bg-red-600 text-white text-xs rounded-lg font-bold hover:bg-red-700 transition">
+        🗑️ Clear All
+    </button>
+</div>
+
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-left text-sm">
+<thead class="bg-slate-50 border-b">
+    <tr>
+        <th class="px-4 py-3 font-bold text-slate-700">Anon ID</th>
+        <th class="px-4 py-3 font-bold text-slate-700">Last Seen</th> <th class="px-4 py-3 font-bold text-slate-700">Latest Location</th>
+        <th class="px-4 py-3 font-bold text-slate-700">Device / OS</th>
+        <th class="px-4 py-3 font-bold text-slate-700">Total Events</th>
+        <th class="px-4 py-3 font-bold text-slate-700 w-32">Actions</th>
+    </tr>
+</thead>
+                        <tbody id="events-table">
+                            <tr><td colspan="5" class="py-20 text-center text-slate-400">Select site and load data</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="detail-modal" class="fixed inset-0 bg-slate-900/50 hidden z-50 flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col">
+                    <div class="p-6 border-b flex justify-between items-center bg-slate-50 rounded-t-2xl">
+                        <div>
+                            <h2 class="text-xl font-bold text-indigo-600" id="modal-uid-title">User Details</h2>
+                            <p class="text-xs text-slate-500" id="modal-uid-subtitle"></p>
+                        </div>
+                        <button onclick="closeModal()" class="text-slate-400 hover:text-red-500 text-2xl">&times;</button>
+                    </div>
+                    <div class="overflow-y-auto p-6 custom-scrollbar" id="modal-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-config" class="hidden max-w-2xl mx-auto">
+            <div class="card p-8">
+                <h2 class="text-xl font-bold mb-2">Edit Site Settings</h2>
+                <p class="text-slate-500 text-sm mb-6">Modify site identifiers, domains, and tracking gates.</p>
+                
+                <div id="config-form" class="space-y-6">
+                    <p class="text-center py-10 text-slate-400">Please select a site from the dropdown first.</p>
+                </div>
+
+                <div class="mt-8 pt-6 border-t flex gap-4">
+                    <button onclick="saveConfig()" class="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-bold hover:bg-indigo-700">Update Site Settings</button>
+                    <button onclick="deleteEvents()" class="px-6 py-3 border border-red-200 text-red-600 rounded-xl font-bold hover:bg-red-50">Clear Logs</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-new" class="hidden max-w-2xl mx-auto">
+            <div class="card p-8">
+                <h2 class="text-xl font-bold mb-6 text-center">Register New Site</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Site Name</label>
+                        <input id="new-name" type="text" placeholder="My Awesome Webstore" class="w-full p-3 border rounded-xl">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Site Key (ID)</label>
+                        <input id="new-key" type="text" placeholder="webstore-prod" class="w-full p-3 border rounded-xl font-mono">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Allowed Domains</label>
+                        <input id="new-domains" type="text" placeholder="example.com, *.example.com" class="w-full p-3 border rounded-xl">
+                    </div>
+                    <button onclick="createSite()" class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold mt-4 hover:bg-black">Initialize Site</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        let rawEventData = [];
+        let allSites = [];
+        const token = localStorage.getItem('admin_token');
+
+        if (token) {
+            document.getElementById('auth-overlay').classList.add('hidden');
+            loadSites();
+        }
+
+        function saveAuth() {
+            const t = document.getElementById('admin-token-input').value.trim();
+            if (t) { localStorage.setItem('admin_token', t); location.reload(); }
+        }
+        function logout() { localStorage.clear(); location.reload(); }
+
+        async function loadSites() {
+            try {
+                const res = await fetch('/admintrack/sites', { headers: { 'Authorization': `Bearer ${token}` } });
+                if (res.ok) {
+                    allSites = await res.json();
+                    const select = document.getElementById('site-key-select');
+                    const currentVal = select.value;
+                    select.innerHTML = '<option value="">Select Site...</option>' + 
+                        allSites.map(s => `<option value="${s.site_key}">${s.name || s.site_key}</option>`).join('');
+                    if(currentVal) select.value = currentVal;
+                }
+            } catch (e) { console.error(e); }
+        }
+
+        function onSiteChange() {
+            if (!document.getElementById('view-config').classList.contains('hidden')) renderConfigUI();
+        }
+
+        async function fetchData() {
+            const key = document.getElementById('site-key-select').value;
+            if (!key) return alert("Select site");
+            
+            const BASE_URL = ""; 
+            try {
+                const res = await fetch(`${BASE_URL}/admintrack/events?site_key=${key}`, { 
+                    headers: { 'Authorization': `Bearer ${token}` } 
+                });
+                
+                if (!res.ok) {
+                    const errorText = await res.text();
+                    throw new Error(`Server responded with ${res.status}: ${errorText}`);
+                }
+                
+                rawEventData = await res.json();
+                updateStats();
+                renderTable(rawEventData); 
+                
+            } catch (e) { 
+                console.error("Fetch Error:", e);
+                alert("Fetch failed: " + e.message); 
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('stat-total').textContent = rawEventData.length;
+            document.getElementById('stat-users').textContent = new Set(rawEventData.map(i => i.uid)).size;
+            const cities = rawEventData.reduce((acc, i) => { if(i.city) acc[i.city] = (acc[i.city] || 0) + 1; return acc; }, {});
+            const top = Object.entries(cities).sort((a,b) => b[1]-a[1])[0];
+            document.getElementById('stat-city').textContent = top ? top[0] : '—';
+        }
+
+        function renderTable(data) {
+    const tbody = document.getElementById('events-table');
+    if (!data.length) {
+        tbody.innerHTML = '<tr><td colspan="6" class="py-20 text-center text-slate-400">No data found</td></tr>';
+        return;
+    }
+
+    const users = {};
+    data.forEach(i => {
+        if (!users[i.uid]) {
+            users[i.uid] = {
+                uid: i.uid,
+                city: i.city || 'Unknown',
+                country: i.country || 'Unknown',
+                device: i.device || 'Unknown',
+                os: i.os || 'Unknown',
+                browser: i.browser || 'Unknown',
+                latestTs: i.ts, // Initialize with first found timestamp
+                count: 0,
+                events: []
+            };
+        }
+        
+        users[i.uid].count++;
+        users[i.uid].events.push(i);
+
+        // Keep the most recent timestamp
+        if (new Date(i.ts) > new Date(users[i.uid].latestTs)) {
+            users[i.uid].latestTs = i.ts;
+        }
+
+        // Update latest metadata
+        users[i.uid].device = i.device || users[i.uid].device;
+        users[i.uid].os = i.os || users[i.uid].os;
+        users[i.uid].browser = i.browser || users[i.uid].browser;
+    });
+
+    tbody.innerHTML = Object.values(users).map(u => {
+        // Format the date (e.g., Oct 24, 14:30)
+        const dateObj = new Date(u.latestTs);
+        const formattedDate = dateObj.toLocaleDateString([], { month: 'short', day: 'numeric' });
+        const formattedTime = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+
+        return `
+            <tr class="border-b hover:bg-slate-50 transition">
+                <td class="px-4 py-4 font-mono text-xs text-indigo-600 font-bold">${u.uid.substring(0, 12)}...</td>
+                <td class="px-4 py-4">
+                    <div class="text-xs font-bold text-slate-700">${formattedDate}</div>
+                    <div class="text-[10px] text-slate-400">${formattedTime}</div>
+                </td>
+                <td class="px-4 py-4 text-xs">${u.city}, ${u.country}</td>
+                <td class="px-4 py-4 text-xs">
+                    <div class="space-y-1">
+                        <span class="bg-slate-100 px-2 py-1 rounded text-[10px] uppercase font-bold">${u.device}</span>
+                        <span class="text-slate-400 text-[10px]">${u.os}</span>
+                    </div>
+                </td>
+                <td class="px-4 py-4 text-xs font-bold">${u.count} events</td>
+                <td class="px-4 py-4 flex gap-1">
+                    <button onclick="openUserDetail('${u.uid}')" 
+                            class="flex-1 bg-indigo-50 text-indigo-600 px-3 py-2 rounded-lg text-xs font-bold hover:bg-indigo-600 hover:text-white transition">
+                        👁️ View
+                    </button>
+                    <button onclick="deleteUserEvents('${u.uid}')" 
+                            class="flex-1 bg-red-50 text-red-600 px-3 py-2 rounded-lg text-xs font-bold hover:bg-red-600 hover:text-white transition">
+                        🗑️
+                    </button>
+                </td>
+            </tr>
+        `;
+    }).join('');
+    
+    window.groupedUsers = users;
+}
+
+
+        function openUserDetail(uid) {
+            const user = window.groupedUsers[uid];
+            const modal = document.getElementById('detail-modal');
+            document.getElementById('modal-uid-title').textContent = `Activity for ${uid.substring(0, 16)}...`;
+            document.getElementById('modal-uid-subtitle').textContent = `${user.city}, ${user.country} • ${user.os} • ${user.browser}`;
+            
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-100 sticky top-0">
+                        <tr>
+                            <th class="p-3">Time</th>
+                            <th class="p-3">Event</th>
+                            <th class="p-3">Page / Referrer</th>
+                            <th class="p-3 text-right">Duration</th>
+                            <th class="p-3">Meta</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        ${user.events.map(e => {
+                            let m = {}; try { m = JSON.parse(e.meta || '{}'); } catch(err){}
+                            return `
+                            <tr>
+                                <td class="p-3 text-slate-500">${new Date(e.ts).toLocaleString()}</td>
+                                <td class="p-3 font-bold uppercase text-indigo-600">${e.event}</td>
+                                <td class="p-3">
+                                    <div class="truncate max-w-[200px]" title="${e.page}">${e.page || '—'}</div>
+                                    <div class="text-[10px] text-slate-400 truncate max-w-[200px]" title="${e.referrer}">Ref: ${e.referrer || 'Direct'}</div>
+                                </td>
+                                <td class="p-3 text-right font-mono">${e.duration_ms ? (e.duration_ms/1000).toFixed(1)+'s' : '—'}</td>
+                                <td class="p-3 font-medium text-slate-700">${m.product_name || '—'}</td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('detail-modal').classList.add('hidden');
+        }
+
+        // ✅ FIXED: Proper checkbox rendering and error handling
+        function renderConfigUI() {
+            const key = document.getElementById('site-key-select').value;
+            const container = document.getElementById('config-form');
+            
+            if(!key) { 
+                container.innerHTML = '<div class="p-10 text-center text-slate-400 border-2 border-dashed rounded-xl">Please select a site from the top dropdown first.</div>'; 
+                return; 
+            }
+
+            const s = allSites.find(x => x.site_key === key);
+            
+            if(!s) { 
+                console.error("Site key", key, "not found in", allSites);
+                container.innerHTML = '<p class="text-center py-10 text-red-500">Site data not loaded. Click "Load Data" first.</p>'; 
+                return; 
+            }
+
+            const toggle = (label, id, val) => `
+                <div class="flex justify-between items-center py-3 border-b border-slate-50 hover:bg-slate-50 px-2 rounded-lg transition">
+                    <span class="text-sm font-semibold text-slate-700">${label}</span>
+                    <input type="checkbox" id="cfg-${id}" ${Number(val) === 1 ? 'checked' : ''} class="w-5 h-5 accent-indigo-600 cursor-pointer">
+                </div>`;
+
+            container.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b pb-6">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Site Name</label>
+                        <input id="cfg-name" type="text" value="${s.name || ''}" class="w-full p-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Site Key (Read Only)</label>
+                        <input id="cfg-key" type="text" value="${s.site_key}" readonly class="w-full p-2.5 border rounded-xl text-sm bg-slate-50 font-mono text-slate-400 outline-none">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Allowed Domains (comma separated)</label>
+                        <input id="cfg-domains" type="text" value="${s.allowed_domains || ''}" placeholder="example.com, *.domain.com" class="w-full p-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                </div>
+                <div class="space-y-1 mt-4">
+                    <h3 class="text-[10px] font-bold uppercase text-slate-500 mb-2 px-2">Feature Toggles</h3>
+                    ${toggle("Global Tracking Enabled", "tracking", s.tracking_enabled)}
+                    ${toggle("Geolocation (City/Country)", "geo", s.geo_enabled)}
+                    ${toggle("Record Pageviews", "pv", s.pageview_enabled)}
+                    ${toggle("Record Custom Events", "ev", s.event_tracking_enabled)}
+                    ${toggle("Identify Device Hardware", "dev", s.device_enabled)}
+                    ${toggle("Identify Operating System", "os", s.os_enabled)}
+                    ${toggle("Identify Browser Engine", "br", s.browser_enabled)}
+                </div>
+            `;
+        }
+
+        // ✅ FIXED: Added error handling and proper checkbox reading
+        async function saveConfig() {
+            const key = document.getElementById('site-key-select').value;
+            if(!key) return alert('Please select a site first');
+            
+            try {
+                const payload = {
+                    name: document.getElementById('cfg-name')?.value || '',
+                    allowed_domains: document.getElementById('cfg-domains')?.value || '',
+                    tracking_enabled: +document.getElementById('cfg-tracking')?.checked || 0,
+                    geo_enabled: +document.getElementById('cfg-geo')?.checked || 0,
+                    pageview_enabled: +document.getElementById('cfg-pv')?.checked || 0,
+                    event_tracking_enabled: +document.getElementById('cfg-ev')?.checked || 0,
+                    device_enabled: +document.getElementById('cfg-dev')?.checked || 0,
+                    os_enabled: +document.getElementById('cfg-os')?.checked || 0,
+                    browser_enabled: +document.getElementById('cfg-br')?.checked || 0,
+                    status: 'active'
+                };
+
+                const res = await fetch(`/admintrack/sites/${key}`, {
+                    method: 'PUT',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if(res.ok) { 
+                    alert("✅ Settings Saved Successfully"); 
+                    await loadSites();
+                    renderConfigUI();
+                } else {
+                    const errorText = await res.text();
+                    throw new Error(`Save failed: ${res.status} - ${errorText}`);
+                }
+            } catch (e) {
+                console.error('Save Error:', e);
+                alert('❌ Save failed: ' + e.message);
+            }
+        }
+
+        async function createSite() {
+            const name = document.getElementById('new-name').value.trim();
+            const key = document.getElementById('new-key').value.trim();
+            const domains = document.getElementById('new-domains').value.trim();
+            
+            if (!name || !key) {
+                return alert('Please fill Site Name and Site Key');
+            }
+            
+            try {
+                const payload = {
+                    site_key: key,
+                    name: name,
+                    allowed_domains: domains,
+                    tracking_enabled: 1, geo_enabled: 1, pageview_enabled: 1, 
+                    event_tracking_enabled: 1, device_enabled: 1, os_enabled: 1, browser_enabled: 1
+                };
+                
+                const res = await fetch('/admintrack/sites', {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                if(res.ok) { 
+                    alert("✅ New Site Initialized Successfully"); 
+                    document.getElementById('new-name').value = '';
+                    document.getElementById('new-key').value = '';
+                    document.getElementById('new-domains').value = '';
+                    switchTab('events'); 
+                    loadSites(); 
+                } else {
+                    const errorText = await res.text();
+                    throw new Error(`Create failed: ${res.status} - ${errorText}`);
+                }
+            } catch (e) {
+                console.error('Create Site Error:', e);
+                alert('❌ Create failed: ' + e.message);
+            }
+        }
+
+        async function deleteEvents() {
+            const key = document.getElementById('site-key-select').value;
+            if(!key || !confirm("⚠️ CRITICAL: Permanently delete ALL data for this site?")) return;
+            try {
+                await fetch(`/admintrack/events?site_key=${key}`, { 
+                    method: 'DELETE', 
+                    headers: { 'Authorization': `Bearer ${token}` } 
+                });
+                alert('✅ Logs cleared successfully');
+                fetchData();
+            } catch (e) {
+                alert('❌ Delete failed: ' + e.message);
+            }
+        }
+// Delete single user events
+async function deleteUserEvents(uid) {
+    if (!confirm(`🗑️ Delete ALL ${window.groupedUsers[uid]?.count || 0} events for user ${uid.substring(0, 12)}...?\n\nThis cannot be undone.`)) {
+        return;
+    }
+
+    try {
+        const key = document.getElementById('site-key-select').value;
+        const res = await fetch(`/admintrack/events?site_key=${key}&uid=${uid}`, {
+            method: 'DELETE',
+            headers: { 'Authorization': `Bearer ${token}` }
+        });
+
+        if (res.ok) {
+            alert('✅ User events deleted successfully');
+            fetchData(); // Reload table
+        } else {
+            const errorText = await res.text();
+            throw new Error(`${res.status}: ${errorText}`);
+        }
+    } catch (e) {
+        console.error('Delete user error:', e);
+        alert('❌ Delete failed: ' + e.message);
+    }
+}
+
+// Delete ALL events (header button)
+async function deleteAllEvents() {
+    const key = document.getElementById('site-key-select').value;
+    if (!key || !confirm(`⚠️ Delete ALL ${rawEventData.length} events for this site?\n\nThis cannot be undone.`)) {
+        return;
+    }
+
+    try {
+        const res = await fetch(`/admintrack/events?site_key=${key}`, {
+            method: 'DELETE',
+            headers: { 'Authorization': `Bearer ${token}` }
+        });
+
+        if (res.ok) {
+            alert('✅ All events deleted successfully');
+            fetchData(); // Reload table
+        } else {
+            const errorText = await res.text();
+            throw new Error(`${res.status}: ${errorText}`);
+        }
+    } catch (e) {
+        console.error('Delete all error:', e);
+        alert('❌ Delete failed: ' + e.message);
+    }
+}
+
+        function switchTab(t) {
+            ['events', 'config', 'new'].forEach(id => {
+                document.getElementById('view-'+id).classList.add('hidden');
+                document.getElementById('btn-'+id).classList.remove('active');
+            });
+            document.getElementById('view-'+t).classList.remove('hidden');
+            document.getElementById('btn-'+t).classList.add('active');
+            if(t === 'config') renderConfigUI();
+        }
+    </script>
+</body>
+</html>

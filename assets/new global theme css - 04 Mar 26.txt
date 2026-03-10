@@ -1,0 +1,169 @@
+/* New Global */
+
+/* ============================================================
+   EZYGODIGI GLOBAL THEME v1.2
+   ============================================================ */
+
+/* --- 1. FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@700&display=swap');
+
+:root {
+    /* --- Brand Colors (Updated for Consistency) --- */
+    --navy: #0f172a;
+    --yellow: #fbbf24;
+    --primary-color: #4f46e5;
+    --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #764ba2 100%);
+    
+    /* --- Text & UI --- */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --border-light: #e2e8f0;
+
+    /* --- Typography Tokens --- */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* --- Spacing & Radius --- */
+    --radius-lg: 32px;
+    --radius-md: 16px;
+    --radius-pill: 50px;
+    --container-width: 1200px;
+    --section-padding: 100px 20px;
+}
+
+/* --- Base Reset --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { 
+    font-family: var(--font-main); 
+    color: var(--text-main); 
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Layout Utilities --- */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding { padding: var(--section-padding); }
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* --- Global Button System --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: var(--radius-md);
+    font-weight: 800; /* Bold for "App" feel */
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: none;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: var(--navy);
+    color: var(--yellow); /* Brand contrast */
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.btn-pill { border-radius: var(--radius-pill); }
+
+/* --- Button Group Logic --- */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+    .btn-group {
+        flex-direction: row;
+        justify-content: center;
+        max-width: none;
+    }
+    .btn-group .btn { min-width: 180px; width: auto; }
+}
+
+/* --- Global Card Style --- */
+.ez-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    transition: all 0.4s ease;
+}
+
+.ez-card:hover { 
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* --- Forms & UI --- */
+.form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-family: var(--font-main);
+    transition: all 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* --- Anchors & Links --- */
+a { color: var(--primary-color); text-decoration: none; transition: 0.3s; }
+a:hover { opacity: 0.8; }
+
+/* --- Scroll Margins --- */
+#showcase {
+    scroll-margin-top: 100px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 100px; 
+}
+
+/* --- Responsive Behavior --- */
+@media (max-width: 992px) {
+    .split-layout { grid-template-columns: 1fr; gap: 40px; }
+    :root { --section-padding: 60px 16px; }
+}

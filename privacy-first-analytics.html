@@ -1,0 +1,2819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4X6Z65R');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+<title>Privacy-First Website Analytics India | Simple GA4 Alternative</title>
+<meta name="description" content="Simple, cookieless website analytics for Indian businesses. Track visitors in Jaipur, Mumbai, and Delhi without GA4 complexity. 100% DPDP Act compliant.">
+<meta name="keywords" content="Website Analytics India, GA4 Alternative India, Cookieless Analytics Jaipur, Privacy First Analytics Mumbai, Digital India SaaS">
+<!--<meta name="robots" content="index, follow">-->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<meta name="author" content="EzyGoDigi">
+	<meta property="og:image" content="https://ezygodigi.in/assets/images/og-ezygodigi.webp">
+	<meta property="og:image:secure_url" content="https://ezygodigi.in/assets/images/og-ezygodigi.webp">
+	<meta property="og:url" content="https://ezygodigi.in/privacy-first-analytics">
+	<meta property="og:type" content="website">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="EzyGoDigi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="canonical" href="https://ezygodigi.in/privacy-first-analytics">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EzyGoDigi Analytics",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "description": "Simple, privacy-first analytics for Indian SMEs. Tracks page views and button clicks without cookies.",
+    "offers": {
+      "@type": "Offer",
+      "price": "999",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "EzyGoDigi Analytics", 
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan", 
+    "addressCountry": "IN"
+  },
+  "url": "https://ezygodigi.in/privacy-first-analytics"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is EzyGo Analytics different from Google Analytics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GA4 is built for data scientists, while EzyGoDigi is built for business owners. We focus on actionable data—like tracking WhatsApp clicks—without complex setup or 'Big Tech' bloat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to show a Cookie Banner with EzyGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. EzyGo is 100% cookieless. Since we don't track Personally Identifiable Information (PII), you can legally remove cookie popups that hurt your conversion rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the EzyGo script slow down my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our script is under 5KB, which is smaller than a single low-res icon. It loads asynchronously, ensuring your Core Web Vitals and SEO scores stay perfect."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is EzyGo Analytics compliant with India's DPDP Act?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. EzyGo processes data with a privacy-first approach and does not store IP addresses, making it fully compliant with India's Digital Personal Data Protection (DPDP) Act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a developer to set up EzyGo Analytics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No developer is required. Setup is a simple one-line script copy-paste into your website header. It works with WordPress, Shopify, and custom sites in less than 60 seconds."
+      }
+    }
+  ]
+}
+</script>
+
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="/ez-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ez-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/ez-48x48.png">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/common.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/common.css"></noscript>
+  	  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="/ez-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ez-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/ez-48x48.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="/assets/common.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="preload" href="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2670&auto=format&fit=crop" as="image">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4X6Z65R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="header-placeholder"></div>
+<div id="breadcrumb-placeholder"></div>
+
+<section class="ezy-analytics-hero">
+    <div class="hero-bg-media"></div>
+    <div class="hero-overlay-deep"></div>
+    
+    <div class="container">
+        <div class="hero-flex-layout">
+            
+            <div class="hero-text-block">
+                <div class="status-badge-row">
+                    <span class="badge-yellow">🚀 No Cookies Required</span>
+                    <span class="badge-glass">100% White Label</span>
+                </div>
+
+                <h1 class="hero-title">Privacy-First Analytics<br>Built for Decisions</h1>
+                
+                <p class="hero-subtitle">
+                    Track website performance without the GA4 headache. Zero cookies, zero tracking IDs, and 100% white-label ready for your own brand or clients.
+                </p>
+
+                <div class="hero-cta-area">
+                    <div class="btn-group-row">
+                        <a href="#comparison" class="btn-analytics-primary">Compare vs GA4</a>
+                        <a href="#pricing" class="btn-analytics-outline">View Pricing</a>
+                    </div>
+                    
+<div class="whatsapp-helper-link">
+    <a href="https://wa.me/917039509783?text=Hi, I need help with the Analytics setup." target="_blank" class="chat-link-card">
+        <div class="chat-icon-wrapper">
+            <i class="fab fa-whatsapp"></i>
+            <span class="online-indicator"></span>
+        </div>
+        <div class="chat-text-wrapper">
+            <span class="chat-label">Need help?</span>
+            <span class="chat-action">Chat with us</span>
+        </div>
+    </a>
+</div>
+                </div>
+            </div>
+
+            <div class="hero-visual-block">
+                <div class="simple-stats-card white-label-mock">
+                    <div class="card-brand-header">
+                        <i class="fas fa-layer-group"></i> YourBrand Analytics
+                    </div>
+                    <div class="card-header">Real-Time Traffic</div>
+                    <div class="big-stat">1,284 <span class="trend-up">+12%</span></div>
+                    <div class="stat-mini-graph">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 45%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                    </div>
+                    <p class="card-footer">GDPR Compliant • No Cookie Banners</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- ANALYTICS HERO STYLES --- */
+.ezy-analytics-hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 20px;
+    background: var(--dark-navy);
+    font-family: var(--font-main);
+    overflow: hidden;
+}
+
+.ezy-analytics-hero .hero-bg-media {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.ezy-analytics-hero .hero-overlay-deep {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--hero-overlay);
+    z-index: 2;
+}
+
+.ezy-analytics-hero .container { position: relative; z-index: 10; }
+
+.hero-flex-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Badges */
+.status-badge-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.badge-yellow {
+    background: var(--accent-yellow) !important;
+    color: var(--dark-navy) !important;
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.badge-glass {
+    background: var(--glass-bg);
+    color: var(--white);
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+/* Typography */
+.hero-title {
+    font-size: clamp(32px, 7vw, 54px);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px !important;
+}
+
+.hero-subtitle {
+    font-size: clamp(16px, 4vw, 20px);
+    color: #94a3b8;
+    margin-bottom: 40px !important;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-group-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-analytics-primary {
+    background: var(--primary-gradient);
+    color: var(--white) !important;
+    padding: 18px 35px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-analytics-outline {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white) !important;
+    padding: 18px 35px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Visual Mockup Styling */
+.simple-stats-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+}
+
+.card-brand-header {
+    font-size: 0.9rem;
+    color: var(--accent-yellow);
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.card-header { font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; }
+.big-stat { font-size: 3rem; font-weight: 900; color: var(--white); margin: 5px 0; }
+.trend-up { font-size: 0.9rem; color: #4ade80; }
+
+.stat-mini-graph {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 60px;
+    margin: 20px 0;
+}
+.bar {
+    flex: 1;
+    background: var(--primary-gradient);
+    border-radius: 4px;
+}
+
+.card-footer { font-size: 0.75rem; color: #64748b; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-flex-layout { grid-template-columns: 1fr; text-align: center; }
+    .status-badge-row, .btn-group-row { justify-content: center; }
+    .btn-group-row { flex-direction: column; }
+    .hero-visual-block { display: none; }
+}
+/* --- ENHANCED INTERACTIVE CHAT LINK --- */
+.whatsapp-helper-link {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.chat-link-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 100px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.chat-link-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #25d366;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon & Online Dot */
+.chat-icon-wrapper {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.online-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    background: #4ade80;
+    border: 2px solid #0f172a; /* Matches your dark navy */
+    border-radius: 50%;
+}
+
+/* Text Styling */
+.chat-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.chat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.chat-action {
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 700;
+}
+
+.chat-link-card:hover .chat-action {
+    color: #25d366;
+}
+
+/* Mobile Alignment */
+@media (max-width: 992px) {
+    .whatsapp-helper-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+</style>
+
+<section class="ezy-problem-solution-section">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <h2 class="section-title">Is your website actually working?</h2>
+            <p class="section-subtitle">Stop guessing and start seeing <strong>real visitor intent.</strong></p>
+        </div>
+
+        <div class="problem-solution-grid">
+            
+            <div class="comparison-card card-warning">
+                <div class="card-tag tag-red">The Headache</div>
+                <h4 class="card-heading">😰 The "GA4" Problem</h4>
+                <ul class="comparison-list">
+                    <li>
+                        <i class="fas fa-times-circle"></i>
+                        <span>Dashboards are too complex to read</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-times-circle"></i>
+                        <span>₹5,000+ monthly fees for "experts"</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-times-circle"></i>
+                        <span>Cookie banners driving users away</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="comparison-card card-success">
+                <div class="card-tag tag-blue">The EzyGo Solution</div>
+                <h4 class="card-heading">🎯 Simple & Powerful</h4>
+                <ul class="comparison-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Simple "Clicks vs Views" dashboard</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Zero configuration required</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cookieless = 100% GDPR/Privacy safe</span>
+                    </li>
+                </ul>
+                <div class="card-footer-note">Included with your website plan</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- ALIGNED PROBLEM VS SOLUTION STYLES --- */
+.ezy-problem-solution-section {
+    padding: 100px 0; /* Vertical padding only */
+    background: var(--white);
+    font-family: var(--font-main);
+    width: 100%;
+    overflow: hidden; /* Prevents horizontal scroll */
+}
+
+/* Fixed container to prevent corner touching */
+.ezy-container-fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Safe gutter for mobile */
+}
+
+.ezy-problem-solution-section .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ezy-problem-solution-section .section-title {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 800;
+    color: var(--dark-navy);
+}
+
+/* Grid Layout Fix */
+.problem-solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+/* Comparison Cards */
+.comparison-card {
+    padding: 50px 40px;
+    border-radius: var(--radius-lg);
+    position: relative;
+    border: 1px solid #edf2f7;
+    transition: transform 0.3s ease;
+    /* Ensures card doesn't push against viewport */
+    box-sizing: border-box; 
+}
+
+.card-warning {
+    background: #fffcf5;
+    border-color: #fef3c7;
+}
+
+.card-success {
+    background: #f8fafc;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.08);
+}
+
+/* Tags */
+.card-tag {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.tag-red { background: #fee2e2; color: #b91c1c; }
+.tag-blue { background: var(--primary-gradient); color: white; }
+
+/* List Styling */
+.card-heading {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: var(--dark-navy);
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.card-warning .comparison-list li { color: #92400e; }
+.card-success .comparison-list li { color: var(--dark-navy); }
+
+/* Footer Note */
+.card-footer-note {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+
+/* Tablet & Mobile Adjustments */
+@media (max-width: 992px) {
+    .problem-solution-grid {
+        grid-template-columns: 1fr; /* Stack cards on tablet/mobile */
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .comparison-card { padding: 40px 20px; }
+    .card-tag { left: 20px; }
+}
+</style>
+
+<section id="comparison" class="ezy-comparison-hook">
+    <div class="container">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">The Honest Truth</span>
+            <h2 class="section-title">Why Businesses are Switching from GA4</h2>
+            <p class="section-subtitle">Google Analytics 4 was built for enterprise data scientists. EzyGoDigi was built for Indian business owners who want answers, not spreadsheets.</p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+            <table class="ezy-comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th class="col-ga4">Google Analytics 4</th>
+                        <th class="col-ezy">EzyGoDigi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feat-name">Setup Time</td>
+                        <td class="val-bad">60+ Mins (Complex GTM)</td>
+                        <td class="val-good">2 Mins (Single Tag)</td>
+                    </tr>
+                    <tr>
+                        <td class="feat-name">Data Accuracy</td>
+                        <td class="val-bad">Blocked by AdBlockers</td>
+                        <td class="val-good">100% AdBlock Proof</td>
+                    </tr>
+                    <tr>
+                        <td class="feat-name">WhatsApp Tracking</td>
+                        <td class="val-bad">Manual "Event" Coding</td>
+                        <td class="val-good">Automatic & Instant</td>
+                    </tr>
+                    <tr>
+                        <td class="feat-name">Privacy Laws</td>
+                        <td class="val-bad">Requires Cookie Banners</td>
+                        <td class="val-good">100% Cookieless / DPDP Ready</td>
+                    </tr>
+                    <tr>
+                        <td class="feat-name">Learning Curve</td>
+                        <td class="val-bad">"Needs a Training Course"</td>
+                        <td class="val-good">"Check it while having Chai"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="comparison-hook-footer">
+            <div class="hook-card">
+                <div class="hook-icon">💡</div>
+                <div class="hook-text">
+                    <h4>The GA4 Tax: <strong>30% Data Loss</strong></h4>
+                    <p>Because GA4 relies on cookies, nearly 1 in 3 visitors from tech-savvy hubs like <strong>Bengaluru, Gurugram, and Jaipur</strong> are invisible to you. EzyGoDigi uses server-side pulses to see 100% of your traffic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- COMPARISON HOOK STYLES --- */
+.ezy-comparison-hook {
+    padding: 100px 20px;
+    background: #ffffff;
+    font-family: var(--font-main);
+}
+
+.ezy-comparison-hook .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.comparison-table-wrapper {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    overflow-x: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.ezy-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: left;
+}
+
+.ezy-comparison-table th, 
+.ezy-comparison-table td {
+    padding: 20px 25px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.ezy-comparison-table th {
+    background: #f8fafc;
+    font-weight: 800;
+    color: var(--dark-navy);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.col-ga4 { color: #64748b; width: 30%; }
+.col-ezy { color: var(--primary-color); width: 30%; background: #f0f7ff; }
+
+.feat-name { font-weight: 700; color: var(--dark-navy); width: 40%; }
+
+.val-bad { color: #ef4444; font-size: 0.9rem; font-weight: 500; }
+.val-good { color: #10b981; font-size: 0.9rem; font-weight: 700; }
+
+/* The Clincher Card */
+.comparison-hook-footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hook-card {
+    background: var(--dark-navy);
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hook-icon { font-size: 3rem; }
+
+.hook-text h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.hook-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .ezy-comparison-table th, .ezy-comparison-table td { padding: 15px; font-size: 0.85rem; }
+    .hook-card { flex-direction: column; text-align: center; padding: 30px; }
+}
+</style>
+
+<section class="ezy-india-analytics">
+    <div class="container">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">Made for India</span>
+            <h2 class="section-title">Built for Businesses in India</h2>
+            <p class="section-subtitle">Optimized for local startups, cloud kitchens, and service providers.</p>
+        </div>
+
+        <div class="features-grid-modern">
+            
+            <div class="ezy-feature-card">
+                <div class="feature-icon-box">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>📍 Geo-Specific Data</h4>
+                    <p>Identify exactly if your traffic is coming from <strong>Jaipur, Delhi, or Mumbai</strong>. Crucial for local SEO and managing neighborhood deliveries.</p>
+                </div>
+            </div>
+
+            <div class="ezy-feature-card">
+                <div class="feature-icon-box">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>⚡ Adblock Proof</h4>
+                    <p>GA4 misses 20-30% of data due to adblockers. Our <strong>server-side tracking</strong> ensures you see 100% of your visitors, every time.</p>
+                </div>
+            </div>
+
+            <div class="ezy-feature-card">
+                <div class="feature-icon-box">
+                    <i class="fas fa-rupee-sign"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>🇮🇳 India-Ready Pricing</h4>
+                    <p>No USD conversion or "international transaction" headaches. Flat INR pricing with <strong>UPI and Razorpay</strong> support.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- INDIAN ANALYTICS FEATURES --- */
+.ezy-india-analytics {
+    padding: 80px 20px;
+    background: var(--bg-light); /* From theme.css */
+    font-family: var(--font-main);
+}
+
+.ezy-india-analytics .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ezy-india-analytics .badge-accent {
+    background: rgba(102, 126, 234, 0.1);
+    color: var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ezy-india-analytics .section-title {
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-top: 15px;
+}
+
+/* Grid Layout */
+.features-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.ezy-feature-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid #edf2f7;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.ezy-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border-color: var(--primary-color);
+}
+
+.feature-icon-box {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-gradient);
+    color: white;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+}
+
+.feature-text h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.feature-text strong {
+    color: var(--primary-color);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .ezy-india-analytics { padding: 60px 16px; }
+    .ezy-feature-card { text-align: center; align-items: center; }
+}
+</style>
+
+
+<section class="ezy-setup-showcase">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">Fastest Integration</span>
+            <h2 class="section-title">Stop Wasting Time on Setup</h2>
+            <p class="section-subtitle">Why hire an expert for weeks when you can get answers in 120 seconds?</p>
+        </div>
+
+        <div class="setup-comparison-grid">
+            
+            <div class="setup-card card-muted">
+                <div class="card-status-header">
+                    <span class="status-dot warning"></span>
+                    <span class="label-warning">The Legacy Way (GA4)</span>
+                </div>
+                
+                <div class="setup-steps-wrapper">
+                    <div class="step-line-item">
+                        <span class="step-num">01</span>
+                        <p>Create Google Cloud & Analytics Accounts</p>
+                    </div>
+                    <div class="step-line-item">
+                        <span class="step-num">02</span>
+                        <p>Configure Data Streams & Measurement IDs</p>
+                    </div>
+                    <div class="step-line-item">
+                        <span class="step-num">03</span>
+                        <p>Install GTM Container & Debug Script</p>
+                    </div>
+                    <div class="step-line-item">
+                        <span class="step-num">04</span>
+                        <p>Manually code "Triggers" for every button</p>
+                    </div>
+                    <div class="step-line-item">
+                        <span class="step-num">05</span>
+                        <p>Wait 24-48 hours for data to process</p>
+                    </div>
+                </div>
+
+                <div class="pain-point-footer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Still need a developer to read the data?</span>
+                </div>
+            </div>
+
+            <div class="setup-card card-premium">
+                <div class="card-status-header">
+                    <span class="status-dot success"></span>
+                    <span class="label-success">The EzyGoDigi Way</span>
+                </div>
+
+                <div class="setup-steps-wrapper active">
+                    <div class="step-line-item success">
+                        <span class="step-icon"><i class="fas fa-copy"></i></span>
+                        <div>
+                            <strong>Step 1: Copy</strong>
+                            <p>Get your unique 1-line script tag</p>
+                        </div>
+                    </div>
+                    <div class="step-line-item success">
+                        <span class="step-icon"><i class="fas fa-code"></i></span>
+                        <div>
+                            <strong>Step 2: Paste</strong>
+                            <p>Drop it into your website header</p>
+                        </div>
+                    </div>
+                    <div class="step-line-item rocket">
+                        <span class="step-icon"><i class="fas fa-rocket"></i></span>
+                        <div>
+                            <strong>Step 3: Done</strong>
+                            <p>Automatic tracking starts <u>instantly</u></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet-box">
+                    <div class="code-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="code-title">track.js</span>
+                    </div>
+                    <code>&lt;script src="https://ezygodigi.in/track.js" data-id="YOUR_ID"&gt;&lt;/script&gt;</code>
+                </div>
+
+                <div class="setup-footer-cta">
+                    <span>No expert needed. Ever.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- ALIGNED SETUP STYLES --- */
+.ezy-setup-showcase {
+    padding: 100px 0;
+    background: #ffffff;
+    font-family: var(--font-main);
+    width: 100%;
+    overflow: hidden;
+}
+
+.ezy-container-fixed {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ezy-setup-showcase .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ezy-setup-showcase .badge-accent {
+    background: #f0f4ff;
+    color: #667eea;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Grid Layout */
+.setup-comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Cards */
+.setup-card {
+    padding: 45px 35px;
+    border-radius: 24px;
+    border: 1px solid #f1f5f9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-muted { background: #fdfdfe; border-style: dashed; }
+.card-premium { 
+    background: #ffffff; 
+    border: 2px solid #667eea; 
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.1);
+}
+
+/* Header Labels */
+.card-status-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.status-dot { width: 8px; height: 8px; border-radius: 50%; }
+.status-dot.warning { background: #f59e0b; box-shadow: 0 0 10px #f59e0b; }
+.status-dot.success { background: #10b981; box-shadow: 0 0 10px #10b981; }
+
+.label-warning { font-weight: 700; color: #94a3b8; font-size: 0.9rem; }
+.label-success { font-weight: 800; color: #667eea; font-size: 1rem; }
+
+/* Step Items (Old Way) */
+.setup-steps-wrapper .step-line-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.step-num {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #cbd5e1;
+    border: 1px solid #cbd5e1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.step-line-item p { font-size: 0.95rem; color: #64748b; margin: 0; }
+
+/* Step Items (New Way) */
+.step-icon {
+    width: 40px;
+    height: 40px;
+    background: #f0f4ff;
+    color: #667eea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.success .step-icon { background: #ecfdf5; color: #10b981; }
+.rocket .step-icon { background: #667eea; color: white; }
+
+.step-line-item strong { display: block; font-size: 1rem; color: #1e293b; }
+
+/* Code Box */
+.code-snippet-box {
+    margin-top: 30px;
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.code-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.code-title { color: #64748b; font-size: 0.75rem; margin-left: 10px; font-family: monospace; }
+
+.code-snippet-box code { color: #38bdf8; font-size: 0.85rem; font-family: 'Courier New', monospace; word-break: break-all; }
+
+/* Footers */
+.pain-point-footer {
+    margin-top: auto;
+    padding-top: 25px;
+    border-top: 1px dashed #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.setup-footer-cta {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 800;
+    color: #667eea;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .setup-card { padding: 30px 20px; }
+    .setup-comparison-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+
+<section class="ezy-visual-proof-section">
+    <div class="container">
+        
+        <div class="section-header-centered">
+            <h2 class="section-title">Real Tracking. Real Results.</h2>
+            <p class="section-subtitle">Live visitor data captured automatically from your website.</p>
+        </div>
+
+        <div class="evidence-showcase-grid">
+            
+            <div class="evidence-wrapper">
+                <div class="evidence-label-row">
+                    <span class="live-pulse-badge">
+                        <span class="pulse-ring"></span>
+                        LIVE DASHBOARD
+                    </span>
+                    <h4 class="evidence-heading">📊 Traffic Overview</h4>
+                </div>
+                
+                <div class="device-mockup">
+                    <div class="mockup-header">
+                        <span class="mock-dot red"></span><span class="mock-dot yellow"></span><span class="mock-dot green"></span>
+                        <div class="mock-url">ezygodigi.in/analytics/live</div>
+                    </div>
+                    <img src="assets/images/sample/analytics-dashboard.png" alt="Real-time analytics dashboard tracking Jaipur visitors">
+                </div>
+                <p class="evidence-caption">Real-time visitor dashboard showing active sessions</p>
+            </div>
+
+            <div class="evidence-wrapper">
+                <div class="evidence-label-row">
+                    <span class="live-pulse-badge green">
+                        <span class="pulse-ring"></span>
+                        LIVE EVENTS
+                    </span>
+                    <h4 class="evidence-heading">🎯 Event Details</h4>
+                </div>
+
+                <div class="device-mockup">
+                    <div class="mockup-header">
+                        <span class="mock-dot red"></span><span class="mock-dot yellow"></span><span class="mock-dot green"></span>
+                        <div class="mock-url">ezygodigi.in/analytics/events</div>
+                    </div>
+                    <img src="assets/images/sample/analytics-dashboard-user-events.png" alt="WhatsApp button click tracking live">
+                </div>
+                <p class="evidence-caption">WhatsApp clicks + timestamps captured live</p>
+            </div>
+        </div>
+
+        <div class="ezy-cta-footer">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <strong>Want to see your own live data?</strong>
+                    <span>Get a 5-minute dashboard walkthrough on WhatsApp.</span>
+                </div>
+                <a href="https://wa.me/917039509783?text=Hi, I saw the analytics dashboard images. Can I get a live demo?" target="_blank" class="btn-whatsapp-premium">
+                    <i class="fab fa-whatsapp"></i> Get a Free Demo
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* --- SHOWCASE & CTA STYLES --- */
+.ezy-visual-proof-section {
+    padding: 100px 20px;
+    background: var(--white);
+    font-family: var(--font-main);
+}
+
+.ezy-visual-proof-section .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ezy-visual-proof-section .section-title {
+    font-size: clamp(28px, 6vw, 42px);
+    font-weight: 800;
+    color: var(--dark-navy);
+}
+
+/* Grid Layout */
+.evidence-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+/* Device Mockup Styling */
+.device-mockup {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    border: 1px solid #e2e8f0;
+}
+
+.device-mockup img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.mockup-header {
+    background: #f1f5f9;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.mock-dot { width: 8px; height: 8px; border-radius: 50%; }
+.mock-dot.red { background: #ff5f56; }
+.mock-dot.yellow { background: #ffbd2e; }
+.mock-dot.green { background: #27c93f; }
+
+.mock-url {
+    margin-left: 10px;
+    background: #fff;
+    font-size: 11px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    color: #94a3b8;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+/* Pulse Badge */
+.live-pulse-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.live-pulse-badge.green { color: #10b981; }
+
+.pulse-ring {
+    width: 8px; height: 8px;
+    background: currentColor;
+    border-radius: 50%;
+    position: relative;
+}
+.pulse-ring::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    background: currentColor;
+    border-radius: 50%;
+    animation: badge-pulse 1.5s infinite;
+}
+
+@keyframes badge-pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+/* WhatsApp Footer CTA */
+.ezy-cta-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f8fafc;
+    border: 1px dashed var(--primary-color);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cta-text { display: flex; flex-direction: column; gap: 5px; }
+.cta-text strong { font-size: 1.2rem; color: var(--dark-navy); }
+.cta-text span { color: var(--text-muted); font-size: 0.95rem; }
+
+.btn-whatsapp-premium {
+    background: #25d366;
+    color: white !important;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp-premium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .evidence-showcase-grid { grid-template-columns: 1fr; }
+    .device-mockup img { height: 280px; }
+    .cta-content { flex-direction: column; text-align: center; }
+    .btn-whatsapp-premium { width: 100%; justify-content: center; }
+}
+</style>
+
+<section class="ezy-geo-intelligence">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">Geographic Intelligence</span>
+            <h2 class="section-title">Hyper-Local Insights for Bharat</h2>
+            <p class="section-subtitle">
+                Built to recognize the unique geography of the Indian market. Get precise data where it matters most—from Tier 1 hubs to emerging Tier 2 cities.
+            </p>
+        </div>
+
+        <div class="geo-feature-grid">
+            <div class="geo-glass-card">
+                <div class="geo-icon-box"><i class="fas fa-location-arrow"></i></div>
+                <div class="geo-info">
+                    <h4>Micro-Location Tracking</h4>
+                    <p>Identify traffic from specific high-value districts like <strong>BKC</strong>, <strong>Cyber City</strong>, or <strong>HSR Layout</strong>.</p>
+                </div>
+            </div>
+
+            <div class="geo-glass-card featured-geo">
+                <div class="geo-icon-box"><i class="fas fa-chart-line"></i></div>
+                <div class="geo-info">
+                    <h4>Tier 2 & 3 Growth</h4>
+                    <p>Specifically tuned for emerging markets. See real visitor counts from <strong>Jaipur</strong>, <strong>Indore</strong>, or <strong>Lucknow</strong>.</p>
+                </div>
+            </div>
+
+            <div class="geo-glass-card">
+                <div class="geo-icon-box"><i class="fas fa-bolt"></i></div>
+                <div class="geo-info">
+                    <h4>Pan-India Infrastructure</h4>
+                    <p>Distributed edge network ensuring lightning-fast tracking for users from <strong>Kashmir to Kanyakumari</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ezy-whatsapp-alignment-box">
+            <div class="cta-pill-container">
+                <div class="cta-left-content">
+                    <div class="avatar-circle">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="online-status"></span>
+                    </div>
+                    <div class="avatar-text">
+                        <strong>Ready to see it in action?</strong>
+                        <span>Get a 5-minute Live Demo on WhatsApp</span>
+                    </div>
+                </div>
+                
+                <div class="cta-right-content">
+                    <a href="https://wa.me/917039509783?text=Hi, I want to see a Live Demo of the Hyper-Local Analytics." target="_blank" class="btn-whatsapp-glow">
+                        Connect Now <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="cta-hint">Average response time: 2 minutes</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* --- CORE ALIGNMENT STYLES --- */
+.ezy-geo-intelligence {
+    padding: 100px 0;
+    background: #f8fafc; /* bg-light equivalent */
+    font-family: var(--font-main);
+    width: 100%;
+    overflow: hidden;
+}
+
+.ezy-container-fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Essential gutter */
+}
+
+.ezy-geo-intelligence .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ezy-geo-intelligence .badge-accent {
+    background: #eef2ff;
+    color: #6366f1;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ezy-geo-intelligence .section-title {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 900;
+    color: #1e293b;
+    margin-top: 15px;
+}
+
+/* Grid Alignment */
+.geo-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.geo-glass-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.featured-geo {
+    border: 2px solid #6366f1;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.05);
+}
+
+.geo-icon-box { font-size: 2rem; color: #6366f1; margin-bottom: 20px; }
+.geo-info h4 { font-size: 1.25rem; font-weight: 800; color: #1e293b; margin-bottom: 12px; }
+.geo-info p { font-size: 0.95rem; color: #64748b; line-height: 1.6; }
+
+/* FIXED WHATSAPP CTA ALIGNMENT */
+.ezy-whatsapp-alignment-box {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-pill-container {
+    background: #ffffff;
+    border-radius: 100px; /* Pill shape */
+    padding: 15px 15px 15px 35px; /* More left padding to balance icons */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    border: 1px solid #f1f5f9;
+}
+
+.cta-left-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-circle {
+    width: 48px;
+    height: 48px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.online-status {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    background: #22c55e;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.avatar-text { text-align: left; }
+.avatar-text strong { display: block; color: #1e293b; font-size: 1.1rem; }
+.avatar-text span { color: #64748b; font-size: 0.85rem; }
+
+.btn-whatsapp-glow {
+    background: #25d366;
+    color: white !important;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-whatsapp-glow:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+.cta-hint {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 850px) {
+    .cta-pill-container {
+        flex-direction: column;
+        border-radius: 30px;
+        padding: 35px 25px;
+        gap: 25px;
+        text-align: center;
+    }
+    .cta-left-content { flex-direction: column; }
+    .avatar-text { text-align: center; }
+    .btn-whatsapp-glow { width: 100%; justify-content: center; }
+}
+</style>
+
+<section class="ezy-pricing-comparison">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent green-bg">Unbeatable ROI</span>
+            <h2 class="section-title">Full Features. Economy Price.</h2>
+            <p class="section-subtitle">Enterprise analytics power at pricing built for Indian startups and SMBs.</p>
+        </div>
+
+        <div class="pricing-battle-grid">
+            
+            <div class="battle-card competitor-card">
+                <div class="battle-badge">Typical Enterprise Tools</div>
+                <div class="price-box">
+                    <span class="currency">₹</span>
+                    <span class="amount">15k</span>
+                    <span class="period">/mo+</span>
+                </div>
+                <ul class="battle-list">
+                    <li><i class="fas fa-times-circle"></i> Complex WhatsApp setup</li>
+                    <li><i class="fas fa-times-circle"></i> Heavy compliance overhead</li>
+                    <li><i class="fas fa-times-circle"></i> Heavy scripts (100KB+)</li>
+                </ul>
+            </div>
+
+            <div class="battle-card winner-card">
+                <div class="battle-badge highlight-badge">EzyGo Analytics</div>
+                <div class="price-box">
+                    <span class="currency">₹</span>
+                    <span class="amount">999</span>
+                    <span class="period">/mo</span>
+                </div>
+                <ul class="battle-list success-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Auto</strong> WhatsApp tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Cookieless & Privacy-first</li>
+                    <li><i class="fas fa-check-circle"></i> ⚡ <strong>5KB script</strong></li>
+                </ul>
+                <div class="winner-label">93% Cheaper</div>
+                <a href="/pricing" class="btn-card-link">View Detailed Pricing →</a>
+            </div>
+
+            <div class="battle-card design-bundle-card">
+                <div class="battle-badge blue-badge">Website + Analytics</div>
+                <div class="price-box">
+                    <span class="currency">₹</span>
+                    <span class="amount">Custom</span>
+                </div>
+                <p class="card-desc">Need a high-performance site built from scratch with analytics included?</p>
+                <ul class="battle-list bundle-list">
+                    <li><i class="fas fa-star"></i> Performance First Design</li>
+                    <li><i class="fas fa-star"></i> Analytics setup included</li>
+                    <li><i class="fas fa-star"></i> SEO & Speed Optimized</li>
+                </ul>
+                <a href="/website-design" class="btn-card-link blue-text">Explore Web Design →</a>
+            </div>
+
+        </div>
+
+        <div class="pricing-nav-footer">
+            <div class="nav-links">
+                <a href="/pricing">Full Comparison Table</a>
+                <span class="dot-separator">•</span>
+                <a href="/website-design">Web Development Services</a>
+                <span class="dot-separator">•</span>
+                <a href="/contact">Request Custom Quote</a>
+            </div>
+            <p class="footer-bottom-text">Prices exclusive of GST. Built with ❤️ in Jaipur for the world.</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* --- UPDATED PRICING STYLES --- */
+.ezy-pricing-comparison {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    font-family: var(--font-main);
+    width: 100%;
+    overflow: hidden;
+}
+
+.ezy-container-fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ezy-pricing-comparison .section-header-centered {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Battle Grid Fix */
+.pricing-battle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.battle-card {
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 25px;
+    position: relative;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Badges */
+.battle-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.highlight-badge { background: #10b981; color: white; }
+.blue-badge { background: #3b82f6; color: white; }
+
+/* Pricing Box */
+.price-box { margin-bottom: 25px; color: #1e293b; }
+.price-box .amount { font-size: 3rem; font-weight: 900; }
+.winner-card .amount { color: #10b981; }
+.competitor-card .amount { color: #94a3b8; text-decoration: line-through; opacity: 0.6; }
+
+.card-desc { font-size: 0.9rem; color: #64748b; margin-bottom: 20px; }
+
+/* Lists */
+.battle-list { list-style: none; padding: 0; margin: 0 auto 30px 0; }
+.battle-list li { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 0.9rem; 
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.fa-check-circle { color: #10b981; }
+.fa-times-circle { color: #ef4444; }
+.fa-star { color: #3b82f6; }
+
+/* Button Links */
+.btn-card-link {
+    margin-top: auto;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #10b981;
+    text-transform: uppercase;
+}
+
+.blue-text { color: #3b82f6; }
+
+/* Special Card Styling */
+.winner-card {
+    border: 2.5px solid #10b981;
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+}
+
+.design-bundle-card { background: #f8fafc; }
+
+/* Footer Nav */
+.pricing-nav-footer {
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 40px;
+}
+
+.nav-links { margin-bottom: 15px; }
+.nav-links a { 
+    color: #64748b; 
+    text-decoration: none; 
+    font-weight: 700; 
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #10b981; }
+.dot-separator { margin: 0 15px; color: #cbd5e1; }
+.footer-bottom-text { font-size: 0.75rem; color: #94a3b8; }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .pricing-battle-grid { grid-template-columns: 1fr; }
+    .battle-card { padding: 40px 25px; }
+    .nav-links { display: flex; flex-direction: column; gap: 15px; }
+    .dot-separator { display: none; }
+}
+</style>
+
+<section id="pricing" class="ezy-pricing-final">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent green-bg">Transparent Pricing</span>
+            <h2 class="section-title">Simple Pricing for Every Stage</h2>
+            <p class="section-subtitle">No hidden fees. Pay as you grow with high-performance analytics.</p>
+        </div>
+
+        <div class="pricing-flex-container">
+            
+            <div class="pricing-card card-popular">
+                <div class="popular-tag">MOST POPULAR</div>
+                <div class="card-top">
+                    <h3 class="plan-name">Starter</h3>
+                    <p class="plan-desc">Perfect for growing local businesses in Jaipur & beyond.</p>
+                    <div class="price-display">
+                        <span class="currency">₹</span>
+                        <span class="value">999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <div class="limit-wrapper">
+                        <span class="event-limit">10,000 monthly events</span>
+                    </div>
+                </div>
+                
+                <div class="card-features">
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> WhatsApp click tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time dashboard</li>
+                        <li><i class="fas fa-check-circle"></i> Jaipur/Delhi geo-data</li>
+                        <li><i class="fas fa-check-circle"></i> 5KB Lightning script</li>
+                        <li><i class="fas fa-check-circle"></i> Standard Email Support</li>
+                    </ul>
+                </div>
+
+                <div class="card-action">
+                    <a href="https://wa.me/917039509783?text=Hi, I want to start with the Starter Plan (₹999)." target="_blank" class="btn-pricing btn-starter">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pricing-card card-growth">
+                <div class="card-top">
+                    <h3 class="plan-name">Growth</h3>
+                    <p class="plan-desc">For high-traffic portals & agencies needing more power.</p>
+                    <div class="price-display">
+                        <span class="currency">₹</span>
+                        <span class="value">4,999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <div class="limit-wrapper">
+                        <span class="event-limit">50,000+ monthly events</span>
+                    </div>
+                </div>
+                
+                <div class="card-features">
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Everything in Starter</strong></li>
+                        <li><i class="fas fa-check-circle"></i> Custom event tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Priority Bharat support</li>
+                        <li><i class="fas fa-check-circle"></i> Weekly PDF reports</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
+                    </ul>
+                </div>
+
+                <div class="card-action">
+                    <a href="https://wa.me/917039509783?text=Hi, I'm interested in the Growth Plan for higher traffic." target="_blank" class="btn-pricing btn-growth">
+                        Contact Sales <i class="fas fa-comment-dots"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pricing-note">
+            <p><i class="fas fa-shield-alt"></i> No credit card required to demo. Cancel anytime.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- CORE ALIGNMENT FIXES --- */
+.ezy-pricing-final {
+    padding: 100px 0;
+    background: #f8fafc;
+    font-family: var(--font-main);
+    width: 100%;
+    overflow: hidden;
+}
+
+.ezy-container-fixed {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ezy-pricing-final .section-header-centered {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.badge-accent.green-bg {
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+/* Flex Container Alignment */
+.pricing-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Forces equal height */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 50px 40px;
+    flex: 1;
+    min-width: 320px;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column; /* Allows vertical spacing control */
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Popular Highlight */
+.card-popular {
+    border: 2px solid #10b981;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #10b981;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+/* Typography Alignment */
+.card-top { text-align: center; }
+.plan-name { font-size: 1.75rem; font-weight: 900; color: #1e293b; margin-bottom: 10px; }
+.plan-desc { color: #64748b; font-size: 0.9rem; margin-bottom: 25px; min-height: 40px; }
+
+.price-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.price-display .currency { font-size: 1.5rem; font-weight: 700; color: #1e293b; margin-right: 2px; }
+.price-display .value { font-size: 3.5rem; font-weight: 950; color: #1e293b; line-height: 1; }
+.price-display .period { color: #94a3b8; font-size: 1rem; margin-left: 4px; }
+
+.card-popular .value { color: #10b981; }
+
+.limit-wrapper { margin-bottom: 30px; }
+.event-limit {
+    background: #f1f5f9;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #475569;
+}
+
+/* Features List Alignment */
+.card-features {
+    margin: 10px 0 40px;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.feature-list { list-style: none; padding: 0; }
+.feature-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.feature-list i { color: #10b981; font-size: 0.85rem; }
+
+/* Buttons */
+.btn-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-starter { background: #10b981; color: white !important; }
+.btn-growth { background: #1e293b; color: white !important; }
+
+.btn-pricing:hover { opacity: 0.95; transform: translateY(-2px); }
+
+.pricing-note {
+    margin-top: 50px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .pricing-card { padding: 40px 25px; min-width: 100%; }
+    .pricing-flex-container { gap: 40px; }
+}
+</style>
+
+<section class="ezy-smart-alternatives">
+    <div class="ezy-container-fixed">
+        
+        <div class="budget-alert-bar">
+            <i class="fas fa-wallet"></i>
+            <span>Searching for a <strong>low-cost alternative</strong> to Enterprise tools? You're in the right place.</span>
+        </div>
+
+        <div class="section-header-centered">
+            <span class="badge-accent red-bg">Stop the Overspend</span>
+            <h2 class="section-title">Essential Analytics. Fractional Cost.</h2>
+            <p class="section-subtitle">
+                WebEngage, CleverTap, and Mixpanel charge for "Enterprise" features you'll likely never touch. 
+                We provide the <strong>High-Impact Essentials</strong> at a price that fits your early-stage growth.
+            </p>
+        </div>
+
+        <div class="comparison-cards-row">
+            <div class="alt-card">
+                <div class="competitor-names">Vs. Mixpanel & Amplitude</div>
+                <div class="alt-icon"><i class="fas fa-chart-line"></i></div>
+                <h5>Growth over Graphs</h5>
+                <p>They focus on complex "Retention Cohorts." We focus on <strong>Conversion Events</strong>. Know exactly who clicked your WhatsApp or Lead buttons without a math degree.</p>
+                <div class="cost-tag">Save ₹8,000+/mo</div>
+            </div>
+
+            <div class="alt-card">
+                <div class="competitor-names">Vs. Hotjar</div>
+                <div class="alt-icon"><i class="fas fa-bolt"></i></div>
+                <h5>Performance over Bloat</h5>
+                <p>Hotjar's heavy tracking can tank your <strong>Google PageSpeed</strong>. Our 5KB script gives you heat-mapped event data without the lag.</p>
+                <div class="cost-tag">Save ₹4,000+/mo</div>
+            </div>
+
+            <div class="alt-card">
+                <div class="competitor-names">Vs. WebEngage & CleverTap</div>
+                <div class="alt-icon"><i class="fas fa-users-cog"></i></div>
+                <h5>Setup in 2m, not 2 Weeks</h5>
+                <p>Don't waste ₹50k on a developer just to integrate. EzyGoDigi is a <strong>No-Code drop-in</strong> designed for the fast-moving Bharat entrepreneur.</p>
+                <div class="cost-tag">Save ₹15,000+/mo</div>
+            </div>
+        </div>
+        
+        <div class="bottom-statement">
+            <div class="strategy-tag">The Early-Stage Strategy</div>
+            <p>Capture 100% of your data today. Scale to the "Giants" only once you have a dedicated data team. <strong>Why pay for a Ferrari when you just need to get to work?</strong></p>
+        </div>
+    </div>
+</section>
+
+<style>
+.ezy-smart-alternatives { padding: 100px 0; background: #ffffff; border-top: 1px solid #f1f5f9; }
+
+/* Budget Bar */
+.budget-alert-bar {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    background: #fff7ed;
+    border: 1px solid #ffedd5;
+    padding: 12px 25px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: #9a3412;
+}
+
+.badge-accent.red-bg { background: #fee2e2; color: #dc2626; }
+
+/* Competitor Cards */
+.comparison-cards-row { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    margin-top: 50px; 
+}
+
+.alt-card { 
+    background: #f8fafc; 
+    padding: 50px 35px; 
+    border-radius: 30px; 
+    border: 1px solid #e2e8f0; 
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt-card:hover { 
+    background: white;
+    border-color: #3b82f6; 
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.competitor-names {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.alt-icon { 
+    font-size: 2.2rem; 
+    color: #3b82f6; 
+    margin-bottom: 20px; 
+}
+
+.alt-card h5 { font-size: 1.25rem; font-weight: 800; margin-bottom: 15px; color: #0f172a; }
+.alt-card p { font-size: 0.95rem; color: #475569; line-height: 1.6; flex-grow: 1; margin-bottom: 25px; }
+
+.cost-tag {
+    background: #dcfce7;
+    color: #16a34a;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+/* Bottom Logic Box */
+.bottom-statement { 
+    margin-top: 70px; 
+    text-align: center; 
+    background: #0f172a; 
+    padding: 40px; 
+    border-radius: 30px;
+    color: white;
+}
+
+.strategy-tag {
+    background: #38bdf8;
+    color: #0f172a;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.bottom-statement p { 
+    font-size: 1.1rem; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .alt-card { padding: 40px 25px; }
+    .budget-alert-bar { border-radius: 20px; text-align: center; flex-direction: column; }
+}
+</style>
+
+
+<section class="ezy-power-section">
+    <div class="ezy-container-fixed">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">Core Engine</span>
+            <h2 class="section-title">Not Just Light. Actually Powerful.</h2>
+            <p class="section-subtitle">A lightweight script that delivers enterprise-grade insights without the bloat.</p>
+        </div>
+
+        <div class="power-feature-grid">
+            
+            <div class="power-card side-blue">
+                <div class="power-header">
+                    <div class="icon-circle blue-bg"><i class="fas fa-server"></i></div>
+                    <h4>Server-Side Tracking</h4>
+                </div>
+                <p>Recover <strong>30% more data</strong> lost by traditional cookie-based tools. Our infrastructure is 100% Adblock-proof and privacy-compliant.</p>
+            </div>
+
+            <div class="power-card side-green">
+                <div class="power-header">
+                    <div class="icon-circle green-bg"><i class="fas fa-magic"></i></div>
+                    <h4>Auto Event Capture</h4>
+                </div>
+                <p>WhatsApp, Phone, and Social clicks are tracked <strong>automatically</strong>. Zero configuration and no complex GTM setups required.</p>
+            </div>
+
+            <div class="power-card side-orange">
+                <div class="power-header">
+                    <div class="icon-circle orange-bg"><i class="fas fa-map-marked-alt"></i></div>
+                    <h4>Micro-Location</h4>
+                </div>
+                <p>Precise geo-data from <strong>Jaipur to BKC to HSR Layout</strong>. Understand exactly which business districts drive your revenue.</p>
+            </div>
+
+        </div>
+
+        <div class="performance-stats-wrapper">
+            <div class="performance-ticker">
+                <div class="stat-item">
+                    <span class="stat-value">5KB</span>
+                    <span class="stat-label">Script Size</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">< 10ms</span>
+                    <span class="stat-label">Execution Time</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">DPDP Ready</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* --- CORE POWER STYLES --- */
+.ezy-power-section {
+    padding: 100px 0;
+    background: #ffffff;
+    font-family: var(--font-main);
+    width: 100%;
+}
+
+.ezy-container-fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ezy-power-section .section-header-centered {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.ezy-power-section .section-title {
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 900;
+    color: #0f172a; /* dark-navy */
+}
+
+/* Feature Grid Alignment */
+.power-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.power-card {
+    background: #f8fafc;
+    border-radius: 24px;
+    padding: 45px 35px;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.power-card:hover {
+    background: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* Side Accents (Cleaned up) */
+.side-blue { border-top: 5px solid #3b82f6; }
+.side-green { border-top: 5px solid #10b981; }
+.side-orange { border-top: 5px solid #f59e0b; }
+
+.power-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.blue-bg { background: #eff6ff; color: #3b82f6; }
+.green-bg { background: #ecfdf5; color: #10b981; }
+.orange-bg { background: #fffbeb; color: #f59e0b; }
+
+.power-header h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.power-card p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Performance Ticker Alignment */
+.performance-stats-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.performance-ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: #0f172a;
+    padding: 35px 60px;
+    border-radius: 100px; /* Pill Shape */
+    color: white;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+}
+
+.stat-item { text-align: center; }
+.stat-value { display: block; font-size: 1.75rem; font-weight: 900; color: #38bdf8; margin-bottom: 5px; }
+.stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.6; font-weight: 700; }
+.stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.1); }
+
+/* Mobile Adjustments */
+@media (max-width: 850px) {
+    .performance-ticker { 
+        flex-direction: column; 
+        gap: 30px; 
+        border-radius: 30px;
+        padding: 40px;
+        width: 100%;
+        max-width: 400px;
+    }
+    .stat-divider { display: none; }
+    .power-card { padding: 35px 25px; }
+    .power-feature-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section class="ezy-faq-section">
+    <div class="container">
+        
+        <div class="section-header-centered">
+            <span class="badge-accent">Support</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about EzyGo Analytics.</p>
+        </div>
+
+        <div class="faq-grid-container">
+            <div class="faq-card">
+                <h4>How is this different from Google Analytics?</h4>
+                <p>GA4 is built for data scientists. EzyGoDigi is built for business owners. We focus on <strong>actionable data</strong>—like which WhatsApp button got clicked—without the complex setup or "Big Tech" bloat.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Do I need to show a Cookie Banner?</h4>
+                <p>No. We are 100% cookieless. Since we don't track PII (Personally Identifiable Information), you can legally remove those annoying popups that hurt your conversion rates.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Will it slow down my website?</h4>
+                <p>Our script is <strong>under 5KB</strong>—that's smaller than a single low-res icon. It loads asynchronously, ensuring your Core Web Vitals and SEO scores stay perfect.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Can I track WhatsApp clicks?</h4>
+                <p>Yes! It happens <strong>automatically</strong>. Any link leading to WhatsApp, a phone dialer, or Instagram is captured as a "Lead Event" without you writing a single line of code.</p>
+            </div>
+
+            <div class="faq-card featured-faq">
+                <h4>Is it compliant with India's DPDP Act?</h4>
+                <p>Yes. We process all data with a privacy-first approach. We don't store IP addresses or sensitive user data, making you fully compliant with India's Digital Personal Data Protection Act.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Can I export my data?</h4>
+                <p>Absolutely. You can download your visitor reports and event logs in CSV or PDF format with one click for your weekly team meetings.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>What if I have multiple websites?</h4>
+                <p>Our dashboard supports multi-site management. You can track your main portal and your landing pages from a single login with ease.</p>
+            </div>
+
+            <div class="faq-card">
+                <h4>Do I need a developer for setup?</h4>
+                <p>If you can copy-paste, you can set it up. Just drop our one-line script into your website header. If you're using WordPress or Shopify, it takes less than 60 seconds.</p>
+            </div>
+        </div>
+
+        <div class="faq-footer">
+            <p>Still have a specific question?</p>
+            <a href="https://wa.me/917039509783?text=Hi, I have a question about EzyGo Analytics." target="_blank" class="faq-wa-link">
+                Ask us on WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* --- FAQ STYLES --- */
+.ezy-faq-section {
+    padding: 100px 20px;
+    background: #fcfcfd;
+    font-family: var(--font-main);
+}
+
+.ezy-faq-section .section-header-centered {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background: var(--white);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.featured-faq {
+    background: #f8fafc;
+    border-left: 4px solid #10b981;
+}
+
+.faq-card h4 {
+    color: var(--dark-navy);
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.faq-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faq-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.faq-footer p {
+    color: var(--dark-navy);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.faq-wa-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #25d366;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-wa-link:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .faq-grid-container { grid-template-columns: 1fr; }
+    .faq-card { padding: 25px; }
+}
+</style>
+
+<section class="ezy-vs-giants">
+    <div class="ezy-container-fixed">
+        <div class="section-header-centered">
+            <span class="badge-accent">The Honest Truth</span>
+            <h2 class="section-title">Stop Paying for "Enterprise Noise"</h2>
+            <p class="section-subtitle">Mixpanel and Amplitude are built for 500-person data teams. EzyGoDigi is built for <strong>Business Owners in India</strong>.</p>
+        </div>
+
+        <div class="vs-grid">
+            <div class="vs-box tool-heavy">
+                <h4>Mixpanel / Amplitude</h4>
+                <ul class="vs-list">
+                    <li><i class="fas fa-exclamation-triangle"></i> 3-Week Developer Integration</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Needs a Data Scientist to read charts</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Heavy scripts slow down your SEO</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Billing in USD ($$$)</li>
+                </ul>
+            </div>
+
+            <div class="vs-divider"><span>VS</span></div>
+
+            <div class="vs-box tool-light">
+                <div class="vs-tag">The Smart Choice</div>
+                <h4>EzyGoDigi</h4>
+                <ul class="vs-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>2-Minute</strong> No-Code Setup</li>
+                    <li><i class="fas fa-check-circle"></i> Dashboard for <strong>Growth, not Math</strong></li>
+                    <li><i class="fas fa-check-circle"></i> 5KB Script (Fastest in India)</li>
+                    <li><i class="fas fa-check-circle"></i> Pricing built for <strong>Bharat SMBs</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.ezy-vs-giants { padding: 80px 0; background: #ffffff; }
+.vs-grid { display: flex; align-items: center; gap: 20px; margin-top: 50px; position: relative; }
+.vs-box { flex: 1; padding: 40px; border-radius: 24px; border: 1px solid #e2e8f0; }
+.tool-heavy { background: #f8fafc; opacity: 0.8; }
+.tool-light { background: #f0fdf4; border: 2px solid #10b981; position: relative; }
+.vs-tag { position: absolute; top: -12px; right: 20px; background: #10b981; color: white; padding: 4px 12px; border-radius: 100px; font-size: 0.7rem; font-weight: 800; }
+.vs-divider { width: 60px; height: 60px; background: #1e293b; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; z-index: 2; border: 4px solid white; }
+.vs-list { list-style: none; padding: 0; margin-top: 20px; text-align: left; }
+.vs-list li { margin-bottom: 12px; font-size: 0.9rem; display: flex; gap: 10px; }
+.tool-heavy i { color: #94a3b8; }
+.tool-light i { color: #10b981; }
+
+@media (max-width: 768px) {
+    .vs-grid { flex-direction: column; }
+    .vs-divider { margin: -30px 0; }
+}
+</style>
+
+<section class="ezy-final-cta">
+    <div class="ezy-container-fixed">
+        <div class="cta-glass-box">
+            
+            <div class="cta-glow-1"></div>
+            <div class="cta-glow-2"></div>
+
+            <div class="cta-content-wrapper">
+                <div class="cta-badge">
+                    <i class="fas fa-bolt"></i> <span>NO-CODE SETUP</span>
+                </div>
+
+                <h2 class="cta-title">Ready to simplify your analytics?</h2>
+                <p class="cta-subtitle">
+                    Stop losing 30% of your data to complex tools. Start tracking what actually matters in <strong>less than 2 minutes.</strong>
+                </p>
+
+                <div class="cta-button-group">
+                    <a href="https://wa.me/917039509783?text=Hi, I'm ready to simplify my analytics. Can we set up a demo?" 
+                       target="_blank" class="btn-cta-primary">
+                        <i class="fab fa-whatsapp"></i> Request a Live Demo
+                    </a>
+                    <p class="cta-trust-note">No credit card required • Cancel anytime</p>
+                </div>
+
+                <div class="cta-mini-stats-grid">
+                    <div class="m-stat">
+                        <strong>93%</strong>
+                        <span>More Affordable</span>
+                    </div>
+                    <div class="m-stat">
+                        <strong>5KB</strong>
+                        <span>Ultra-Light Script</span>
+                    </div>
+                    <div class="m-stat">
+                        <strong>100%</strong>
+                        <span>Privacy Ready</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- FINAL CTA CORE STYLES --- */
+.ezy-final-cta {
+    padding: 80px 0;
+    background: #f8fafc;
+    font-family: var(--font-main);
+    width: 100%;
+}
+
+.ezy-container-fixed {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cta-glass-box {
+    background: #0f172a; /* Dark Navy */
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 40px;
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+}
+
+/* Decorative Glows (Fixed for Mobile) */
+.cta-glow-1 {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.cta-glow-2 {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(37, 211, 102, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.cta-content-wrapper { position: relative; z-index: 2; }
+
+.cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-title {
+    font-size: clamp(28px, 6vw, 48px);
+    font-weight: 950;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cta-subtitle {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto 45px;
+    line-height: 1.6;
+}
+
+/* Button Alignment */
+.btn-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #25d366;
+    color: white !important;
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-size: 1.15rem;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+
+.btn-cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+}
+
+.cta-trust-note {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* Stats Section */
+.cta-mini-stats-grid {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.m-stat { flex: 1; max-width: 150px; }
+.m-stat strong { font-size: 1.5rem; color: #38bdf8; display: block; margin-bottom: 5px; }
+.m-stat span { font-size: 0.75rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+
+/* MOBILE RESPONSIVENESS FIX */
+@media (max-width: 768px) {
+    .cta-glass-box {
+        padding: 50px 20px;
+        border-radius: 30px;
+    }
+    
+    .cta-title { margin-bottom: 15px; }
+    
+    .btn-cta-primary {
+        width: 100%; /* Full width button on mobile */
+        padding: 18px 25px;
+    }
+
+    .cta-mini-stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+        gap: 30px 10px;
+        margin-top: 40px;
+    }
+    
+    /* Make the 3rd stat span across both columns for symmetry */
+    .m-stat:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+</style>
+
+<div id="footer-placeholder"></div>
+
+<script src="/assets/common.js"></script>
+<!-- just before closing </body> -->
+<script src="https://ezygodigi.in/analytic/analytics.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    Analytics.init({ siteKey: "pk_live_ezygodigi" });
+  }, 1500);
+});
+</script>
+</body>
+</html>

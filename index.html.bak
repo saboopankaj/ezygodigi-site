@@ -1,0 +1,3366 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4X6Z65R');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1391039479227265');
+fbq('track', 'PageView');
+</script>
+<!-- Meta Pixel Code -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1391039479227265&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8"> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- ✅ OPEN GRAPH (FB/WhatsApp/Twitter Previews) -->
+	<meta property="og:title" content="Affordable Website Design Company in India | 24-Hour Website Delivery">
+	<meta property="og:description" content="Affordable website design agency in India for small businesses and startups. Get a mobile-first, SEO-ready website delivered in just 24 hours. Plans start at ₹999.">
+	<meta property="og:image" content="https://ezygodigi.in/assets/images/og-ezygodigi.webp">
+	<meta property="og:image:secure_url" content="https://ezygodigi.in/assets/images/og-ezygodigi.webp">
+	<meta property="og:url" content="https://ezygodigi.in">
+	<meta property="og:type" content="website">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="EzyGoDigi">
+
+<!--<meta name="robots" content="index, follow">-->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+	<title>Affordable Website Design Company in India | 24-Hour Website Delivery</title>
+
+	<meta name="description" content="Affordable website design agency in India for small businesses and startups. Get a mobile-first, SEO-ready website delivered in just 24 hours. Plans start at ₹999.">
+
+	<link rel="canonical" href="https://ezygodigi.in/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://ezygodigi.in/#organization",
+      "name": "EzyGoDigi",
+      "url": "https://ezygodigi.in",
+      "logo": "https://ezygodigi.in/ez-32x32.png"
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ezygodigi.in/#localbusiness",
+      "name": "EzyGoDigi",
+      "image": "https://ezygodigi.in/ez-32x32.png",
+      "url": "https://ezygodigi.in",
+      "telephone": "+91-141-3180080",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Murlipura",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "postalCode": "302013",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "priceRange": "₹₹",
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "name": "Website Design Services",
+      "serviceType": "Website Design & Development",
+      "provider": {
+        "@id": "https://ezygodigi.in/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "Affordable website design company in India offering mobile-first, SEO-optimized websites delivered in 24 hours."
+    },
+
+    {
+      "@type": "Service",
+      "name": "Ecommerce Website Development",
+      "serviceType": "Ecommerce Development",
+      "provider": {
+        "@id": "https://ezygodigi.in/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "Professional ecommerce website development services in India with payment gateway and WhatsApp integration."
+    },
+
+    {
+      "@type": "Service",
+      "name": "Landing Page Development",
+      "serviceType": "High-Converting Landing Pages",
+      "provider": {
+        "@id": "https://ezygodigi.in/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "Conversion-focused landing page design services in India starting at ₹999."
+    },
+
+    {
+      "@type": "Service",
+      "name": "SEO & Tracking Services",
+      "serviceType": "SEO Optimization & Analytics Setup",
+      "provider": {
+        "@id": "https://ezygodigi.in/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "SEO optimization, GA4 setup, and tracking services for businesses across India."
+    }
+
+  ]
+}
+</script>
+
+	  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="/ez-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ez-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/ez-48x48.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="/assets/common.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/images/hero/hero-about-pricing.webp" type="image/webp">
+
+ </head>
+ <body>
+  
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4X6Z65R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- HEADER -->
+<div id="header-placeholder"></div>
+<div id="breadcrumb-placeholder"></div>
+
+
+<section class="hero-agency">
+    <div class="hero-navy-overlay"></div>
+    <div class="container">
+        <div class="hero-badge-row">
+            <span class="badge-tech-glow">🚀 Fast Website launch</span>
+        </div>
+
+        <h1>
+            Affordable Website Design Company in India <br>
+            <span class="highlight">Ready in 24 Hours</span> <br>
+        </h1>
+
+        <div class="hero-description">
+            <p>
+                Affordable <strong>website design services in India</strong> for startups, ecommerce, and local businesses — mobile-first and built for growth.
+            </p>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="https://wa.me/917039509783?text=Hi, I want to book my Free Strategy Consultation." 
+               target="_blank" 
+               class="btn btn-primary btn-pill">
+               Get Free Consultation →
+            </a>
+            
+            <a href="#showcase" class="btn btn-glass btn-pill">
+                See Live Solutions
+            </a>
+        </div>
+
+        <div class="trust-indicators">
+            <div class="hero-rating-alt">
+                <span class="stars">★★★★★</span>
+                <span>Rated 5★ by Early Clients on Google</span>
+            </div>
+            <div class="referral-minimal">
+                 <a href="/refer">🎁 Refer a Friend & Earn ₹1000</a>
+            </div>
+        </div>
+
+        <ul class="hero-checkmarks">
+            <li>✅ SEO-Optimized</li>
+            <li>✅ Payment Ready</li>
+            <li>✅ Mobile Responsive</li>
+            <li>✅ Transparent Pricing</li>
+        </ul>
+		<div class="hero-scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span class="scroll-text">Scroll to Calculate Cost</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+/* --- REFER PAGE THEME INTEGRATION --- */
+.hero-agency {
+    position: relative;
+    background: url('/assets/images/hero/hero-about-pricing.webp') no-repeat center center/cover;
+    background-color: #020617; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* FIX: Clear Desktop Header so Badge is visible */
+@media (min-width: 992px) {
+    .hero-agency {
+        padding-top: 80px; 
+    }
+}
+
+.hero-navy-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0.7) 0%, #020617 100%);
+    z-index: 1;
+}
+
+.hero-agency .container {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    width: 100%;
+}
+
+.hero-agency h1 {
+    font-size: clamp(1.8rem, 7.5vw, 3.8rem); 
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.hero-agency .highlight {
+    color: #60a5fa;
+    background: linear-gradient(to right, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hero-description p {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    line-height: 1.5;
+    margin: 0 auto 15px;
+    max-width: 550px;
+    color: #94a3b8; 
+}
+
+/* --- UPDATED BUTTON STYLES --- */
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.btn-pill {
+    padding: 16px 28px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    border: 2px solid #2563eb;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- SCROLL ANIMATION --- */
+.hero-scroll-indicator {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: fadeIn 2s ease;
+}
+
+.mouse {
+    width: 20px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.wheel {
+    width: 3px;
+    height: 6px;
+    background: #60a5fa;
+    border-radius: 2px;
+    margin-top: 6px;
+    animation: scrollWheel 1.6s infinite;
+}
+
+.scroll-text {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+@keyframes scrollWheel {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(12px); opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+}
+
+/* --- TRUST & REFERRAL --- */
+.trust-indicators {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hero-rating-alt { font-size: 0.8rem; color: #94a3b8; }
+.stars { color: #facc15; }
+.referral-minimal a { color: #60a5fa !important; font-size: 0.85rem; font-weight: 700; text-decoration: none; }
+
+/* Badge & Checkmarks */
+.badge-tech-glow {
+    background: rgba(250, 204, 21, 0.1); 
+    color: #facc15; 
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(250, 204, 21, 0.3); 
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.hero-checkmarks {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0 15px;
+    margin: 25px auto; 
+    max-width: 450px; 
+}
+
+.hero-checkmarks li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.08); 
+    padding: 8px 10px; 
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Logic for 4th item */
+@media (max-width: 767px) {
+    .hero-checkmarks li:nth-child(odd):last-child {
+        grid-column: span 2; 
+        width: max-content;
+        margin: 0 auto;
+    }
+}
+
+/* --- DESKTOP REFINEMENTS --- */
+@media (min-width: 768px) {
+    .hero-buttons { flex-direction: row; justify-content: center; gap: 15px; }
+    .btn-pill { width: auto; min-width: 210px; }
+    .trust-indicators { flex-direction: row; justify-content: center; gap: 20px; }
+
+    .hero-checkmarks {
+        display: flex;
+        grid-template-columns: none;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 30px;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .hero-checkmarks li {
+        font-size: 0.85rem;
+        padding: 8px 18px;
+    }
+}
+
+/* =====================================================
+   📱 GALAXY S8 & COMPACT DEVICE HEADER FIX
+   ===================================================== */
+
+@media screen and (max-width: 380px) {
+    /* 1. Prevent the logo container from taking 100% width */
+    .logo-link {
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+        margin-right: 5px !important;
+    }
+
+    .logo-flex-container {
+        display: flex !important;
+        align-items: center !important;
+        max-width: 100% !important;
+    }
+
+    /* 2. Hide the icon to save ~30px immediately */
+    .icon-side {
+        display: none !important;
+    }
+
+    /* 3. PROTECT THE BADGE: Force it to stay visible */
+    .tag-window {
+        flex-shrink: 0 !important; /* Forces browser NOT to hide it */
+        width: 90px !important;    /* Specific width for 360px screens */
+        display: block !important;
+        margin-left: 2px !important;
+    }
+
+    /* 4. Shrink Brand Name for S8 width */
+    .brand-name {
+        font-size: 14px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 5. Tighten Right Side Actions */
+    .header-actions {
+        gap: 5px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .mobile-icon-btn {
+        width: 28px !important;
+        height: 28px !important;
+        padding: 5px !important;
+    }
+}
+
+/* Special Case: If the screen is even smaller (320px) */
+@media screen and (max-width: 320px) {
+    .brand-name {
+        display: none !important; /* Hide name to keep Badge visible */
+    }
+    .tag-window {
+        width: 110px !important;
+    }
+}
+
+</style>
+
+<!-- Marquee Text -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    <span class="m-item">🚀 24-Hour Website Delivery</span>
+    <span class="m-item">💎 Transparent Pricing</span>
+    <span class="m-item">📈 SEO Optimized Architecture</span>
+    <span class="m-item">📱 Mobile-First Design</span>
+    <span class="m-item">🛠️ Free Technical Consultation</span>
+    
+    <span class="m-item">🚀 24-Hour Website Delivery</span>
+    <span class="m-item">💎 Transparent Pricing</span>
+    <span class="m-item">📈 SEO Optimized Architecture</span>
+    <span class="m-item">📱 Mobile-First Design</span>
+    <span class="m-item">🛠️ Free Technical Consultation</span>
+  </div>
+</div>
+
+<style>
+/* --- INFINITE MARQUEE --- */
+.marquee-container {
+  width: 100%;
+  background: #f8fafc; /* Light subtle contrast */
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+  padding: 12px 0;
+  user-select: none;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 25s linear infinite;
+  will-change: transform; /* Boosts performance */
+}
+
+.marquee-content:hover {
+  animation-play-state: paused; /* User-friendly pause */
+}
+
+.m-item {
+  font-size: 14px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 40px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* THE ANIMATION - Perfectly seamless */
+@keyframes scrollLoop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* Mobile Tweak: Speed up slightly on small screens */
+@media (max-width: 768px) {
+  .marquee-content {
+    animation-duration: 15s;
+  }
+  .m-item {
+    font-size: 12px;
+    padding: 0 25px;
+  }
+}
+</style>
+<!-- Marquee Text -->
+
+
+<section class="cost-hook-section">
+    <div class="container-fluid">
+        <div class="calculator-card-wide">
+            <div class="card-content">
+                <div class="hook-badge">💰 Instant Quote</div>
+                <h2>What will your website cost?</h2>
+                <p>Get a precise investment estimate for your project in under 60 seconds. No hidden fees, just transparent pricing.</p>
+                
+                <div class="hook-cta-row">
+                    <a href="/website-cost-calculator" class="btn btn-primary btn-pill btn-hero-focused pulse-animation">
+                        💰 Calculate Now
+                    </a>
+                </div>
+                
+                <div class="hook-footer">
+                    <span>⚡ 100% Free</span>
+                    <span class="dot">•</span>
+                    <span>📊 Market-Accurate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- COST HOOK SECTION: FULL WIDTH --- */
+.cost-hook-section {
+    background-color: #f1f5f9; /* Light Grey Base */
+    padding: 60px 0; /* Vertical padding only */
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 20px; /* Left/Right Margin for the card */
+    width: 100%;
+    max-width: 1400px; /* Limits ultra-wide screens */
+    margin: 0 auto;
+}
+
+/* THE WIDE CARD WITH PURPLE & GREEN MIXED MARGIN */
+.calculator-card-wide {
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 4px; /* The thickness of the gradient "margin" border */
+    /* PURPLE TO GREEN MIX */
+    background: linear-gradient(90deg, #a855f7 0%, #22c55e 100%);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.card-content {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px 30px;
+    text-align: center; /* Center text and elements */
+}
+
+.hook-badge {
+    background: rgba(168, 85, 247, 0.1);
+    color: #9333ea;
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.card-content h2 {
+    color: #0f172a;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #64748b;
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* --- THE CENTERED SINGLE-ROW CTA --- */
+.hook-cta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-hero-focused {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    white-space: nowrap; /* Keeps it on one line */
+    background: #2563eb;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* FOOTER LABELS */
+.hook-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.hook-footer .dot { color: #22c55e; } /* Green dot for flavor */
+
+/* PULSE FOR FOCUS */
+@keyframes pulse-cta {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+.pulse-animation { animation: pulse-cta 2s infinite; }
+
+/* DESKTOP REFINEMENTS */
+@media (min-width: 992px) {
+    .container-fluid {
+        padding: 0 80px; /* Wider side margins for desktop */
+    }
+    .card-content {
+        padding: 70px 40px;
+    }
+}
+</style>
+
+<section class="who-we-help">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">Our Expertise</span>
+            <h2>Trusted Across India</h2>
+            <p>From Jaipur to nationwide — 500+ cities served with fast, reliable web solutions.</p>
+        </div>
+
+        <div class="help-grid">
+            <div class="help-card">
+                <div class="help-icon">🏪</div>
+                <div class="help-content">
+                    <h3>Local Shops & Retail</h3>
+                    <p>Grocery, electronics, and boutiques. <strong>24hr delivery</strong> + WhatsApp ordering for Jaipur shops and nationwide retail.</p>
+                    <a href="contact" class="help-link">Get Shop Website →</a>
+                </div>
+            </div>
+
+            <div class="help-card">
+                <div class="help-icon">🍲</div>
+                <div class="help-content">
+                    <h3>Cloud Kitchens & F&B</h3>
+                    <p>Direct ordering with <strong>Razorpay + WhatsApp</strong>. Serving kitchens from Jaipur to Mumbai and Bangalore.</p>
+                    <a href="cloud-kitchen-website" class="help-link">Kitchen Packages →</a>
+                </div>
+            </div>
+
+            <div class="help-card">
+                <div class="help-icon">💼</div>
+                <div class="help-content">
+                    <h3>Consultants & Pros</h3>
+                    <p>Property agents, doctors, and lawyers. <strong>Local SEO</strong> focused lead forms to dominate Google searches in your city.</p>
+                    <a href="contact" class="help-link">Free Consultation →</a>
+                </div>
+            </div>
+
+            <div class="help-card">
+                <div class="help-icon">🚀</div>
+                <div class="help-content">
+                    <h3>Startups & SMBs</h3>
+                    <p>Scalable sites from <strong>₹10K</strong>. From Jaipur startups to national brands — grow without ever needing a re-build.</p>
+                    <a href="pricing" class="help-link">See Pricing →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="location-footer">
+            <p>Serving businesses in <strong>Jaipur, Delhi, Mumbai, Bangalore</strong> and across India.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- WHO WE HELP: THEME INTEGRATED --- */
+.who-we-help {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.help-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* --- CARD UI --- */
+.help-card {
+    background: var(--bg-light);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.help-card:hover {
+    background: var(--white);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 30px -10px rgba(102, 126, 234, 0.15);
+    transform: translateY(-5px);
+}
+
+.help-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background: var(--white);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    transition: 0.3s ease;
+}
+
+.help-card:hover .help-icon {
+    background: var(--primary-gradient);
+    color: var(--white);
+}
+
+.help-content h3 {
+    font-size: 1.25rem;
+    color: var(--dark-navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.help-content p {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.85;
+}
+
+.help-link {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: auto;
+    transition: 0.2s;
+}
+
+.help-link:hover {
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+/* --- FOOTER UI --- */
+.location-footer {
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.location-footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-card {
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .help-icon { margin-inline: auto; }
+}
+</style>
+
+<section class="stats">
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <p class="stat-label">Happy Clients</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <p class="stat-label">Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <p class="stat-label">Free Tools</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <p class="stat-label">Expert Support</p>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- STATS SECTION: THEME INTEGRATED --- */
+.stats {
+    padding: var(--section-padding); /* Uses global 80px 20px */
+    background: var(--dark-navy);    /* Brand dark color */
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle Top Fade: Smooths the transition from a white section above */
+.stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--white), transparent);
+    z-index: 1;
+    opacity: 0; /* Set to 0 if you don't want the fade-in from white */
+}
+
+.stats-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.stat-item {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-8px);
+}
+
+.stat-number {
+    font-size: clamp(2.2rem, 5vw, 3.5rem); /* Slightly larger for impact */
+    font-weight: 800;
+    color: var(--accent-yellow); /* Brand warm gold */
+    line-height: 1;
+    margin-bottom: 12px;
+    /* Subtle glow effect for the numbers */
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7); /* Muted white for hierarchy */
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 992px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        padding: 50px 15px; /* Tighter mobile padding */
+    }
+    
+    .stats-container {
+        gap: 30px 10px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.05em;
+    }
+}
+</style>
+
+
+<section id="showcase" class="client-strip enhanced">
+  <div class="client-strip-inner">
+
+    <div class="client-strip-image">
+      <div class="mobile-ui-pair">
+        <div class="img-frame primary">
+          <img src="/assets/images/sample/ecommerce-food-ordering-engine-home-page.webp" alt="Mithora Kitchen home screen" loading="lazy" />
+        </div>
+
+        <div class="img-frame secondary">
+          <img src="/assets/images/sample/ecommerce-food-ordering-engine-menu-page.webp" alt="Mithora Kitchen menu screen" loading="lazy" />
+        </div>
+        
+        <div class="image-overlay">
+          <span class="live-badge">Live Project</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="client-strip-text">
+      <p class="eyebrow">Developed by EzyGoDigi</p>
+
+      <h3>
+        Mithora Kitchen
+        <span class="highlight">
+          – High-Conversion Food Engine
+        </span>
+      </h3>
+
+      <p>
+        A Jaipur-born brand powered by an <strong>EzyGoDigi custom-built 
+        D2C platform</strong>. We engineered this system to bypass third-party apps, allowing Mithora to keep 100% of their margins.
+      </p>
+      
+      <p>
+        <strong>Tech Stack:</strong> Features a proprietary <strong>WhatsApp-integrated checkout</strong>, instant UPI processing, and a mobile-first UI optimized for rapid local food delivery.
+      </p>
+
+      <div class="client-strip-actions">
+        <a href="https://mithora.in/" target="_blank" class="btn btn-primary btn-pill">
+          Explore the Live Engine →
+        </a>
+<a href="https://wa.me/917039509783?text=Hi%20EzyGoDigi,%20I%20want%20to%20discuss%20a%20website%20for%20my%20business." 
+class="btn btn-outline btn-pill" target="_blank">
+💬 Let’s Chat Instantly →
+</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* --- SHOWCASE UI FRAMEWORK --- */
+.client-strip.enhanced {
+    padding: var(--section-padding); /* Using Theme Padding */
+    background: var(--white);
+    overflow: hidden;
+}
+
+.client-strip-inner {
+    max-width: var(--container-width); /* Using Theme Width */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 60px;
+    align-items: center;
+}
+
+/* --- IMAGE OVERLAP LOGIC --- */
+.client-strip-image {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+
+.mobile-ui-pair {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.img-frame {
+    flex: 0 0 60%;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
+    transition: transform 0.4s ease;
+}
+
+.img-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Phone-like rounding */
+}
+
+.img-frame.primary {
+    z-index: 2;
+    position: relative;
+}
+
+.img-frame.secondary {
+    z-index: 1;
+    margin-left: -25%; 
+    margin-top: 60px;   
+}
+
+.img-frame:hover {
+    transform: translateY(-10px);
+}
+
+/* Badge using Theme Success Color */
+.image-overlay {
+    position: absolute;
+    bottom: 40px;
+    right: 5%;
+    z-index: 3;
+}
+
+.live-badge {
+    background: var(--accent-success);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: var(--radius-pill);
+    font-weight: 800;
+    font-size: 13px;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* --- TYPOGRAPHY --- */
+.eyebrow {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.client-strip-text h3 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--dark-navy);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.client-strip-text .highlight {
+    display: block;
+    color: var(--primary-color);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-top: 8px;
+}
+
+.client-strip-text p {
+    color: var(--text-main);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* --- ACTIONS (Synced with Hero Button Logic) --- */
+.client-strip-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 35px;
+    max-width: 280px; /* Mobile stack width */
+}
+
+.btn-outline {
+    border: 2px solid #e2e8f0 !important;
+    color: var(--text-main) !important;
+    background: transparent !important;
+}
+
+.btn-outline:hover {
+    background: var(--bg-light) !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 900px) {
+    .client-strip-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .client-strip-image {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .mobile-ui-pair {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .client-strip-actions {
+        margin-inline: auto;
+        align-items: center;
+    }
+}
+
+@media (min-width: 901px) {
+    .client-strip-actions {
+        flex-direction: row;
+        max-width: none;
+    }
+    
+    .client-strip-actions .btn {
+        min-width: 180px;
+    }
+}
+
+/* --- UPDATED BRANDING STYLES --- */
+.eyebrow {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800 !important;
+    font-size: 0.95rem !important;
+    border-left: 3px solid #764ba2;
+    padding-left: 12px;
+    margin-bottom: 15px !important;
+}
+
+.client-strip-text .highlight {
+    color: #4f46e5; /* Deep purple/indigo for trust */
+}
+
+/* Button overrides to match your theme */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-pill {
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.3);
+}
+
+</style>
+
+
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">Solutions</span>
+            <h2>Our Core Services</h2>
+            <p>Affordable digital solutions starting at <strong>₹999</strong> | Jaipur & India-wide</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Website Design</h3>
+                <p class="price">₹3K - 25K</p>
+                <p class="description">Mobile-first, SEO-ready websites delivered in <strong>24 hours</strong>.</p>
+                <a href="website-design" class="service-link">View Packages →</a>
+            </div>
+
+            <div class="service-card highlight-primary">
+                <div class="service-icon">📊</div>
+                <h3>Privacy Analytics</h3>
+                <p class="price">₹1K / mo</p>
+                <p class="description">GA4 alternative that tracks WhatsApp & calls without cookies.</p>
+                <a href="/privacy-first-analytics" class="service-link">View Dashboard →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p class="price">₹8K - 15K</p>
+                <p class="description">Conversion-optimized interfaces that drive leads & sales.</p>
+                <a href="ui-ux-design" class="service-link">See Examples →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Graphics & Branding</h3>
+                <p class="price">₹3K - 12K</p>
+                <p class="description">Logos, banners, social posts & marketing materials.</p>
+                <a href="graphics-design" class="service-link">Start Designing →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>SEO & Tracking</h3>
+                <p class="price">₹1.5K - 8K</p>
+                <p class="description">Fix GA4, GTM, and indexing issues. Fast <strong>24hr fix</strong> available.</p>
+                <a href="seo-tracking" class="service-link">Fix Now →</a>
+            </div>
+
+            <div class="service-card highlight-success">
+                <div class="service-icon">🚀</div>
+                <h3>Landing Pages</h3>
+                <p class="price">Starts ₹999</p>
+                <p class="description">High-converting pages for Ads with WhatsApp & GA4 integration.</p>
+                <a href="ad-landing-pages" class="service-link">₹999 Page →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- SERVICES SECTION: THEME INTEGRATED --- */
+.services {
+    padding: var(--section-padding);
+    background: var(--bg-light); /* Using theme background */
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-header .badge {
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.1);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: var(--dark-navy);
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.section-header p {
+    color: var(--text-main);
+    opacity: 0.8;
+}
+
+/* --- GRID SYSTEM --- */
+.services-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* --- CARD DESIGN --- */
+.service-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary-color);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: var(--dark-navy);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service-card .price {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.service-card .description {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    opacity: 0.9;
+}
+
+.service-link {
+    font-weight: 700;
+    color: var(--dark-navy);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.service-link:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* Highlighted Variations using Theme Variables */
+.highlight-primary { border-top: 5px solid var(--primary-color); }
+.highlight-success { border-top: 5px solid var(--accent-success); }
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .service-link:hover {
+        transform: none; /* Disable shift on mobile for better tap UX */
+    }
+}
+</style>
+
+
+<section class="teaser-section">
+  <div class="teaser-wrapper">
+    
+    <div class="t-card tech-bg">
+      <div class="t-top">
+        <span class="t-badge">Performance Edge</span>
+        <h3 class="stat-main">
+          80ms <span class="vs-text">vs</span> 3.5s
+        </h3>
+        
+        <div class="speed-bar-container">
+          <div class="speed-bar cloudflare" style="width: 15%;"></div>
+          <div class="speed-bar traditional" style="width: 100%;"></div>
+          <div class="bar-labels">
+            <span>EzyGoDigi</span>
+            <span>WordPress/Shopify</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="t-bottom">
+        <p><strong>Cloudflare Edge</strong> eliminates loading lag. We deliver instant speed that saves your sales from bouncing.</p>
+        <a href="website-design#tech-comparison" class="t-cta">Compare Tech →</a>
+      </div>
+    </div>
+
+    <div class="t-card savings-bg">
+      <div class="t-top">
+        <span class="t-badge">Financial Advantage</span>
+        <h3 class="stat-main">
+          Save ₹2.46L
+        </h3>
+        <p class="stat-sub">98% Cheaper than Agencies</p>
+      </div>
+
+      <div class="t-bottom">
+        <p>Our <strong>₹999/mo</strong> model provides enterprise-grade code without the ₹2.5L upfront agency markup.</p>
+        <a href="pricing#savings-comparison" class="t-cta outline">See Breakdown →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* --- TEASER: THEME INTEGRATED --- */
+.teaser-section {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.teaser-wrapper {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* --- THE POWER CARD --- */
+.t-card {
+    border-radius: var(--radius-lg);
+    padding: 45px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 440px;
+    transition: transform 0.3s ease;
+}
+
+.t-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-bg { 
+    background: var(--dark-navy); 
+    border: 1px solid rgba(255,255,255,0.05); 
+}
+
+.savings-bg { 
+    background: var(--primary-gradient); 
+    border: none;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.25);
+}
+
+/* --- TYPOGRAPHY --- */
+.t-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 25px;
+    color: var(--white);
+}
+
+.stat-main {
+    font-size: clamp(2.2rem, 4vw, 3rem); 
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--white);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.vs-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.stat-sub {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-yellow); 
+    margin-bottom: 20px;
+}
+
+/* --- SPEED VISUALIZER --- */
+.speed-bar-container {
+    margin: 35px 0;
+}
+
+.speed-bar {
+    height: 10px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 10px;
+}
+
+.speed-bar.cloudflare { 
+    background: #10b981; /* Success Green */
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+} 
+.speed-bar.traditional { 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+.bar-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- BUTTON UI --- */
+.t-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background: var(--white);
+    color: var(--dark-navy);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.t-cta:hover {
+    background: var(--bg-light);
+    transform: scale(1.02);
+}
+
+.t-cta.outline {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.t-cta.outline:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+/* --- MOBILE --- */
+@media (max-width: 992px) {
+    .teaser-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .t-card {
+        min-height: auto;
+        padding: 40px 30px;
+    }
+}
+</style>
+
+<section class="pricing-index-preview">
+    <div class="pi-container">
+        <div class="pi-header">
+            <span class="pi-tag">Transparent India-Based Pricing</span>
+            <h2>Professional Website Design <br>Starting at <strong>₹999</strong></h2>
+            <p>High-speed, serverless digital systems for Jaipur startups and Pan-India brands.</p>
+        </div>
+
+        <div class="pi-grid">
+            <div class="pi-card">
+                <div class="pi-card-header">
+                    <h3>Starter Launch</h3>
+                    <div class="pi-price">₹999<span>/one-time</span></div>
+                </div>
+                <ul class="pi-list">
+                    <li>High-Speed Landing Page</li>
+                    <li>Mobile-First UI Design</li>
+                    <li>WhatsApp Integration</li>
+                </ul>
+            </div>
+
+            <div class="pi-card">
+                <div class="pi-card-header">
+                    <h3>Digital Presence</h3>
+                    <div class="pi-price">₹2,999<span>/one-time</span></div>
+                </div>
+                <ul class="pi-list">
+                    <li>Single-Page Web System</li>
+                    <li>Google Search Map Setup</li>
+                    <li>Free AI Support Bot</li>
+                </ul>
+            </div>
+
+            <div class="pi-card pi-featured">
+                <div class="pi-badge">Most Popular</div>
+                <div class="pi-card-header">
+                    <h3>Business Growth</h3>
+                    <div class="pi-price">₹9,999<span>/one-time</span></div>
+                </div>
+                <ul class="pi-list">
+                    <li>5-Page Custom Website</li>
+                    <li>Admin Content Dashboard</li>
+                    <li>Premium UI/UX System</li>
+                </ul>
+            </div>
+
+            <div class="pi-card">
+                <div class="pi-card-header">
+                    <h3>Enterprise Pro</h3>
+                    <div class="pi-price">₹24,999<span>/one-time</span></div>
+                </div>
+                <ul class="pi-list">
+                    <li>10+ Page Custom System</li>
+                    <li>Payment Gateway</li>
+                    <li>Advanced AI Automations</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pi-footer">
+            <a href="/pricing" class="pi-btn">View All 40+ Features →</a>
+        </div>
+    </div>
+</section>
+
+<style>
+
+/* --- INDEX PRICING PREVIEW: PREMIUM & FAST --- */
+.pricing-index-preview {
+    /* INTEGRATED THEME VARIABLES */
+    --p-brand: var(--primary-color, #4f46e5); 
+    --p-dark: #0f172a;
+    --p-accent: var(--accent-success, #10b981);
+    --p-gray: #64748b;
+    
+    background: #ffffff;
+    padding: 100px 20px;
+    font-family: var(--font-main, 'Inter', sans-serif); 
+}
+
+.pi-container { 
+    max-width: 1400px; 
+    margin: 0 auto; 
+}
+
+.pi-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+.pi-tag { 
+    color: var(--p-brand); 
+    font-weight: 800; 
+    font-size: 0.75rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+.pi-header h2 { 
+    font-size: clamp(2rem, 5vw, 2.8rem); 
+    color: var(--p-dark); 
+    margin: 15px 0;
+    font-weight: 800; 
+    line-height: 1.1;
+}
+
+.pi-header h2 strong { 
+    color: var(--p-brand); 
+}
+
+/* GRID LOGIC: Clean Vertical Stack on Mobile */
+.pi-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+    margin-bottom: 50px;
+}
+
+.pi-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-lg, 24px); 
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.pi-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* FEATURED CARD STYLING */
+.pi-card.pi-featured {
+    border: 2px solid var(--p-brand);
+    box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.15);
+}
+
+.pi-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--p-brand);
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.pi-card h3 { 
+    font-size: 1.4rem; 
+    color: var(--p-dark); 
+    font-weight: 800; 
+    margin-bottom: 10px; 
+}
+
+.pi-price { 
+    font-size: 2.2rem; 
+    font-weight: 900; 
+    color: var(--p-dark); 
+    margin-bottom: 25px;
+}
+
+.pi-price span { 
+    font-size: 0.85rem; 
+    color: var(--p-gray); 
+    font-weight: 500; 
+}
+
+.pi-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0 0 35px 0; 
+    flex-grow: 1; 
+}
+
+.pi-list li { 
+    padding: 10px 0; 
+    font-size: 0.95rem; 
+    color: var(--p-gray); 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pi-list li::before { 
+    content: "✓"; 
+    color: var(--p-accent); 
+    font-weight: 900; 
+}
+
+/* ACTION BUTTON */
+.pi-btn {
+    display: inline-block;
+    background: var(--p-brand);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 100px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+}
+
+.pi-btn:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.3); 
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    .pi-header h2 { font-size: 1.8rem; }
+    .pi-card { padding: 30px 20px; }
+}
+
+</style>
+
+<section class="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">Workflow</span>
+            <h2>How We Work</h2>
+            <p class="header-desc">A simple, transparent process designed to get you online fast.</p>
+        </div>
+        
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-connector"></div>
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Consultation</h4>
+                    <p>Free session to understand your business needs and digital goals.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-connector"></div>
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Design & Plan</h4>
+                    <p>We create clean mockups and finalize the structure for your approval.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-connector"></div>
+                <div class="step-number highlight-step">3</div>
+                <div class="step-content">
+                    <h4>Launch (24h)</h4>
+                    <p>Rapid development using optimized frameworks to go live in just one day.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Growth Support</h4>
+                    <p>Your site goes live with 24/7 support to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- PROCESS SECTION: HIGH VISIBILITY THEME --- */
+.process {
+    padding: var(--section-padding);
+    background: var(--dark-navy); /* Dark background from theme.css */
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+
+.process .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.process .section-header h2 {
+    color: #ffffff; /* Pure white for visibility */
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.process .header-desc {
+    color: #cbd5e1; /* High-contrast light slate */
+    font-size: 1.1rem;
+}
+
+.process .badge {
+    color: var(--accent-yellow); 
+    background: rgba(251, 191, 36, 0.15);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- TIMELINE LOGIC --- */
+.process-steps {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+    gap: 25px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background: #1e293b; /* Solid dark base */
+    border: 2px solid #334155;
+    color: #94a3b8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.highlight-step {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 25px rgba(102, 126, 234, 0.45);
+}
+
+/* Vertical Connector Line */
+.step-connector {
+    position: absolute;
+    top: 48px;
+    left: 24px;
+    width: 2px;
+    height: calc(100% - 48px + 50px);
+    background: #334155;
+    z-index: 1;
+}
+
+.step-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #ffffff; /* Bright white headers */
+    font-weight: 700;
+}
+
+.step-content p {
+    font-size: 1rem;
+    color: #94a3b8; /* Clear readable grey-blue */
+    line-height: 1.6;
+}
+
+/* --- DESKTOP HORIZONTAL LAYOUT --- */
+@media (min-width: 992px) {
+    .process-steps {
+        max-width: var(--container-width);
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+        flex: 1;
+    }
+
+    .step-connector {
+        top: 24px;
+        left: calc(50% + 24px);
+        width: 100%;
+        height: 2px;
+    }
+
+    .step:last-child .step-connector {
+        display: none;
+    }
+    
+    .step-number {
+        margin-bottom: 25px;
+    }
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 480px) {
+    .step { gap: 15px; }
+    .step-number {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+    .step-connector {
+        left: 21px;
+        top: 42px;
+    }
+}
+</style>
+
+<section class="approach-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">Our Strategy</span>
+            <h2>Affordable Development Approach</h2>
+            <p>
+                We help local businesses, startups, and cloud kitchens get online fast. 
+                Our model ensures professional results without long timelines or expensive agency retainers.
+            </p>
+        </div>
+
+        <div class="approach-grid">
+            <div class="approach-card">
+                <div class="approach-icon">⚡</div>
+                <h4>Speed to Market</h4>
+                <p>Launch a fully functional, SEO-optimized site in as little as <strong>24 hours</strong>.</p>
+            </div>
+
+            <div class="approach-card">
+                <div class="approach-icon">💰</div>
+                <h4>Zero Hidden Costs</h4>
+                <p>Transparent, one-time pricing models starting from <strong>₹3,000</strong>.</p>
+            </div>
+
+            <div class="approach-card">
+                <div class="approach-icon">📱</div>
+                <h4>Mobile-First Design</h4>
+                <p>Perfectly responsive layouts optimized for <strong>WhatsApp orders</strong> and local leads.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- APPROACH SECTION: THEME INTEGRATED --- */
+.approach-section {
+    padding: var(--section-padding);
+    background: var(--bg-light); /* Integrated with theme light background */
+}
+
+.approach-section .container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.approach-section .section-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+}
+
+.approach-section .badge {
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.1); /* 10% opacity of primary color */
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.approach-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--dark-navy);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.approach-section p {
+    color: var(--text-main);
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* --- THE APPROACH GRID --- */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.approach-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.approach-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(102, 126, 234, 0.15);
+    border-color: var(--primary-color);
+}
+
+.approach-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.approach-card h4 {
+    font-size: 1.25rem;
+    color: var(--dark-navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.approach-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 850px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .approach-card {
+        padding: 35px 25px;
+    }
+}
+</style>
+
+<section class="why-ezygodigi">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">The EzyGoDigi Edge</span>
+      <h2>Why Choose Us?</h2>
+      <p class="header-desc">Enterprise-quality results at small business prices. We build for performance, not just looks.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <div class="why-info">
+          <h4>Lightning-Fast Delivery</h4>
+          <p>Live websites in <strong>24 hours</strong> using battle-tested Cloudflare Workers — no waiting weeks for agencies.</p>
+        </div>
+      </div>
+
+      <div class="why-card highlight-glow">
+        <div class="why-icon">💰</div>
+        <div class="why-info">
+          <h4>80% Lower Costs</h4>
+          <p>Serverless architecture + AI automation = <strong>₹10K-40K sites</strong> (vs ₹1-3L agency prices). Same quality.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">👨‍💻</div>
+        <div class="why-info">
+          <h4>Direct Expert Access</h4>
+          <p>No account managers. Work <strong>directly with the developers</strong> who actually build your digital solution.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">✅</div>
+        <div class="why-info">
+          <h4>Pay-Per-Feature</h4>
+          <p>Menu? ₹2K. WhatsApp ordering? ₹3K. No bloated ₹50K packages — <strong>pay for exactly what you need</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- WHY SECTION: THEME INTEGRATED --- */
+.why-ezygodigi {
+    padding: var(--section-padding);
+    background: var(--dark-navy); /* Brand dark color */
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+
+.why-ezygodigi .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-ezygodigi .section-header h2 {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.why-ezygodigi .header-desc {
+    color: #cbd5e1; /* High-contrast light slate */
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.why-ezygodigi .badge {
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.15);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- BENTO GRID --- */
+.why-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.03); /* Subtle glass effect */
+    padding: 35px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Featured Glow Card */
+.highlight-glow {
+    position: relative;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 30px rgba(102, 126, 234, 0.15);
+}
+
+.why-icon {
+    font-size: 1.8rem;
+    background: var(--dark-navy);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.why-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.why-info p {
+    font-size: 0.95rem;
+    color: #94a3b8; /* Readable Slate color */
+    line-height: 1.6;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 992px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-card {
+        padding: 25px;
+        gap: 15px;
+        flex-direction: column; /* Stack icons on very small screens */
+    }
+
+    .why-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+</style>
+
+<section class="customer-reviews">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Testimonials</span>
+      <h2>What Our Clients Say</h2>
+      <p>Real feedback from businesses who trusted EzyGoDigi for high-performance web solutions.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="stars">★★★★★</div>
+          <div class="google-icon">G</div>
+        </div>
+        <p class="review-text">
+          “Found EzyGoDigi through Google. They understood our requirements perfectly and delivered a light, high-performance e-commerce website quickly. Highly recommended.”
+        </p>
+        <div class="review-author">
+          <strong>Ashish</strong>
+          <span>Bangalore • <small>Verified Review</small></span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="stars">★★★★★</div>
+          <div class="google-icon">G</div>
+        </div>
+        <p class="review-text">
+          “Fantastic job creating the Kriators website. The design is clean, modern, and very user-friendly. Their creativity and attention to detail truly stand out. Impactful work!”
+        </p>
+        <div class="review-author">
+          <strong>Sagar</strong>
+          <span>Mumbai • <small>Verified Review</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-footer">
+      <p>⭐ Rated <strong>5.0/5</strong> by our early customers on 
+        <a href="https://g.page/r/CTRBfzlHPMwCEBM/review" target="_blank" rel="noopener">Google Business</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="india-coverage">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="badge">Nationwide Presence</span>
+      <h2 class="section-title">Website Design Services Across India</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="coverage-grid">
+      <div class="coverage-text">
+        <p>
+          EzyGoDigi is an <strong>affordable website design company in India</strong> 
+          serving businesses across major cities including Delhi, Mumbai, Bangalore, 
+          Hyderabad, Chennai, Pune, Ahmedabad, and Jaipur.
+        </p>
+        <p>
+          Whether you are launching a startup in <strong>Bangalore</strong>, a retail store in <strong>Delhi</strong>, 
+          a cloud kitchen in <strong>Mumbai</strong>, or a consultancy in <strong>Jaipur</strong>, our 
+          website development services are built for speed, security, and ranking.
+        </p>
+        <div class="coverage-stats">
+          <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-desc">Uptime Guarantee</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">₹999</span>
+            <span class="stat-desc">Starting Price</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="coverage-highlight-box">
+        <h4>Why Choose Us?</h4>
+        <ul>
+          <li>🚀 SEO-Optimized for Local Ranking</li>
+          <li>📱 Mobile-First Responsive Design</li>
+          <li>💬 Integrated WhatsApp & Payments</li>
+          <li>⚡ Millisecond Loading Speed</li>
+        </ul>
+        <a href="/pricing" class="btn btn-primary">View India Packages</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- India Coverage Section --- */
+.india-coverage {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.coverage-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.coverage-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Highlight Box */
+.coverage-highlight-box {
+    background: var(--bg-light);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(118, 75, 162, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.coverage-highlight-box h4 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.coverage-highlight-box ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.coverage-highlight-box li {
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--dark-navy);
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .coverage-grid {
+        grid-template-columns: 1fr;
+    }
+    .coverage-stats {
+        justify-content: space-around;
+    }
+}
+</style>
+
+<style>
+/* --- REVIEWS: THEME INTEGRATED --- */
+.customer-reviews {
+    padding: var(--section-padding);
+    background: var(--bg-light); /* Uses theme background */
+}
+
+.customer-reviews .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.customer-reviews .badge {
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.1);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.customer-reviews h2 {
+    color: var(--dark-navy);
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.reviews-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* --- REVIEW CARD --- */
+.review-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: var(--primary-color);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: var(--accent-yellow); /* Brand warm gold */
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+    background: #4285F4; /* Keep original Google Blue */
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2);
+}
+
+.review-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    font-style: italic;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    opacity: 0.9;
+}
+
+.review-author {
+    border-top: 1px solid var(--bg-light);
+    padding-top: 20px;
+}
+
+.review-author strong {
+    display: block;
+    color: var(--dark-navy);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.review-author span {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* --- FOOTER --- */
+.reviews-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reviews-footer p {
+    color: var(--text-main);
+}
+
+.reviews-footer a {
+    color: #4285F4;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.reviews-footer a:hover {
+    border-color: #4285F4;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 850px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .review-card {
+        padding: 30px 25px;
+    }
+}
+</style>
+
+
+<section class="jaipur-local">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="badge">Local Expertise</span>
+      <h2 class="section-title">Website Design Company in Jaipur</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="local-grid">
+      <div class="local-text">
+        <p>
+          EzyGoDigi is a trusted <strong>website design company in Jaipur</strong> 
+          helping local businesses build a strong digital presence. From retail 
+          stores and cloud kitchens to consultants and startups, we provide 
+          high-performance websites tailored for the Pink City.
+        </p>
+        
+        <div class="location-tags">
+          <span class="loc-tag">Vaishali Nagar</span>
+          <span class="loc-tag">Mansarovar</span>
+          <span class="loc-tag">Malviya Nagar</span>
+          <span class="loc-tag">Sitapura</span>
+          <span class="loc-tag">Murlipura</span>
+          <span class="loc-tag">Jagatpura</span>
+          <span class="loc-tag">Bani Park</span>
+        </div>
+
+        <p>
+          Whether you run a local shop in <strong>Vaishali Nagar</strong>, a manufacturing 
+          unit in <strong>Sitapura Industrial Area</strong>, or a startup in <strong>Malviya Nagar</strong>, 
+          our web development services are designed for speed and local lead generation.
+        </p>
+      </div>
+
+      <div class="local-feature-card">
+        <div class="feature-icon">🏙️</div>
+        <h4>Why Jaipur Businesses Trust Us?</h4>
+        <ul class="feature-list">
+          <li>📍 <strong>Local SEO:</strong> Appear when people search "near me".</li>
+          <li>⚡ <strong>24-Hour Delivery:</strong> Get online in a single day.</li>
+          <li>📱 <strong>WhatsApp Ready:</strong> Direct chat for local inquiries.</li>
+          <li>💰 <strong>Fixed Pricing:</strong> No hidden "agency" fees.</li>
+        </ul>
+        <a href="https://wa.me/917039509783" class="btn btn-primary w-100">Get a Local Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* --- Jaipur Local Section --- */
+.jaipur-local {
+    padding: var(--section-padding);
+    background: var(--bg-light); /* Light grey to contrast with the white section above */
+}
+
+.local-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.loc-tag {
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    border-radius: var(--radius-pill);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Feature Card */
+.local-feature-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--primary-color);
+}
+
+.local-feature-card h4 {
+    margin: 15px 0;
+    color: var(--dark-navy);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.feature-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+    color: var(--text-main);
+}
+
+/* Mobile responsive */
+@media (max-width: 992px) {
+    .local-grid {
+        grid-template-columns: 1fr;
+    }
+    .local-feature-card {
+        padding: 30px 20px;
+    }
+}
+</style>
+
+
+
+<section class="free-tools-section">
+  <div class="container">
+    <div class="free-tools-card">
+      <div class="free-tools-content">
+        <span class="badge-gold">Free Resources</span>
+        <h2>Digital Tools for Small Businesses</h2>
+        
+        <p class="free-tools-desc">
+          We’ve built a growing collection of free digital tools to help 
+          <strong>professionals, startups, and job seekers</strong> work smarter online.
+        </p>
+
+        <p class="free-tools-note">
+          While these tools are free to use, our core focus remains building 
+          affordable, high-performance websites for businesses across India.
+        </p>
+
+        <div class="free-tools-actions">
+          <a href="/free-tools" class="btn-tools">
+            Explore All 25+ Free Tools →
+          </a>
+        </div>
+      </div>
+      
+      <div class="tools-visual-grid">
+        <div class="mini-tool">PDF Tools</div>
+        <div class="mini-tool">SEO Audit</div>
+        <div class="mini-tool">QR Generator</div>
+        <div class="mini-tool">Bio Links</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- FREE TOOLS: THEME INTEGRATED --- */
+.free-tools-section {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.free-tools-card {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    background: var(--dark-navy); /* Brand dark color */
+    border-radius: var(--radius-lg);
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+/* Decorative background glow */
+.free-tools-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    filter: blur(120px);
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+/* --- TEXT CONTENT --- */
+.badge-gold {
+    display: inline-block;
+    color: var(--accent-yellow);
+    background: rgba(251, 191, 36, 0.1);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.free-tools-content h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.free-tools-desc {
+    font-size: 1.1rem;
+    color: #94a3b8; /* Slate-400 for high readability on dark */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.free-tools-note {
+    font-size: 0.9rem;
+    color: #64748b; /* Slate-500 */
+    font-style: italic;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+/* --- BUTTON UI --- */
+.free-tools-actions {
+    margin-top: 40px;
+}
+
+.btn-tools {
+    display: inline-block;
+    background: var(--primary-gradient);
+    color: var(--white);
+    padding: 18px 40px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-tools:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.45);
+    filter: brightness(1.1);
+}
+
+/* --- VISUAL GRID --- */
+.tools-visual-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.mini-tool {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 24px 15px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.mini-tool:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .free-tools-card {
+        grid-template-columns: 1fr;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .free-tools-note {
+        text-align: left;
+    }
+
+    .tools-visual-grid {
+        display: none; /* Simplifies mobile view to drive the CTA */
+    }
+
+    .btn-tools {
+        width: 100%;
+    }
+}
+</style>
+
+<section class="dual-cta">
+  <div class="container">
+    <div class="cta-grid">
+      
+      <div class="cta-card calculator-cta">
+        <div class="cta-overlay-icon">📊</div>
+        <div class="cta-content">
+          <span class="cta-badge badge-gold-alt">Self-Service</span>
+          <h3>Instant Pricing</h3>
+          <p>Get a transparent, custom quote for your project in under <strong>60 seconds</strong>.</p>
+          <a href="/website-cost-calculator" class="btn-cta primary-action">
+            Calculate My Price →
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-card consult-cta">
+        <div class="cta-overlay-icon">🚀</div>
+        <div class="cta-content">
+          <span class="cta-badge badge-blue-alt">Direct Expert</span>
+          <h3>Free Strategy Call</h3>
+          <p>Not sure where to start? Speak directly with a developer about your business goals.</p>
+          <a href="/contact" class="btn-cta outline-action">
+            Talk to Expert →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- DUAL CTA: THEME INTEGRATED --- */
+.dual-cta {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.cta-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* --- CARD DESIGN --- */
+.cta-card {
+    position: relative;
+    padding: 60px 45px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    color: var(--white);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-card:hover {
+    transform: translateY(-8px);
+}
+
+.calculator-cta {
+    background: var(--primary-gradient); /* Brand Gradient */
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.25);
+}
+
+.consult-cta {
+    background: var(--dark-navy); /* Brand Dark */
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+/* --- OVERLAY ICON --- */
+.cta-overlay-icon {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 8rem;
+    opacity: 0.12;
+    transform: rotate(15deg);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* --- CONTENT UI --- */
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 20px;
+}
+
+.badge-gold-alt {
+    color: var(--accent-yellow);
+    background: rgba(251, 191, 36, 0.2);
+}
+
+.badge-blue-alt {
+    color: #818cf8;
+    background: rgba(129, 140, 248, 0.2);
+}
+
+.cta-content h3 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- BUTTONS --- */
+.btn-cta {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    border-radius: var(--radius-md);
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.primary-action {
+    background: var(--white);
+    color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.primary-action:hover {
+    background: var(--bg-light);
+    transform: scale(1.02);
+}
+
+.outline-action {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+}
+
+.outline-action:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .cta-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .cta-card {
+        padding: 45px 30px;
+        text-align: center;
+    }
+    
+    .cta-overlay-icon {
+        font-size: 6rem;
+    }
+}
+</style>
+
+<section class="faq-section">
+<div class="container">
+
+<div class="section-header">
+<span class="badge">FAQ</span>
+<h2>Frequently Asked Questions</h2>
+<p>Common questions about our website design services in India.</p>
+</div>
+
+<div class="faq-wrapper">
+
+<div class="faq-item">
+<button class="faq-question">
+How much does a website cost in India?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Website design costs in India vary depending on features. Basic landing pages start at ₹999, while business websites range between ₹3,000 and ₹25,000 depending on functionality and integrations.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+How fast can you deliver a website?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Most websites are delivered within 24 hours. More advanced business websites or ecommerce systems may take a few days depending on requirements.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Do your websites include SEO optimization?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Yes. All websites include on-page SEO including meta tags, mobile optimization, schema setup and Google Search Console integration.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Do you provide website design services in Jaipur?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Yes. EzyGoDigi is a Jaipur based website design company serving businesses across Jaipur including Vaishali Nagar, Mansarovar, Malviya Nagar and Sitapura.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Can my website accept payments or WhatsApp orders?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Yes. We integrate payment gateways like Razorpay and direct WhatsApp ordering so customers can easily contact or purchase from your website.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Do you provide support after website launch?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Yes. We provide ongoing support and optional maintenance services to ensure your website remains secure, fast and optimized.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<style>
+.faq-section{
+padding:var(--section-padding);
+background:var(--white);
+}
+
+.faq-wrapper{
+max-width:800px;
+margin:auto;
+}
+
+.faq-item{
+border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.faq-question{
+width:100%;
+background:none;
+border:none;
+padding:20px 0;
+text-align:left;
+font-size:1.1rem;
+font-weight:700;
+color:var(--dark-navy);
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+}
+
+.faq-question span{
+font-size:1.5rem;
+color:var(--primary-color);
+}
+
+.faq-answer{
+display:none;
+padding-bottom:20px;
+}
+
+.faq-answer p{
+color:var(--text-main);
+line-height:1.6;
+font-size:0.95rem;
+}
+</style>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(btn=>{
+btn.addEventListener("click",()=>{
+const answer=btn.nextElementSibling;
+answer.style.display =
+answer.style.display === "block" ? "none" : "block";
+});
+});
+</script>
+	<script src="/assets/common.js"></script>
+<!-- just before closing </body> -->
+<script src="https://ezygodigi.in/analytic/analytics.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    Analytics.init({ siteKey: "pk_live_ezygodigi" });
+  }, 1500);
+});
+</script>
+
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+
+{
+"@type":"Question",
+"name":"How much does a website cost in India?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Website design costs in India vary depending on features. Basic landing pages start at ₹999 while business websites can range between ₹3,000 and ₹25,000 depending on features."
+}
+},
+
+{
+"@type":"Question",
+"name":"How fast can you deliver a website?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Most websites are delivered within 24 hours. Advanced ecommerce or custom projects may take a few additional days."
+}
+},
+
+{
+"@type":"Question",
+"name":"Do your websites include SEO optimization?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. All websites include on-page SEO including meta tags, mobile optimization, schema setup and Google Search Console integration."
+}
+},
+
+{
+"@type":"Question",
+"name":"Do you provide website design services in Jaipur?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. EzyGoDigi is a Jaipur based website design company serving businesses across Jaipur including Vaishali Nagar, Mansarovar, Malviya Nagar and Sitapura."
+}
+},
+
+{
+"@type":"Question",
+"name":"Can my website accept payments or WhatsApp orders?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. Websites can include payment gateway integration and WhatsApp ordering so customers can contact or purchase easily."
+}
+}
+
+]
+}
+</script>
+ </body>
+</html>

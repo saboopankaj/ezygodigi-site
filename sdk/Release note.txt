@@ -1,0 +1,26 @@
+v1
+
+
+V2
+launch 07 Jan
+Feature
+Chatbot Icon and Badge
+Improve onbaording enable/disable flow
+Structured bot response
+chat UI update
+
+V3
+Message parsing with chip, it checks for QR (quick reply ) in message and convert and parse it..
+Mobile friednly
+
+
+V4
+Message parsing with chip, it checks for QR (quick reply ) in message and convert and parse it..
+Mobile friednly
+Storing of page url in sessions/chat logs
+Asking repeated onbaording in same session refresh fix
+UI enhancemeet
+
+V5 ( Live Currently )
+Mobile responsiveness fix
+footer powered by EzyGoDigi added

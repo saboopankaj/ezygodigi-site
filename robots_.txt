@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block internal / non-SEO paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_worker.js
+Disallow: /assets/private/
+
+# Sitemap
+Sitemap: https://ezygodigi.in/sitemap.xml

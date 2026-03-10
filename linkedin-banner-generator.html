@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4X6Z65R');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+	<title>LinkedIn Banner Generator – Professional Cover Design Tool</title>
+
+<meta name="description" content="Create professional LinkedIn banners for consultants, business owners and job seekers. Customize text, colors and download instantly.">
+
+<meta name="keywords" content="
+LinkedIn banner generator,
+LinkedIn cover photo tool,
+LinkedIn banner design,
+professional LinkedIn banner,
+personal branding LinkedIn
+">
+
+<link rel="canonical" href="https://ezygodigi.in/linkedin-banner-generator">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "LinkedIn Banner Generator"
+}
+</script>
+
+	  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="/ez-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ez-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/ez-48x48.png">
+	<link rel="preload" href="/assets/common.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/common.css"></noscript>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+            color: white;
+            padding: 30px 40px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .template-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .templates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .template-card {
+            border: 3px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f8f9fa;
+        }
+
+        .template-card:hover {
+            border-color: #0077b5;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,119,181,0.2);
+        }
+
+        .template-card.selected {
+            border-color: #0077b5;
+            background: #e3f2fd;
+        }
+
+        .template-preview {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .template-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        .editor-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .controls-panel {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            max-height: 800px;
+            overflow-y: auto;
+        }
+
+        .control-group {
+            margin-bottom: 25px;
+        }
+
+        .control-group label {
+            display: block;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #0077b5;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        input[type="color"] {
+            width: 100%;
+            height: 45px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .upload-btn {
+            width: 100%;
+            padding: 12px;
+            background: white;
+            border: 2px dashed #0077b5;
+            border-radius: 8px;
+            color: #0077b5;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .upload-btn:hover {
+            background: #f0f8ff;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            background: white;
+        }
+
+        .preview-panel {
+            position: sticky;
+            top: 20px;
+        }
+
+        .canvas-container {
+            background: #f0f0f0;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            background: white;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,119,181,0.4);
+        }
+
+        .action-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .color-presets {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .color-preset {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .color-preset:hover {
+            transform: scale(1.1);
+            border-color: #2c3e50;
+        }
+
+        .alignment-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .align-btn {
+            flex: 1;
+            padding: 10px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            color: #2c3e50;
+        }
+
+        .align-btn:hover {
+            border-color: #0077b5;
+            background: #f0f8ff;
+        }
+
+        .align-btn.active {
+            background: #0077b5;
+            color: white;
+            border-color: #0077b5;
+        }
+
+        .image-preview {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 1024px) {
+            .editor-section {
+                grid-template-columns: 1fr;
+            }
+
+            .preview-panel {
+                position: relative;
+                top: 0;
+            }
+        }
+		/* ===== COMMON HEADER / FOOTER ===== */
+nav{
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+}
+
+
+
+
+@media(max-width:768px){
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:#667eea;
+    flex-direction:column;
+    padding:20px;
+  }
+  .nav-links.active{display:flex}
+  .mobile-menu-btn{display:block}
+}
+
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4X6Z65R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- HEADER -->
+<div id="header-placeholder"></div>
+<div id="breadcrumb-placeholder"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🎨 LinkedIn Banner Generator</h1>
+            <p>Create professional LinkedIn banners (1584 x 396 px) in minutes</p>
+        </div>
+
+        <div class="content">
+            <div class="template-section">
+                <div class="section-title">Choose a Template</div>
+                <div class="templates">
+                    <div class="template-card" onclick="selectTemplate('minimal', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="template-name">Minimal Gradient</div>
+                    </div>
+                    <div class="template-card" onclick="selectTemplate('professional', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);"></div>
+                        <div class="template-name">Professional Blue</div>
+                    </div>
+                    <div class="template-card" onclick="selectTemplate('dark', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);"></div>
+                        <div class="template-name">Dark Modern</div>
+                    </div>
+                    <div class="template-card" onclick="selectTemplate('warm', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="template-name">Warm Sunset</div>
+                    </div>
+                    <div class="template-card" onclick="selectTemplate('tech', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="template-name">Tech Blue</div>
+                    </div>
+                    <div class="template-card" onclick="selectTemplate('nature', this)">
+                        <div class="template-preview" style="background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);"></div>
+                        <div class="template-name">Nature Green</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="editor-section">
+                <div class="controls-panel">
+                    <div class="control-group">
+                        <label>Main Heading</label>
+                        <input type="text" id="mainText" placeholder="Your Name or Title" value="John Doe">
+                    </div>
+
+                    <div class="control-group">
+                        <label>Subtitle</label>
+                        <input type="text" id="subText" placeholder="Your Role or Tagline" value="Product Designer & Creative Thinker">
+                    </div>
+
+                    <div class="control-group">
+                        <label>Additional Text (Optional)</label>
+                        <textarea id="additionalText" placeholder="Add skills, achievements, or a brief description"></textarea>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Text Alignment</label>
+                        <div class="alignment-buttons">
+                            <button class="align-btn active" onclick="setAlignment('left', this)">← Left</button>
+                            <button class="align-btn" onclick="setAlignment('center', this)">⬌ Center</button>
+                            <button class="align-btn" onclick="setAlignment('right', this)">→ Right</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Background Color 1</label>
+                        <input type="color" id="color1" value="#667eea">
+                        <div class="color-presets">
+                            <div class="color-preset" style="background: #667eea;" onclick="setColor1('#667eea')"></div>
+                            <div class="color-preset" style="background: #0077b5;" onclick="setColor1('#0077b5')"></div>
+                            <div class="color-preset" style="background: #2c3e50;" onclick="setColor1('#2c3e50')"></div>
+                            <div class="color-preset" style="background: #f093fb;" onclick="setColor1('#f093fb')"></div>
+                            <div class="color-preset" style="background: #4facfe;" onclick="setColor1('#4facfe')"></div>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Background Color 2</label>
+                        <input type="color" id="color2" value="#764ba2">
+                        <div class="color-presets">
+                            <div class="color-preset" style="background: #764ba2;" onclick="setColor2('#764ba2')"></div>
+                            <div class="color-preset" style="background: #00a0dc;" onclick="setColor2('#00a0dc')"></div>
+                            <div class="color-preset" style="background: #34495e;" onclick="setColor2('#34495e')"></div>
+                            <div class="color-preset" style="background: #f5576c;" onclick="setColor2('#f5576c')"></div>
+                            <div class="color-preset" style="background: #00f2fe;" onclick="setColor2('#00f2fe')"></div>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Text Color</label>
+                        <input type="color" id="textColor" value="#ffffff">
+                    </div>
+
+                    <div class="control-group">
+                        <label>Font Style</label>
+                        <select id="fontFamily">
+                            <option value="Arial, sans-serif">Arial (Clean)</option>
+                            <option value="'Georgia', serif">Georgia (Elegant)</option>
+                            <option value="'Courier New', monospace">Courier (Tech)</option>
+                            <option value="'Trebuchet MS', sans-serif">Trebuchet (Modern)</option>
+                            <option value="'Impact', sans-serif">Impact (Bold)</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Upload Background Image (Optional)</label>
+                        <input type="file" id="bgImageInput" accept="image/*">
+                        <div class="upload-btn" onclick="document.getElementById('bgImageInput').click()">
+                            📁 Choose Image
+                        </div>
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+
+                    <div class="control-group" id="opacityControl" style="display: none;">
+                        <label>Background Image Opacity</label>
+                        <input type="range" id="bgOpacity" min="0" max="100" value="40" step="5">
+                        <div class="value-display" id="bgOpacityValue">40%</div>
+                    </div>
+
+                    <div class="control-group" id="gradientOpacityControl" style="display: none;">
+                        <label>Gradient Overlay Opacity</label>
+                        <input type="range" id="gradientOpacity" min="0" max="100" value="85" step="5">
+                        <div class="value-display" id="gradientOpacityValue">85%</div>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <div class="canvas-container">
+                        <canvas id="bannerCanvas" width="1584" height="396"></canvas>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn" onclick="downloadBanner()">💾 Download Banner (PNG)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('bannerCanvas');
+        const ctx = canvas.getContext('2d');
+        let bgImage = null;
+        let currentTemplate = 'minimal';
+        let textAlignment = 'left';
+        let bgImageOpacity = 40;
+        let gradientOverlayOpacity = 85;
+
+        const templates = {
+            minimal: { color1: '#667eea', color2: '#764ba2' },
+            professional: { color1: '#0077b5', color2: '#00a0dc' },
+            dark: { color1: '#2c3e50', color2: '#34495e' },
+            warm: { color1: '#f093fb', color2: '#f5576c' },
+            tech: { color1: '#4facfe', color2: '#00f2fe' },
+            nature: { color1: '#56ab2f', color2: '#a8e063' }
+        };
+
+        function selectTemplate(template, element) {
+            currentTemplate = template;
+            document.querySelectorAll('.template-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            if (element) {
+                element.classList.add('selected');
+            }
+
+            const colors = templates[template];
+            document.getElementById('color1').value = colors.color1;
+            document.getElementById('color2').value = colors.color2;
+            drawBanner();
+        }
+
+        function setAlignment(align, element) {
+            textAlignment = align;
+            document.querySelectorAll('.align-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            if (element) {
+                element.classList.add('active');
+            }
+            drawBanner();
+        }
+
+        function setColor1(color) {
+            document.getElementById('color1').value = color;
+            drawBanner();
+        }
+
+        function setColor2(color) {
+            document.getElementById('color2').value = color;
+            drawBanner();
+        }
+
+        document.getElementById('mainText').addEventListener('input', drawBanner);
+        document.getElementById('subText').addEventListener('input', drawBanner);
+        document.getElementById('additionalText').addEventListener('input', drawBanner);
+        document.getElementById('color1').addEventListener('input', drawBanner);
+        document.getElementById('color2').addEventListener('input', drawBanner);
+        document.getElementById('textColor').addEventListener('input', drawBanner);
+        document.getElementById('fontFamily').addEventListener('change', drawBanner);
+
+        document.getElementById('bgImageInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                document.getElementById('imagePreview').textContent = `✓ ${file.name}`;
+                document.getElementById('opacityControl').style.display = 'block';
+                document.getElementById('gradientOpacityControl').style.display = 'block';
+                
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.onload = function() {
+                        bgImage = img;
+                        drawBanner();
+                    };
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Background image opacity control
+        document.getElementById('bgOpacity').addEventListener('input', function(e) {
+            bgImageOpacity = parseInt(e.target.value);
+            document.getElementById('bgOpacityValue').textContent = bgImageOpacity + '%';
+            drawBanner();
+        });
+
+        // Gradient overlay opacity control
+        document.getElementById('gradientOpacity').addEventListener('input', function(e) {
+            gradientOverlayOpacity = parseInt(e.target.value);
+            document.getElementById('gradientOpacityValue').textContent = gradientOverlayOpacity + '%';
+            drawBanner();
+        });
+
+        function getTextX(textWidth) {
+            if (textAlignment === 'center') {
+                return canvas.width / 2;
+            } else if (textAlignment === 'right') {
+                return canvas.width - 80;
+            }
+            return 80; // left
+        }
+
+        function drawBanner() {
+            const mainText = document.getElementById('mainText').value || 'Your Name';
+            const subText = document.getElementById('subText').value || 'Your Title';
+            const additionalText = document.getElementById('additionalText').value;
+            const color1 = document.getElementById('color1').value;
+            const color2 = document.getElementById('color2').value;
+            const textColor = document.getElementById('textColor').value;
+            const fontFamily = document.getElementById('fontFamily').value;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw background image if exists
+            if (bgImage) {
+                ctx.globalAlpha = bgImageOpacity / 100;
+                const scale = Math.max(canvas.width / bgImage.width, canvas.height / bgImage.height);
+                const x = (canvas.width - bgImage.width * scale) / 2;
+                const y = (canvas.height - bgImage.height * scale) / 2;
+                ctx.drawImage(bgImage, x, y, bgImage.width * scale, bgImage.height * scale);
+                ctx.globalAlpha = 1;
+            }
+
+            // Draw gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, color1);
+            gradient.addColorStop(1, color2);
+            ctx.fillStyle = gradient;
+            ctx.globalAlpha = bgImage ? (gradientOverlayOpacity / 100) : 1;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.globalAlpha = 1;
+
+            // Add decorative elements based on alignment
+            ctx.globalAlpha = 0.1;
+            ctx.fillStyle = '#ffffff';
+            if (textAlignment === 'left') {
+                ctx.beginPath();
+                ctx.arc(1400, 100, 200, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(200, 350, 150, 0, Math.PI * 2);
+                ctx.fill();
+            } else if (textAlignment === 'center') {
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2, 350, 250, 0, Math.PI * 2);
+                ctx.fill();
+            } else {
+                ctx.beginPath();
+                ctx.arc(200, 100, 200, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(1400, 350, 150, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.globalAlpha = 1;
+
+            // Set text alignment
+            ctx.textAlign = textAlignment;
+            ctx.fillStyle = textColor;
+
+            // Main heading
+            ctx.font = `bold 80px ${fontFamily}`;
+            const mainTextX = getTextX(ctx.measureText(mainText).width);
+            ctx.fillText(mainText, mainTextX, 150);
+
+            // Subtitle
+            ctx.font = `40px ${fontFamily}`;
+            const subTextX = getTextX(ctx.measureText(subText).width);
+            ctx.fillText(subText, subTextX, 220);
+
+            // Decorative line
+            ctx.strokeStyle = textColor;
+            ctx.globalAlpha = 0.3;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            if (textAlignment === 'left') {
+                ctx.moveTo(80, 250);
+                ctx.lineTo(400, 250);
+            } else if (textAlignment === 'center') {
+                ctx.moveTo(canvas.width / 2 - 160, 250);
+                ctx.lineTo(canvas.width / 2 + 160, 250);
+            } else {
+                ctx.moveTo(canvas.width - 400, 250);
+                ctx.lineTo(canvas.width - 80, 250);
+            }
+            ctx.stroke();
+            ctx.globalAlpha = 1;
+
+            // Additional text
+            if (additionalText) {
+                ctx.font = `28px ${fontFamily}`;
+                const words = additionalText.split(' ');
+                let line = '';
+                let y = 290;
+                const maxWidth = canvas.width - 160;
+
+                for (let i = 0; i < words.length; i++) {
+                    const testLine = line + words[i] + ' ';
+                    const metrics = ctx.measureText(testLine);
+                    if (metrics.width > maxWidth && i > 0) {
+                        const lineX = getTextX(ctx.measureText(line).width);
+                        ctx.fillText(line, lineX, y);
+                        line = words[i] + ' ';
+                        y += 40;
+                        if (y > 370) break;
+                    } else {
+                        line = testLine;
+                    }
+                }
+                if (y <= 370) {
+                    const lineX = getTextX(ctx.measureText(line).width);
+                    ctx.fillText(line, lineX, y);
+                }
+            }
+        }
+
+        function downloadBanner() {
+            try {
+                canvas.toBlob(function(blob) {
+                    if (!blob) {
+                        console.error('Failed to create blob');
+                        fallbackDownload();
+                        return;
+                    }
+                    
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.download = 'linkedin-banner-1584x396.png';
+                    link.href = url;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    setTimeout(() => {
+                        URL.revokeObjectURL(url);
+                    }, 100);
+                }, 'image/png', 1.0);
+            } catch (error) {
+                console.error('Download error:', error);
+                fallbackDownload();
+            }
+        }
+
+        function fallbackDownload() {
+            try {
+                const dataURL = canvas.toDataURL('image/png', 1.0);
+                const link = document.createElement('a');
+                link.download = 'linkedin-banner-1584x396.png';
+                link.href = dataURL;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (err) {
+                alert('Download failed. Please try right-clicking the banner and selecting "Save Image As..."');
+            }
+        }
+
+        // Initial draw
+        window.addEventListener('DOMContentLoaded', function() {
+            const firstTemplate = document.querySelector('.template-card');
+            if (firstTemplate) {
+                selectTemplate('minimal', firstTemplate);
+            }
+            drawBanner();
+        });
+    </script>
+	<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+<script src="/assets/common.js"></script>
+<!-- just before closing </body> -->
+<script src="https://ezygodigi.in/analytic/analytics.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    Analytics.init({ siteKey: "pk_live_ezygodigi" });
+  }, 1500);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraaj Jewels - Exquisite Handcrafted Collections</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Work Sans', sans-serif; background: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 120px 20px 80px; text-align: center; position: relative; }
+        .hero::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 300px; background: radial-gradient(ellipse at center, rgba(255,215,0,0.1) 0%, transparent 70%); }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 8vw, 72px); font-weight: 700; margin-bottom: 16px; background: linear-gradient(135deg, #ffd700, #ffed4e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: clamp(18px, 2.5vw, 22px); margin-bottom: 48px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-btn { background: linear-gradient(135deg, #ffd700, #ffed4e); color: #1a1a2e; padding: 16px 40px; border-radius: 30px; font-size: 18px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 8px 25px rgba(255,215,0,0.4); transition: all 0.3s; position: relative; overflow: hidden; }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(255,215,0,0.5); }
+        .collections { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .collections h2 { font-family: 'Playfair Display', serif; font-size: 36px; text-align: center; margin-bottom: 60px; color: #ffd700; }
+        .collection-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .collection-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,215,0,0.2); border-radius: 20px; padding: 40px 24px; text-align: center; transition: all 0.3s; backdrop-filter: blur(10px); }
+        .collection-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-8px); border-color: #ffd700; }
+        .gem-icon { font-size: 64px; margin-bottom: 20px; background: linear-gradient(135deg, #ffd700, #ffed4e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .collection-card h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 12px; }
+        .price-range { font-size: 20px; font-weight: 600; color: #ffd700; margin-bottom: 16px; }
+        @media (max-width: 768px) { .collections { padding: 60px 20px; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Viraaj Jewels</h1>
+        <p>Handcrafted heirloom pieces • 22K Hallmark gold • Lifetime exchange</p>
+        <a href="tel:+919999999999" class="cta-btn">💎 Book Private Viewing</a>
+    </section>
+
+    <section class="collections">
+        <h2>Featured Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <div class="gem-icon">💍</div>
+                <h3>Bridal Sets</h3>
+                <div class="price-range">₹2.5L - ₹15L</div>
+                <p>Necklace + jhumka + bangles - complete bridal look</p>
+            </div>
+            <div class="collection-card">
+                <div class="gem-icon">📿</div>
+                <h3>Mangalsutra</h3>
+                <div class="price-range">₹25K - ₹2.5L</div>
+                <p>Modern + traditional designs with diamond pendants</p>
+            </div>
+            <div class="collection-card">
+                <div class="gem-icon">💎</div>
+                <h3>Solitaire Rings</h3>
+                <div class="price-range">₹50K - ₹8L</div>
+                <p>GIA certified diamonds • Platinum + yellow gold</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

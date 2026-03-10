@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithora Premium Snacks - Wholesale Jaipur</title>
+    <style>
+        :root{--gold:#d4af37;--black:#0a0a0a;--gray:#1a1a1a;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Playfair Display',serif;background:var(--black);color:white;line-height:1.7;}
+        .navbar{position:fixed;top:0;left:0;right:0;background:rgba(10,10,10,0.95);backdrop-filter:blur(20px);z-index:1000;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;}
+        .hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23d4af37" width="1200" height="800"/><circle fill="%23b8941f" cx="300" cy="200" r="150"/><circle fill="%23e6c141" cx="900" cy="600" r="120"/></svg>');display:flex;align-items:center;justify-content:center;text-align:center;}
+        .hero-content{max-width:700px;padding:0 20px;}
+        .hero h1{font-size:clamp(4rem,10vw,8rem);font-weight:400;margin-bottom:1rem;letter-spacing:0.1em;}
+        .hero .subtitle{font-size:1.4rem;opacity:0.9;margin-bottom:3rem;}
+        .products{padding:120px 5% 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;}
+        .product{position:relative;height:500px;background:var(--gray);border-radius:24px;overflow:hidden;transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);cursor:pointer;}
+        .product:hover{transform:scale(1.05) translateY(-20px);}
+        .product::before{content:'';position:absolute;top:0;left:0;right:0;height:60%;background:linear-gradient(135deg,var(--gold),#f1c40f);z-index:1;}
+        .product::after{content:attr(data-emoji);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:6rem;z-index:2;opacity:0.9;}
+        .product-info{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.9));padding:2rem;z-index:3;text-align:center;}
+        .product h3{font-size:1.5rem;margin-bottom:0.5rem;}
+        .price{font-size:2.5rem;font-weight:300;color:var(--gold);}
+        .floating-cart{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 20px 40px rgba(212,175,55,0.4);cursor:pointer;z-index:1000;animation:pulse 2s infinite;}
+        @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.1);}}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="font-size:1.5rem;font-weight:300;">Mithora Premium</div>
+        <div style="display:flex;gap:2rem;">
+            <a href="#" style="color:white;text-decoration:none;opacity:0.8;">Shop</a>
+            <a href="#" style="color:white;text-decoration:none;opacity:0.8;">Wholesale</a>
+            <a href="#" style="color:white;text-decoration:none;opacity:0.8;">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Artisan Snacks</h1>
+            <p class="subtitle">Handcrafted in Jaipur • Wholesale Prices • Next Day Delivery</p>
+            <button style="background:var(--gold);color:var(--black);padding:20px 50px;border:none;border-radius:50px;font-size:1.3rem;font-family:inherit;cursor:pointer;font-weight:300;">Explore Collection</button>
+        </div>
+    </section>
+    
+    <section class="products">
+        <div class="product" data-emoji="🥔" data-name="Aloo Tikki">
+            <div class="product-info">
+                <h3>Signature Aloo Tikki</h3>
+                <div class="price">₹299/kg</div>
+            </div>
+        </div>
+        <div class="product" data-emoji="🌮" data-name="Pani Puri">
+            <div class="product-info">
+                <h3>Classic Pani Puri</h3>
+                <div class="price">₹199/pack</div>
+            </div>
+        </div>
+        <div class="product" data-emoji="🥟" data-name="Samosa">
+            <div class="product-info">
+                <h3>Butter Samosa</h3>
+                <div class="price">₹350/dozen</div>
+            </div>
+        </div>
+        <div class="product" data-emoji="🍲" data-name="Khichdi">
+            <div class="product-info">
+                <h3>Homestyle Khichdi</h3>
+                <div class="price">₹89/plate</div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="floating-cart">🛒</div>
+</body>
+</html>

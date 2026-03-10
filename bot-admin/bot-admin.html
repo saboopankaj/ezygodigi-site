@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot Admin – EzyGoDigi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; margin: 0; background: #f5f5f7; color: #111; }
+    header { background: #111827; color: #f9fafb; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 16px; }
+    header .bot-select { display: flex; gap: 8px; align-items: center; }
+
+    .layout { display: flex; height: calc(100vh - 48px); }
+    nav { width: 220px; background: #111827; color: #e5e7eb; padding: 12px 0; box-sizing: border-box; }
+    nav button { width: 100%; text-align: left; border: 0; background: transparent; color: inherit;
+                 padding: 10px 16px; cursor: pointer; font-size: 14px; }
+    nav button.active { background: #1f2937; }
+
+    main { flex: 1; padding: 16px 20px; overflow: auto; box-sizing: border-box; }
+
+    .card { background: #ffffff; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(15,23,42,.08); }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .card-header h2 { margin: 0; font-size: 15px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 6px 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { text-align: left; background: #f9fafb; }
+    .status-empty { font-style: italic; color: #6b7280; padding: 20px; text-align: center; }
+
+    .pill { font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #eef2ff; color: #4338ca; display: inline-block; }
+    .pill.active { background: #ecfdf5; color: #166534; }
+    .btn { border: 0; border-radius: 4px; padding: 6px 10px; font-size: 13px; cursor: pointer; }
+    .btn-primary { background: #2563eb; color: #fff; }
+    .btn-ghost { background: transparent; color: #374151; }
+    .btn-sm { padding: 4px 7px; font-size: 12px; }
+    .btn-danger { background: #ef4444; color: #fff; }
+
+    .tagline { font-size: 12px; color: #6b7280; margin-top: 2px; }
+    .badge { display: inline-block; padding: 2px 5px; font-size: 11px; border-radius: 4px; background: #ecfdf5; color: #166534; }
+
+    #login-screen { display: none; height: 100vh; align-items: center; justify-content: center; background: #020617; color: #f9fafb; }
+    #login-card { background: #0b1120; padding: 20px 22px; border-radius: 10px; width: 320px; box-shadow: 0 10px 40px rgba(0,0,0,.4); }
+    #login-card h1 { margin: 0 0 6px; font-size: 18px; }
+    #login-card label { font-size: 12px; display: block; margin-bottom: 4px; }
+    #login-card input { width: 100%; padding: 6px 7px; border-radius: 4px; border: 1px solid #4b5563; background: #020617; color: #e5e7eb; }
+    #login-card button { margin-top: 10px; width: 100%; padding: 7px 0; border-radius: 4px; border: 0; background: #22c55e; color: #052e16; cursor: pointer; font-size: 13px; }
+
+    #app { display: none; }
+    .status { font-size: 12px; color: #6b7280; }
+
+    /* Modal */
+    #modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); z-index: 1000; align-items: center; justify-content: center; }
+    #modal-content { background: #fff; border-radius: 12px; width: 90%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+    .modal-header { padding: 20px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center; }
+    .modal-header h3 { margin: 0; font-size: 16px; }
+    .modal-body { padding: 20px; }
+    .modal-actions { padding: 0 20px 20px; text-align: right; border-top: 1px solid #e5e7eb; }
+    .row { display: flex; gap: 12px; margin-bottom: 12px; }
+    .row > div { flex: 1; }
+    input[type="text"], input[type="number"], textarea, select {
+      width: 100%; box-sizing: border-box; font-size: 13px; padding: 8px 10px; border-radius: 6px; border: 1px solid #d1d5db; background: #fff;
+    }
+    textarea { min-height: 100px; resize: vertical; }
+    label { font-size: 12px; color: #374151; margin-bottom: 4px; display: block; }
+  </style>
+</head>
+<body>
+<div id="login-screen">
+  <div id="login-card">
+    <h1>Chatbot Admin</h1>
+    <p class="tagline">Enter admin token to manage rules, knowledge and logs.</p>
+    <label for="admin-token">Admin token</label>
+    <input id="admin-token" type="password" autocomplete="off" />
+    <button id="login-btn">Continue</button>
+  </div>
+</div>
+
+<div id="app">
+  <header>
+    <h1>Chatbot Admin</h1>
+    <div class="bot-select">
+      <span class="tagline">Bot:</span>
+      <select id="bot-select">
+        <option value="ezygodigi">ezygodigi</option>
+        <option value="mithora">mithora</option>
+      </select>
+      <button class="btn btn-ghost btn-sm" id="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav>
+      <button class="active" data-tab="rules-tab">Rules</button>
+      <button data-tab="knowledge-tab">Knowledge</button>
+      <button data-tab="logs-tab">Conversations</button>
+    </nav>
+    <main>
+      <!-- Rules -->
+      <section id="rules-tab" class="tab">
+        <div class="card">
+          <div class="card-header">
+            <h2>Rules</h2>
+            <button class="btn btn-primary btn-sm" id="add-rule-btn">+ New rule</button>
+          </div>
+          <p class="tagline">Rules answer common FAQs instantly using keyword matching. If no rule matches, AI with knowledge will answer.</p>
+          <div id="rules-list"></div>
+        </div>
+      </section>
+
+      <!-- Knowledge -->
+      <section id="knowledge-tab" class="tab" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h2>Knowledge</h2>
+            <button class="btn btn-primary btn-sm" id="add-knowledge-btn">+ New article</button>
+          </div>
+          <p class="tagline">Long-form context used by AI when no rule matches. Keep at least one global "general" article.</p>
+          <div id="knowledge-list"></div>
+        </div>
+      </section>
+
+      <!-- Logs -->
+      <section id="logs-tab" class="tab" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h2>Recent conversations</h2>
+            <span class="status" id="logs-status"></span>
+          </div>
+          <div id="logs-list"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="modal">
+  <div id="modal-content">
+    <div class="modal-header">
+      <h3 id="modal-title">Edit Rule</h3>
+      <button class="btn btn-ghost btn-sm" id="modal-close">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="modal-cancel">Cancel</button>
+      <button class="btn btn-primary" id="modal-save">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const API_BASE = "https://ezygodigi.in"; // Fixed: no trailing slash
+  const storageKey = "chat_admin_token";
+
+  const loginScreen = document.getElementById("login-screen");
+  const app = document.getElementById("app");
+  const loginInput = document.getElementById("admin-token");
+  const loginBtn = document.getElementById("login-btn");
+  const logoutBtn = document.getElementById("logout-btn");
+  const botSelect = document.getElementById("bot-select");
+  const modal = document.getElementById("modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalBody = document.getElementById("modal-body");
+  const modalSave = document.getElementById("modal-save");
+  let currentEditData = null;
+  let currentEditType = null; // 'rule' or 'knowledge'
+
+  // Modal controls
+  document.getElementById("modal-close").onclick = () => modal.style.display = "none";
+  document.getElementById("modal-cancel").onclick = () => modal.style.display = "none";
+  modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+  // Tabs
+  document.querySelectorAll("nav button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const tab = btn.dataset.tab;
+      document.querySelectorAll("main .tab").forEach(s => {
+        s.style.display = (s.id === tab) ? "block" : "none";
+      });
+      if (tab === "rules-tab") loadRules();
+      if (tab === "knowledge-tab") loadKnowledge();
+      if (tab === "logs-tab") loadLogs();
+    });
+  });
+
+  // Login / logout
+  function showApp() { loginScreen.style.display = "none"; app.style.display = "block"; loadRules(); }
+  function showLogin() { app.style.display = "none"; loginScreen.style.display = "flex"; }
+
+  loginBtn.addEventListener("click", () => {
+    const token = loginInput.value.trim();
+    if (!token) return;
+    localStorage.setItem(storageKey, token);
+    showApp();
+  });
+
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem(storageKey);
+    showLogin();
+  });
+
+  const existingToken = localStorage.getItem(storageKey);
+  if (existingToken) showApp();
+
+  botSelect.addEventListener("change", () => {
+    const activeTab = document.querySelector("nav button.active")?.dataset.tab;
+    if (activeTab === "rules-tab") loadRules();
+    if (activeTab === "knowledge-tab") loadKnowledge();
+    if (activeTab === "logs-tab") loadLogs();
+  });
+
+  function getToken() { return localStorage.getItem(storageKey) || ""; }
+
+  async function apiGet(path) {
+    const token = getToken();
+    const url = `${API_BASE}${path}${path.includes("?") ? "&" : "?"}admin_key=${encodeURIComponent(token)}`; // Fixed: admin_key
+    const res = await fetch(url);
+    if (res.status === 401) {
+      localStorage.removeItem(storageKey);
+      alert("Session expired. Please login again.");
+      showLogin();
+      throw new Error("Unauthorized");
+    }
+    return res.json();
+  }
+
+  async function apiPost(path, body) {
+    const token = getToken();
+    const url = `${API_BASE}${path}?admin_key=${encodeURIComponent(token)}`; // Fixed: admin_key
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    });
+    if (res.status === 401) {
+      localStorage.removeItem(storageKey);
+      alert("Session expired. Please login again.");
+      showLogin();
+      throw new Error("Unauthorized");
+    }
+    return res.json();
+  }
+
+  // ----- RULES UI -----
+  const rulesList = document.getElementById("rules-list");
+  document.getElementById("add-rule-btn").addEventListener("click", () => {
+    currentEditData = { bot_key: botSelect.value, keywords: "", reply: "", intent: "general", priority: 10, is_active: 1 };
+    currentEditType = "rule";
+    showRuleEditor(currentEditData);
+  });
+
+  async function loadRules() {
+    rulesList.innerHTML = "Loading rules…";
+    try {
+      const botKey = botSelect.value;
+      const data = await apiGet(`/admin/rules?bot_key=${encodeURIComponent(botKey)}`);
+      renderRulesTable(data);
+    } catch (e) {
+      rulesList.innerHTML = '<div class="status-empty">Failed to load rules.</div>';
+    }
+  }
+
+  function renderRulesTable(data) {
+    if (!data.length) {
+      rulesList.innerHTML = '<div class="status-empty">No rules found. <button class="btn btn-primary btn-sm" onclick="document.getElementById(\'add-rule-btn\').click()">Add first rule</button></div>';
+      return;
+    }
+    const table = document.createElement("table");
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Intent</th>
+          <th>Keywords</th>
+          <th>Priority</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    `;
+    const tbody = table.querySelector("tbody");
+    data.forEach(rule => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td><strong>${rule.intent || "general"}</strong></td>
+        <td>${rule.keywords ? rule.keywords.split(',').slice(0,3).join(', ') + (rule.keywords.split(',').length > 3 ? '...' : '') : '-'}</td>
+        <td>${rule.priority || 1}</td>
+        <td><span class="pill ${rule.is_active ? 'active' : ''}">${rule.is_active ? 'Active' : 'Inactive'}</span></td>
+        <td>
+          <button class="btn btn-ghost btn-sm" onclick="editRule(${rule.id || 'null'})">Edit</button>
+          ${rule.id ? `<button class="btn btn-danger btn-sm" style="margin-left:4px;" onclick="deleteRule(${rule.id})">Delete</button>` : ''}
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    rulesList.innerHTML = "";
+    rulesList.appendChild(table);
+  }
+
+  function showRuleEditor(rule) {
+    modalTitle.textContent = rule.id ? "Edit Rule" : "New Rule";
+    modalBody.innerHTML = `
+      <div class="row">
+        <div>
+          <label>Keywords (comma separated)</label>
+          <textarea class="keywords">${rule.keywords || ""}</textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Reply text</label>
+          <textarea class="reply">${rule.reply || ""}</textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Intent</label>
+          <input type="text" class="intent" value="${rule.intent || "general"}" />
+        </div>
+        <div>
+          <label>Priority</label>
+          <input type="number" class="priority" value="${rule.priority || 1}" min="1" max="100" />
+        </div>
+        <div>
+          <label>Active</label>
+          <select class="is_active">
+            <option value="1" ${rule.is_active == 1 ? "selected" : ""}>Yes</option>
+            <option value="0" ${rule.is_active == 0 ? "selected" : ""}>No</option>
+          </select>
+        </div>
+      </div>
+    `;
+    modal.style.display = "flex";
+    modalSave.onclick = async () => {
+      const payload = {
+        id: rule.id || null,
+        bot_key: botSelect.value,
+        keywords: modalBody.querySelector(".keywords").value.trim(),
+        reply: modalBody.querySelector(".reply").value.trim(),
+        intent: modalBody.querySelector(".intent").value.trim() || "general",
+        priority: Number(modalBody.querySelector(".priority").value || 1),
+        is_active: Number(modalBody.querySelector(".is_active").value)
+      };
+      await apiPost("/admin/rules", payload);
+      modal.style.display = "none";
+      loadRules();
+    };
+  }
+
+  window.editRule = (id) => {
+    const rule = { id };
+    currentEditData = rule;
+    currentEditType = "rule";
+    // Load full data
+    apiGet(`/admin/rules?bot_key=${encodeURIComponent(botSelect.value)}&id=${id}`).then(data => {
+      if (data.length) showRuleEditor(data[0]);
+    });
+  };
+
+  window.deleteRule = async (id) => {
+    if (!confirm("Delete this rule?")) return;
+    await apiPost("/admin/rules", { id, _action: "delete" });
+    loadRules();
+  };
+
+  // ----- KNOWLEDGE UI -----
+  const knowledgeList = document.getElementById("knowledge-list");
+  document.getElementById("add-knowledge-btn").addEventListener("click", () => {
+    currentEditData = { bot_key: botSelect.value, content: "", intent: "general", page: null, is_active: 1 };
+    currentEditType = "knowledge";
+    showKnowledgeEditor(currentEditData);
+  });
+
+  async function loadKnowledge() {
+    knowledgeList.innerHTML = "Loading knowledge…";
+    try {
+      const botKey = botSelect.value;
+      const data = await apiGet(`/admin/knowledge?bot_key=${encodeURIComponent(botKey)}`);
+      renderKnowledgeTable(data);
+    } catch (e) {
+      knowledgeList.innerHTML = '<div class="status-empty">Failed to load knowledge.</div>';
+    }
+  }
+
+  function renderKnowledgeTable(data) {
+    if (!data.length) {
+      knowledgeList.innerHTML = '<div class="status-empty">No knowledge articles. <button class="btn btn-primary btn-sm" onclick="document.getElementById(\'add-knowledge-btn\').click()">Add first article</button></div>';
+      return;
+    }
+    const table = document.createElement("table");
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Intent</th>
+          <th>Page</th>
+          <th>Preview</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    `;
+    const tbody = table.querySelector("tbody");
+    data.forEach(row => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td><strong>${row.intent || "general"}</strong></td>
+        <td>${row.page || "global"}</td>
+        <td>${(row.content_preview || row.content || '').slice(0, 50)}${(row.content_preview || row.content || '').length > 50 ? '...' : ''}</td>
+        <td><span class="pill ${row.is_active ? 'active' : ''}">${row.is_active ? 'Active' : 'Inactive'}</span></td>
+        <td>
+          <button class="btn btn-ghost btn-sm" onclick="editKnowledge(${row.id || 'null'})">Edit</button>
+          ${row.id ? `<button class="btn btn-danger btn-sm" style="margin-left:4px;" onclick="deleteKnowledge(${row.id})">Delete</button>` : ''}
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    knowledgeList.innerHTML = "";
+    knowledgeList.appendChild(table);
+  }
+
+  function showKnowledgeEditor(row) {
+    modalTitle.textContent = row.id ? "Edit Knowledge" : "New Article";
+    modalBody.innerHTML = `
+      <div class="row">
+        <div>
+          <label>Intent</label>
+          <input type="text" class="intent" value="${row.intent || "general"}" />
+        </div>
+        <div>
+          <label>Page (optional)</label>
+          <input type="text" class="page" value="${row.page || ""}" placeholder="/pricing" />
+        </div>
+        <div>
+          <label>Active</label>
+          <select class="is_active">
+            <option value="1" ${row.is_active == 1 ? "selected" : ""}>Yes</option>
+            <option value="0" ${row.is_active == 0 ? "selected" : ""}>No</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Content (used by AI)</label>
+          <textarea class="content">${row.content || row.content_preview || ""}</textarea>
+        </div>
+      </div>
+    `;
+    modal.style.display = "flex";
+    modalSave.onclick = async () => {
+      const payload = {
+        id: row.id || null,
+        bot_key: botSelect.value,
+        content: modalBody.querySelector(".content").value.trim(),
+        intent: modalBody.querySelector(".intent").value.trim() || "general",
+        page: modalBody.querySelector(".page").value.trim() || null,
+        is_active: Number(modalBody.querySelector(".is_active").value)
+      };
+      await apiPost("/admin/knowledge", payload);
+      modal.style.display = "none";
+      loadKnowledge();
+    };
+  }
+
+  window.editKnowledge = (id) => {
+    const row = { id };
+    currentEditData = row;
+    currentEditType = "knowledge";
+    apiGet(`/admin/knowledge?bot_key=${encodeURIComponent(botSelect.value)}&id=${id}`).then(data => {
+      if (data.length) showKnowledgeEditor(data[0]);
+    });
+  };
+
+  window.deleteKnowledge = async (id) => {
+    if (!confirm("Delete this knowledge article?")) return;
+    await apiPost("/admin/knowledge", { id, _action: "delete" });
+    loadKnowledge();
+  };
+
+  // ----- LOGS UI (unchanged compact table) -----
+  const logsList = document.getElementById("logs-list");
+  const logsStatus = document.getElementById("logs-status");
+
+  async function loadLogs() {
+    logsList.innerHTML = "Loading…";
+    logsStatus.textContent = "";
+    try {
+      const botKey = botSelect.value;
+      const data = await apiGet(`/admin/messages?bot_key=${encodeURIComponent(botKey)}&limit=50`);
+      logsStatus.textContent = `Showing latest ${data.length} messages`;
+      const table = document.createElement("table");
+      table.innerHTML = `
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Session</th>
+            <th>Message</th>
+            <th>Intent</th>
+            <th>Page</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      `;
+      const tbody = table.querySelector("tbody");
+      data.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${row.created_at || ""}</td>
+          <td>${row.session_id || ""}</td>
+          <td>${(row.message || '').slice(0, 40)}${(row.message || '').length > 40 ? '...' : ''}</td>
+          <td>${row.intent || ""}</td>
+          <td>${row.page || ""}</td>
+          <td><span class="pill">${row.reply_source || ""}</span></td>
+        `;
+        tbody.appendChild(tr);
+      });
+      logsList.innerHTML = "";
+      logsList.appendChild(table);
+    } catch (e) {
+      logsList.innerHTML = "Failed to load logs.";
+    }
+  }
+</script>
+</body>
+</html>

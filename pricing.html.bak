@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4X6Z65R');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1391039479227265');
+fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1391039479227265&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta name="robots" content="index, follow">-->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+	<title>Cheapest Website Design Company in India | ₹999 Website Jaipur - EzyGoDigi</title>
+<meta name="description" content="Looking for the cheapest website design company in India? Get a professional website starting at ₹999. Affordable ecommerce, business and landing page websites for startups and small businesses in Jaipur and across India.">
+<meta name="keywords" content="website design under rs 3000, website design under rs 5000, lowest website price india, low price website for shopping, low price website for business, cheap website for business, rs 999 web service, low cost website design jaipur, website 999 india, affordable ecommerce website">
+
+
+
+<link rel="canonical" href="https://ezygodigi.in/pricing">
+
+
+	  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="/ez-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ez-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/ez-48x48.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/theme.css">
+<link rel="stylesheet" href="/assets/common.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="/assets/images/hero/hero-about-pricing.webp" type="image/webp">
+    
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4X6Z65R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- HEADER -->
+<div id="header-placeholder"></div>
+<div id="breadcrumb-placeholder"></div>
+
+
+<section class="hero-pricing-dark">
+  <div class="hd-container">
+    
+    <div class="hd-badge-wrapper">
+      <span class="hd-badge">
+        <span class="blaze-dot"></span> 
+        <span class="blaze-text">80ms Global Edge Delivery</span>
+      </span>
+    </div>
+
+    <h1>Affordable Web Design in India<br> 
+      <span class="highlight">Starting at ₹999</span>
+    </h1>
+
+<p class="hd-subtext">
+Looking for the <strong>cheapest website design company in India</strong>? 
+We build ultra-fast, SEO-ready websites starting at ₹999 for startups,
+small businesses, and ecommerce brands in <strong>Jaipur and across India</strong>.
+</p>
+
+    <div class="hd-cta-group">
+      <a href="#plan" class="hd-btn-primary">
+        <span class="btn-main">View Packages</span>
+        <span class="btn-sub">Starts ₹999 One-time</span>
+      </a>
+      <a href="https://wa.me/917039509783" class="hd-btn-glass">
+        <span class="btn-main">Talk to an Expert</span>
+        <span class="btn-sub">Free Consultation</span>
+      </a>
+    </div>
+
+    <div class="hd-trust-row">
+      <div class="td-item">
+        <span class="td-icon">💳</span>
+        <strong>₹0</strong>
+        <span>Monthly Fees</span>
+      </div>
+      <div class="td-item">
+        <span class="td-icon">⚡</span>
+        <strong>24h</strong>
+        <span>Delivery</span>
+      </div>
+      <div class="td-item">
+        <span class="td-icon">🔑</span>
+        <strong>100%</strong>
+        <span>Ownership</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+/* --- HERO PRICING: CLEAN & SPACIOUS --- */
+.hero-pricing-dark {
+    background: var(--hero-overlay), url('/assets/images/hero/hero-about-pricing.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 24px;
+    color: var(--white);
+    text-align: center;
+}
+
+.hd-container { max-width: 900px; width: 100%; z-index: 2; }
+
+/* BLAZE ANIMATED DOT */
+.blaze-dot {
+    width: 10px;
+    height: 10px;
+    background: #22c55e; /* Bright Green */
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 10px #22c55e;
+}
+.blaze-dot::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid #22c55e;
+    animation: blaze 1.5s infinite;
+}
+@keyframes blaze {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2.5); opacity: 0; }
+}
+
+.hd-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    border: 1px solid var(--glass-border);
+}
+
+.hero-pricing-dark h1 { 
+    font-size: clamp(2.2rem, 6vw, 3.5rem); 
+    line-height: 1.1; 
+    margin-bottom: 20px;
+}
+.hero-pricing-dark .highlight { color: var(--accent-yellow); }
+
+.hd-subtext {
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    margin: 0 auto 48px; /* High vertical space before buttons */
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+/* BUTTONS */
+.hd-cta-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.hd-btn-primary, .hd-btn-glass {
+    flex: 1;
+    max-width: 240px;
+    padding: 14px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.hd-btn-primary { background: var(--primary-gradient); }
+.hd-btn-glass { 
+    background: var(--glass-bg); 
+    border: 1px solid var(--glass-border); 
+    backdrop-filter: blur(10px); 
+}
+
+/* TRUST ROW - DE-CLUTTERED */
+.hd-trust-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.td-item { display: flex; align-items: center; gap: 8px; font-size: 0.95rem; }
+.td-item strong { color: var(--accent-yellow); font-size: 1.1rem; }
+.td-item span { opacity: 0.7; }
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .hero-pricing-dark { padding: 80px 20px 40px; }
+    .hd-cta-group { flex-direction: column; align-items: center; gap: 12px; margin-bottom: 40px; }
+    .hd-btn-primary, .hd-btn-glass { width: 100%; max-width: 320px; }
+    
+    .hd-trust-row { 
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--glass-border);
+    }
+}
+</style>
+
+<section class="seo-intro-v2">
+    <div class="si-container">
+        
+        <div class="si-header">
+            <span class="si-tag">The EzyGoDigi Advantage</span>
+            <h2>Affordable Web Excellence in <strong>India</strong></h2>
+        </div>
+            
+        <div class="si-layout">
+            <div class="si-main-text">
+                <p>
+                    EzyGoDigi is recognized as a leading provider of <strong>affordable website design in India</strong>. 
+                    Our mission is to bridge the gap between high-end tech and small business budgets. 
+                    With our <strong>₹999 Starter Package</strong>, we help startups and consultants in 
+                    <strong>Jaipur</strong> launch a professional presence in record time.
+                </p>
+            </div>
+
+            <div class="si-features">
+                <div class="si-feat-item">
+                    <span class="si-number">01</span>
+                    <p><strong>Low-cost development in Jaipur</strong> with high-speed serverless architecture.</p>
+                </div>
+                <div class="si-feat-item">
+                    <span class="si-number">02</span>
+                    <p>Optimized <strong>D2C setups</strong> designed to rank higher on Google India.</p>
+                </div>
+                <div class="si-feat-item">
+                    <span class="si-number">03</span>
+                    <p>Mobile-first strategy to empower <strong>local entrepreneurs</strong> globally.</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="si-footer-action">
+            <div class="si-trust-bar">
+                <div class="si-trust-item"><i class="fas fa-bolt"></i> 1.5s Load</div>
+                <div class="si-trust-item"><i class="fas fa-check-circle"></i> GST Ready</div>
+                <div class="si-trust-item"><i class="fas fa-shield-alt"></i> SSL Inc.</div>
+            </div>
+            
+            <div class="si-pill-link">
+                <p>Explore our <a href="/website-design">professional website design services</a> across <strong>India</strong>. <i class="fas fa-arrow-right"></i></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.seo-intro-v2 {
+    --si-primary: var(--primary-color, #4f46e5);
+    --si-accent: #8b5cf6;
+    --si-dark: var(--text-dark, #0f172a);
+    --si-slate: var(--text-light, #64748b);
+    --si-font: var(--font-main, 'Inter', sans-serif);
+    
+    padding: 100px 20px;
+    background: #ffffff;
+    font-family: var(--si-font);
+}
+
+.si-container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    background: #fdfdff; 
+    padding: 60px;
+    border-radius: 40px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 40px 100px -20px rgba(0,0,0,0.03);
+}
+
+.si-tag {
+    color: var(--si-primary);
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.si-header h2 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    color: var(--si-dark);
+    font-weight: 900;
+    margin-bottom: 50px;
+    line-height: 1.1;
+}
+
+.si-header h2 strong {
+    background: linear-gradient(135deg, var(--si-primary), var(--si-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Layout Logic */
+.si-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    text-align: left;
+}
+
+.si-main-text p {
+    font-size: 1.2rem;
+    color: var(--si-slate);
+    line-height: 1.8;
+    position: relative;
+    padding-left: 30px;
+    border-left: 4px solid var(--si-primary);
+}
+
+/* Feature List Logic */
+.si-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.si-feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.si-number {
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--si-primary);
+    background: rgba(79, 70, 229, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.si-feat-item p {
+    font-size: 1rem;
+    color: var(--si-dark);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Bottom Action Fix */
+.si-footer-action {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.si-trust-bar {
+    display: flex;
+    gap: 25px;
+}
+
+.si-trust-item {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--si-slate);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.si-trust-item i { color: var(--si-primary); }
+
+/* The Pill Link - Modern Style */
+.si-pill-link {
+    background: #ffffff;
+    padding: 12px 25px;
+    border-radius: 100px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.si-pill-link p { margin: 0; font-size: 0.95rem; color: var(--si-slate); }
+
+.si-pill-link a {
+    color: var(--si-primary);
+    text-decoration: none;
+    font-weight: 800;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.si-pill-link a:hover { color: var(--si-accent); }
+
+/* Mobile Adjustments */
+@media (max-width: 900px) {
+    .si-layout { grid-template-columns: 1fr; gap: 40px; }
+    .si-container { padding: 40px 25px; }
+    .si-footer-action { flex-direction: column; text-align: center; }
+    .si-main-text p { font-size: 1.1rem; }
+}
+</style>
+
+    <section id="plan" class="pricing-pro-v2">
+    <div class="p-container">
+        
+        <div class="p-header">
+            <span class="p-top-label">Fast. Serverless. One-Time Payment.</span>
+            <h2>Transparent Pricing for <br><span class="highlight">High-Growth Businesses</span></h2>
+            <p>High-speed digital systems with <strong>Free AI Chatbots</strong> and Zero Monthly Maintenance.</p>
+        </div>
+
+        <div class="p-grid">
+            
+            <div class="p-card starter">
+                <div class="p-card-header">
+                    <span class="p-icon">🎯</span>
+                    <h3>Starter Launch</h3>
+                    <div class="p-price">₹999 <span>/one-time</span></div>
+                    <p class="p-delivery">⚡ Live in 24 Hours</p>
+                </div>
+                <div class="p-features">
+                    <div class="p-feature-tag">Best for: Rapid Landing Pages</div>
+                    <ul class="p-list">
+                        <li>High-Speed <strong>Landing Page</strong></li>
+                        <li>Mobile-First UI Design</li>
+                        <li>Click-to-Call/WhatsApp</li>
+                        <li>80ms Edge Delivery</li>
+                    </ul>
+                </div>
+                <a href="contact" class="p-btn-outline">Launch Now</a>
+            </div>
+
+            <div class="p-card">
+                <div class="p-card-header">
+                    <span class="p-icon">✨</span>
+                    <h3>Digital Presence</h3>
+                    <div class="p-price">₹2,999 <span>/one-time</span></div>
+                    <p class="p-delivery">⚡ Live in 48 Hours</p>
+                </div>
+                <div class="p-features">
+                    <div class="p-feature-tag">Best for: Personal Portfolios</div>
+                    <ul class="p-list">
+                        <li><strong>Single-Page</strong> Web System</li>
+                        <li>Google Search Map Setup</li>
+                        <li>Basic SEO Meta Tags</li>
+                        <li>Free AI Support Bot</li>
+                    </ul>
+                </div>
+                <a href="contact" class="p-btn-outline">Select Plan</a>
+            </div>
+
+            <div class="p-card featured">
+                <div class="featured-ribbon">Most Popular</div>
+                <div class="p-card-header">
+                    <span class="p-icon">🌱</span>
+                    <h3>Business Growth</h3>
+                    <div class="p-price">₹9,999 <span>/one-time</span></div>
+                    <p class="p-delivery">⚡ Live in 5 Days</p>
+                </div>
+                <div class="p-features">
+                    <div class="p-feature-tag">Best for: Growing Brands</div>
+                    <ul class="p-list">
+                        <li><strong>5-Page</strong> Custom Website</li>
+                        <li>Admin Content Dashboard</li>
+                        <li>Premium UI/UX System</li>
+                        <li>GSC & Analytics Setup</li>
+                    </ul>
+                </div>
+                <a href="contact" class="p-btn-primary">Get Started</a>
+            </div>
+
+            <div class="p-card">
+                <div class="p-card-header">
+                    <span class="p-icon">🚀</span>
+                    <h3>Enterprise Pro</h3>
+                    <div class="p-price">₹24,999 <span>/one-time</span></div>
+                    <p class="p-delivery">⚡ Live in 20 Days</p>
+                </div>
+                <div class="p-features">
+                    <div class="p-feature-tag">Best for: E-commerce/Apps</div>
+                    <ul class="p-list">
+                        <li><strong>10+ Page</strong> Custom System</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>Advanced AI Automations</li>
+                        <li>3 Months Support</li>
+                    </ul>
+                </div>
+                <a href="contact" class="p-btn-outline">Build Brand</a>
+            </div>
+
+        </div>
+
+<div class="p-trust-banner">
+    <div class="ptb-icon">🎁</div>
+    <div class="ptb-content">
+        <div class="ptb-main">Special Launch Offer: <strong>₹99/mo Hosting</strong></div>
+        <div class="ptb-sub">Ultrafast CDN + SSL included for the first 100 clients.</div>
+    </div>
+    <a href="contact" class="ptb-cta">Claim Offer</a>
+</div>
+    </div>
+</section>
+
+<style>
+.pricing-pro-v2 {
+    /* --- INTEGRATED THEME VARIABLES --- */
+    --p-brand: var(--primary-color, #4f46e5); /* Uses your site's primary color */
+    --p-dark: #0f172a;
+    --p-accent: var(--accent-success, #10b981);
+    --p-gray: #64748b;
+    
+    background: #ffffff;
+    padding: 80px 20px;
+    
+    /* --- INTEGRATED FONT --- */
+    font-family: var(--font-main, 'Inter', sans-serif); 
+}
+
+.p-container { max-width: 1400px; margin: 0 auto; }
+
+.p-header { text-align: center; margin-bottom: 60px; }
+.p-header h2 { 
+    font-size: clamp(2rem, 5vw, 2.8rem); 
+    color: var(--p-dark); 
+    margin: 15px 0;
+    font-weight: 800; /* Matches your bold index headers */
+}
+.p-header .highlight { color: var(--p-brand); }
+
+.p-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 25px; 
+}
+
+.p-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-lg, 24px); /* Uses your theme radius */
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* DASHED BORDER FOR 999 PLAN */
+.p-card.starter {
+    background: #fdfdff;
+    border: 2px dashed #cbd5e1;
+}
+
+.p-card.featured {
+    border: 2px solid var(--p-brand);
+    box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.15);
+}
+
+.featured-ribbon {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--p-brand);
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    z-index: 10;
+}
+
+.p-icon { font-size: 2rem; margin-bottom: 15px; display: block; }
+.p-price { font-size: 2.2rem; font-weight: 900; color: var(--p-dark); }
+.p-price span { font-size: 0.85rem; color: var(--p-gray); font-weight: 400; }
+.p-delivery { color: var(--p-accent); font-weight: 800; font-size: 0.85rem; margin-top: 8px; }
+
+.p-feature-tag {
+    background: #f1f5f9;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: var(--p-dark);
+    font-weight: 700;
+    margin: 20px 0 15px;
+    display: inline-block;
+}
+
+.p-list { list-style: none; padding: 0; margin-bottom: 30px; flex-grow: 1; }
+.p-list li { 
+    padding: 8px 0; 
+    font-size: 0.95rem; 
+    color: var(--p-gray); 
+    display: flex;
+    align-items: center;
+}
+.p-list li::before { 
+    content: "✓"; 
+    color: var(--p-accent); 
+    font-weight: 900; 
+    margin-right: 10px; 
+}
+
+/* BUTTONS MATCHING YOUR INDEX STYLE */
+.p-btn-outline, .p-btn-primary {
+    text-align: center;
+    padding: 14px;
+    border-radius: var(--radius-md, 12px);
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.p-btn-outline { 
+    border: 2px solid #e2e8f0; 
+    color: var(--p-dark); 
+}
+
+.p-btn-primary { 
+    background: var(--primary-gradient, var(--p-brand)); /* Uses your theme gradient */
+    color: white; 
+}
+
+.p-btn-primary:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2); 
+}
+
+/* --- TRUST BANNER (MOBILE-FIRST) --- */
+.p-trust-banner {
+    margin-top: 60px;
+    background: #f0fdf4;
+    border: 2px dashed var(--p-accent);
+    border-radius: var(--radius-lg, 24px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.ptb-main {
+    font-size: 1.25rem;
+    color: #065f46;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.ptb-sub {
+    color: #047857;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.ptb-cta {
+    background: #059669;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 800;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* DESKTOP RESPONSIVENESS */
+@media (min-width: 992px) {
+    .p-grid { grid-template-columns: repeat(4, 1fr); align-items: stretch; }
+    
+    .p-trust-banner {
+        flex-direction: row;
+        text-align: left;
+        padding: 25px 45px;
+        justify-content: space-between;
+    }
+    
+    .ptb-cta { width: auto; }
+}
+
+@media (max-width: 768px) {
+    .p-header h2 { font-size: 1.8rem; }
+    .p-card { max-width: 400px; margin: 0 auto; width: 100%; }
+}
+</style>
+
+
+<section class="direct-pay-v1">
+  <div class="dp-container">
+    
+    <div class="dp-header">
+      <span class="dp-pill">Zero Hidden Fees</span>
+      <h2>Direct Provider Billing</h2>
+      <p>Transparent digital infrastructure for <strong>Jaipur Businesses</strong> & <strong>Pan India</strong> Brands.</p>
+      
+      <div class="dp-main-highlight">
+        🚀 95% of Small Businesses in India: <strong>Only ₹600/year</strong> (Total Fixed Cost)
+      </div>
+    </div>
+
+    <div class="dp-grid">
+      
+      <div class="dp-card">
+        <div class="dp-icon">🌐</div>
+        <h4>Global Domain</h4>
+        <div class="dp-price green">₹600<span>/year</span></div>
+        <p class="dp-desc">GoDaddy / Cloudflare India.<br><strong>Full ownership & control.</strong></p>
+      </div>
+
+      <div class="dp-card">
+        <div class="dp-icon">⚡</div>
+        <h4>Enterprise Edge</h4>
+        <div class="dp-price">₹0<span>/month</span></div>
+        <p class="dp-desc">Cloudflare Serverless. Free for first 100k daily hits. <strong>98% stay FREE.</strong></p>
+      </div>
+
+      <div class="dp-card">
+        <div class="dp-icon">📧</div>
+        <h4>Professional Email</h4>
+        <div class="dp-price">₹0<span>/month</span></div>
+        <p class="dp-desc">Zoho / Resend. Free for first 3,000 emails. <strong>100 orders/day FREE.</strong></p>
+      </div>
+
+      <div class="dp-card">
+        <div class="dp-icon">💬</div>
+        <h4>WhatsApp Business</h4>
+        <div class="dp-price green">₹0.30<span>/msg</span></div>
+        <p class="dp-desc">Direct Meta Billing (India).<br><strong>Low volume setup is FREE.</strong></p>
+      </div>
+
+      <div class="dp-card">
+        <div class="dp-icon">📱</div>
+        <h4>Smart SMS Alerts</h4>
+        <div class="dp-price">₹0.50<span>/msg</span></div>
+        <p class="dp-desc">Twilio / MSG91. Only pay for extras. <strong>Critical alerts included.</strong></p>
+      </div>
+
+      <div class="dp-card">
+        <div class="dp-icon">📊</div>
+        <h4>GSC & Analytics</h4>
+        <div class="dp-price">₹0<span>/forever</span></div>
+        <p class="dp-desc">Standard for all <strong>Jaipur SEO</strong> projects. No monthly maintenance.</p>
+      </div>
+
+    </div>
+
+    <div class="dp-monitor-box">
+      <div class="m-icon">🛡️</div>
+      <div class="m-text">
+        <strong>Usage Monitoring Included</strong>
+        <p>We monitor your system 24/7 from Jaipur. We alert you on WhatsApp BEFORE any third-party charges kick in. No surprises.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.direct-pay-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --dp-primary: var(--primary-color, #4f46e5);
+    --dp-success: var(--accent-success, #10b981);
+    --dp-dark: var(--text-dark, #0f172a);
+    --dp-slate: var(--text-light, #64748b);
+    --dp-border: #f1f5f9;
+    
+    padding: 80px 20px;
+    background: var(--white, #ffffff);
+    font-family: var(--font-main, 'Inter', system-ui, sans-serif);
+}
+
+.dp-container { max-width: 1100px; margin: 0 auto; }
+
+.dp-header { text-align: center; margin-bottom: 50px; }
+.dp-pill { 
+    display: inline-block; 
+    background: rgba(79, 70, 229, 0.1); 
+    color: var(--dp-primary); 
+    padding: 6px 16px; 
+    border-radius: 100px; 
+    font-size: 0.75rem; 
+    font-weight: 800; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.dp-header h2 { 
+    font-size: clamp(2rem, 5vw, 3rem); 
+    color: var(--dp-dark); 
+    font-weight: 900; 
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.dp-header p { 
+    color: var(--dp-slate); 
+    font-size: 1.1rem; 
+    margin-bottom: 30px; 
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.dp-main-highlight {
+    background: #f0fdf4;
+    color: #166534;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: var(--radius-md, 12px);
+    border: 1px solid #dcfce7;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.05);
+}
+
+/* Grid & Cards */
+.dp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.dp-card {
+    background: #ffffff;
+    border: 1px solid var(--dp-border);
+    padding: 35px 25px;
+    border-radius: var(--radius-lg, 24px);
+    text-align: center;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dp-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    border-color: var(--dp-primary);
+}
+
+.dp-icon { font-size: 2.8rem; margin-bottom: 15px; }
+.dp-card h4 { 
+    font-size: 1.25rem; 
+    color: var(--dp-dark); 
+    font-weight: 800; 
+    margin-bottom: 12px; 
+}
+
+.dp-price { 
+    font-size: 2rem; 
+    font-weight: 900; 
+    color: #ef4444; /* Alert color for costs */
+    margin-bottom: 10px; 
+}
+.dp-price.green { color: var(--dp-success); }
+.dp-price span { font-size: 0.95rem; color: var(--dp-slate); font-weight: 500; }
+
+.dp-desc { font-size: 0.95rem; color: var(--dp-slate); line-height: 1.6; margin: 0; }
+.dp-desc strong { color: var(--dp-dark); font-weight: 700; }
+
+/* Monitor Box - The Trust Hook */
+.dp-monitor-box {
+    margin-top: 60px;
+    background: var(--dp-dark);
+    color: white;
+    padding: 30px;
+    border-radius: var(--radius-lg, 24px);
+    display: flex;
+    flex-direction: column; /* Mobile Default */
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.dp-monitor-box .m-icon { font-size: 3rem; }
+.dp-monitor-box strong { 
+    font-size: 1.25rem; 
+    display: block; 
+    margin-bottom: 8px; 
+    color: var(--dp-success); 
+    font-weight: 800;
+}
+.dp-monitor-box p { margin: 0; font-size: 1rem; opacity: 0.9; line-height: 1.5; }
+
+/* Desktop Adjustments */
+@media (min-width: 768px) {
+    .dp-monitor-box { 
+        flex-direction: row; 
+        text-align: left; 
+        padding: 40px 60px; 
+        justify-content: center;
+    }
+}
+</style>
+
+<section class="savings-comparison-v1">
+  <div class="s-container">
+    
+    <div class="s-header">
+      <span class="s-pill">India's Most Affordable Web Systems</span>
+      <h2>Save Up To <strong>98%</strong> Yearly</h2>
+      <p>Transparent pricing for <strong>Jaipur Startups</strong> & <strong>Pan India</strong> D2C Brands.</p>
+    </div>
+
+    <div class="s-hero-card">
+      <div class="s-hero-info">
+        <span class="s-label">🏆 THE EZYGODIGI WAY (JAIPUR)</span>
+        <div class="s-price-row">
+          <span class="s-curr">₹</span>
+          <span class="s-amt">3,599</span>
+        </div>
+        <p>Complete 1st Year: Setup + Hosting + AI Bot</p>
+      </div>
+      <div class="s-hero-badge">BEST ROI IN INDIA</div>
+    </div>
+
+    <div class="s-stack">
+      
+      <div class="s-item">
+        <div class="s-item-top">
+          <span class="s-platform">Shopify / Enterprise E-com</span>
+          <span class="s-old-price">₹2,50,000</span>
+        </div>
+        <div class="s-save-bar">
+          <div class="s-fill" style="width: 98%;">98% SAVINGS</div>
+        </div>
+        <p class="s-saving-amt">Save <strong>₹2,46,400</strong> with our Serverless Stack</p>
+      </div>
+
+      <div class="s-item">
+        <div class="s-item-top">
+          <span class="s-platform">WooCommerce (WP)</span>
+          <span class="s-old-price">₹25,000</span>
+        </div>
+        <div class="s-save-bar">
+          <div class="s-fill" style="width: 86%;">86% SAVINGS</div>
+        </div>
+        <p class="s-saving-amt">Save <strong>₹21,400</strong> vs Traditional Hosting</p>
+      </div>
+
+      <div class="s-item">
+        <div class="s-item-top">
+          <span class="s-platform">Traditional Jaipur Agencies</span>
+          <span class="s-old-price">₹15,000</span>
+        </div>
+        <div class="s-save-bar">
+          <div class="s-fill" style="width: 76%;">76% SAVINGS</div>
+        </div>
+        <p class="s-saving-amt">Save <strong>₹11,400</strong> with our AI-First approach</p>
+      </div>
+
+    </div>
+
+    <div class="s-footer">
+      <h3>Affordable Web Design in Jaipur & Beyond</h3>
+      <p>Data based on actual 2026 project costs for Indian D2C & Service brands.</p>
+      <a href="contact" class="s-cta-btn">Start Saving ₹2.46L Yearly →</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.savings-comparison-v1 {
+  /* --- THEME ALIGNMENT --- */
+  --s-primary: var(--primary-color, #4f46e5);
+  --s-success: var(--accent-success, #10b981);
+  --s-dark: var(--text-dark, #0f172a);
+  --s-slate: var(--text-light, #64748b);
+  
+  padding: 80px 20px;
+  background: var(--white, #ffffff);
+  font-family: var(--font-main, 'Inter', sans-serif);
+}
+
+.s-container { max-width: 650px; margin: 0 auto; }
+
+.s-header { text-align: center; margin-bottom: 40px; }
+.s-pill { 
+  display: inline-block; 
+  background: rgba(79, 70, 229, 0.1); 
+  color: var(--s-primary); 
+  padding: 6px 16px; 
+  border-radius: 100px; 
+  font-size: 0.75rem; 
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.s-header h2 { font-size: clamp(1.8rem, 5vw, 2.5rem); color: var(--s-dark); font-weight: 900; margin-bottom: 10px; line-height: 1.1; }
+.s-header h2 strong { color: var(--s-success); }
+.s-header p { color: var(--s-slate); font-size: 1rem; }
+
+/* HERO SAVINGS CARD */
+.s-hero-card {
+  background: var(--primary-gradient, linear-gradient(135deg, #4f46e5 0%, #4338ca 100%));
+  color: white;
+  padding: 45px 30px;
+  border-radius: var(--radius-lg, 24px);
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.2);
+}
+.s-label { font-size: 0.8rem; font-weight: 800; opacity: 0.9; letter-spacing: 0.1em; }
+.s-price-row { font-size: clamp(3rem, 10vw, 4.5rem); font-weight: 900; line-height: 1; margin: 15px 0; }
+.s-curr { font-size: 1.8rem; vertical-align: super; margin-right: 5px; }
+
+.s-hero-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--s-success);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+/* COMPARISON STACK */
+.s-stack { display: flex; flex-direction: column; gap: 15px; margin-bottom: 50px; }
+.s-item { 
+  background: #ffffff; 
+  border: 1px solid #e2e8f0; 
+  padding: 25px; 
+  border-radius: var(--radius-md, 16px);
+  transition: transform 0.2s ease;
+}
+.s-item:hover { transform: translateY(-3px); }
+
+.s-item-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.s-platform { font-weight: 800; color: var(--s-dark); font-size: 1rem; }
+.s-old-price { color: #ef4444; text-decoration: line-through; font-weight: 700; font-size: 1rem; }
+
+.s-save-bar { 
+  background: #f1f5f9; 
+  height: 28px; 
+  border-radius: 100px; 
+  overflow: hidden; 
+  margin-bottom: 12px;
+}
+.s-fill { 
+  background: var(--s-success); 
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  padding-left: 20px; 
+  color: white; 
+  font-size: 0.75rem; 
+  font-weight: 900; 
+  letter-spacing: 0.05em;
+}
+
+.s-saving-amt { font-size: 0.9rem; color: var(--s-slate); margin: 0; font-weight: 500; }
+.s-saving-amt strong { color: var(--s-success); font-weight: 800; }
+
+/* FOOTER & CTA */
+.s-footer h3 { font-size: 1.4rem; font-weight: 900; color: var(--s-dark); margin-bottom: 10px; }
+.s-footer p { font-size: 0.95rem; color: var(--s-slate); margin-bottom: 35px; }
+.s-cta-btn {
+  display: inline-block;
+  background: var(--s-dark);
+  color: white;
+  padding: 20px 45px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
+}
+.s-cta-btn:hover { background: var(--s-primary); transform: scale(1.05); }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 480px) {
+  .s-price-row { font-size: 3.5rem; }
+  .s-item { padding: 20px; }
+  .s-cta-btn { width: 100%; padding: 18px 20px; box-sizing: border-box; }
+}
+</style>
+
+
+
+<section class="quick-comp-v1">
+    <div class="qc-container">
+        
+        <div class="qc-header">
+            <span class="qc-badge">Compare Solutions</span>
+            <h2>India's Best Value Web Systems</h2>
+            <p>Scalable digital growth for <strong>Jaipur Startups</strong> and <strong>Pan-India</strong> Brands.</p>
+        </div>
+
+        <div class="qc-grid">
+            
+            <div class="qc-card">
+                <div class="qc-icon">🎯</div>
+                <h4>SEO Booster</h4>
+                <div class="qc-price">₹999</div>
+                <ul class="qc-list">
+                    <li><i class="fas fa-check"></i> 1 Landing Page</li>
+                    <li><i class="fas fa-check"></i> Mobile-First UI</li>
+                    <li><i class="fas fa-check"></i> WhatsApp Click</li>
+                    <li class="off"><i class="fas fa-times"></i> AI Chatbot</li>
+                    <li class="off"><i class="fas fa-times"></i> Dashboard</li>
+                </ul>
+            </div>
+
+            <div class="qc-card">
+                <div class="qc-icon">✨</div>
+                <h4>Digital Presence</h4>
+                <div class="qc-price">₹2,999</div>
+                <ul class="qc-list">
+                    <li><i class="fas fa-check"></i> Single Page System</li>
+                    <li><i class="fas fa-check"></i> Google Maps Setup</li>
+                    <li><i class="fas fa-check"></i> AI Support Bot</li>
+                    <li><i class="fas fa-clock"></i> 7 Days Support</li>
+                    <li class="off"><i class="fas fa-times"></i> CMS Admin</li>
+                </ul>
+            </div>
+
+            <div class="qc-card featured">
+                <div class="qc-popular">Most Popular in Jaipur</div>
+                <div class="qc-icon">🌱</div>
+                <h4>Business Growth</h4>
+                <div class="qc-price">₹9,999</div>
+                <ul class="qc-list">
+                    <li><i class="fas fa-check"></i> 5 Pages Custom</li>
+                    <li><i class="fas fa-check"></i> WhatsApp Biz API</li>
+                    <li><i class="fas fa-check"></i> Basic CMS Admin</li>
+                    <li><i class="fas fa-check"></i> GSC & SEO Setup</li>
+                    <li><i class="fas fa-clock"></i> 1 Month Support</li>
+                </ul>
+            </div>
+
+            <div class="qc-card">
+                <div class="qc-icon">🚀</div>
+                <h4>Enterprise Pro</h4>
+                <div class="qc-price">₹24,999</div>
+                <ul class="qc-list">
+                    <li><i class="fas fa-check"></i> 10+ Pages Custom</li>
+                    <li><i class="fas fa-check"></i> Full E-com Suite</li>
+                    <li><i class="fas fa-check"></i> Razorpay Integration</li>
+                    <li><i class="fas fa-check"></i> Advanced AI Auto</li>
+                    <li><i class="fas fa-clock"></i> 3 Months Support</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.quick-comp-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --qc-primary: var(--primary-color, #4f46e5);
+    --qc-success: var(--accent-success, #10b981);
+    --qc-dark: var(--text-dark, #0f172a);
+    --qc-slate: var(--text-light, #64748b);
+    --qc-border: #f1f5f9;
+    
+    padding: 80px 20px;
+    background: var(--bg-light, #f8fafc);
+    font-family: var(--font-main, 'Inter', system-ui, sans-serif);
+}
+
+.qc-container { max-width: 1250px; margin: 0 auto; }
+
+.qc-header { text-align: center; margin-bottom: 50px; }
+.qc-badge {
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--qc-primary);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.qc-header h2 { 
+    font-size: clamp(2rem, 5vw, 2.5rem); 
+    color: var(--qc-dark); 
+    font-weight: 900; 
+    margin-bottom: 10px; 
+}
+.qc-header p { color: var(--qc-slate); font-size: 1.1rem; }
+
+/* Grid & Cards */
+.qc-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.qc-card {
+    background: #ffffff;
+    border: 1px solid var(--qc-border);
+    padding: 40px 25px;
+    border-radius: var(--radius-lg, 24px);
+    text-align: center;
+    position: relative;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.qc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.qc-card.featured {
+    border: 2px solid var(--qc-primary);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
+}
+
+.qc-popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--qc-primary);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.qc-icon { font-size: 2.5rem; margin-bottom: 15px; }
+.qc-card h4 { font-size: 1.35rem; color: var(--qc-dark); font-weight: 800; margin-bottom: 8px; }
+.qc-price { font-size: 2.2rem; font-weight: 900; color: var(--qc-primary); margin-bottom: 25px; }
+
+/* Comparison List */
+.qc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    flex-grow: 1;
+}
+.qc-list li {
+    font-size: 0.95rem;
+    color: var(--qc-slate);
+    padding: 12px 0;
+    border-bottom: 1px solid #f8fafc;
+    display: flex;
+    align-items: center;
+}
+.qc-list i { margin-right: 12px; font-size: 0.9rem; width: 18px; text-align: center;}
+.qc-list i.fa-check { color: var(--qc-success); }
+.qc-list i.fa-clock { color: var(--qc-primary); }
+.qc-list i.fa-times { color: #cbd5e1; opacity: 0.5; }
+.qc-list li.off { color: #cbd5e1; }
+
+/* Responsive Breaks */
+@media (min-width: 640px) {
+    .qc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+    .qc-grid { grid-template-columns: repeat(4, 1fr); }
+    .qc-card.featured { transform: scale(1.05); }
+}
+</style>
+
+
+
+<section class="perfect-for-v1">
+  <div class="pf-container">
+    
+    <div class="pf-header">
+      <span class="pf-pill">Nationwide Digital Solutions</span>
+      <h2>Built in Jaipur. Scaled for <strong>India.</strong></h2>
+      <p>From local <strong>Pink City</strong> startups to <strong>Pan-India</strong> D2C powerhouses, we build systems that dominate the Indian market.</p>
+    </div>
+
+    <div class="pf-grid">
+      
+      <div class="pf-card tier-hook">
+        <div class="pf-icon">🎯</div>
+        <div class="pf-content">
+          <h4>₹999 SEO Booster</h4>
+          <h5>The India-Wide Launchpad</h5>
+          <p>Perfect for <strong>Affiliate Marketers & Meta Ad Experts</strong> across India. Get a high-speed landing page designed for the Indian mobile user. Ideal for testing product-market fit in cities like <strong>Mumbai, Delhi, and Bangalore</strong> with zero lag.</p>
+        </div>
+      </div>
+
+      <div class="pf-card">
+        <div class="pf-icon">🏪</div>
+        <div class="pf-content">
+          <h4>₹2,999 Starter</h4>
+          <h5>The Professional Identity</h5>
+          <p>For <strong>Small Businesses & Consultants</strong> nationwide. A digital presence that builds trust from Jaipur to Kerala. Includes Google My Business optimization to ensure your local service is visible in any Indian pin code.</p>
+        </div>
+      </div>
+
+      <div class="pf-card tier-success">
+        <div class="pf-icon">🍳</div>
+        <div class="pf-content">
+          <h4>₹9,999 Basic</h4>
+          <h5>The Multi-City Service Pro</h5>
+          <p>Ideal for <strong>Cloud Kitchens in Jaipur, Agencies in Gurgaon, and Tiffin Services in Pune</strong>. Features a dynamic service catalog and easy CMS. Perfect for brands managing orders across multiple locations with WhatsApp automation.</p>
+        </div>
+      </div>
+
+      <div class="pf-card featured">
+        <div class="pf-icon">📦</div>
+        <div class="pf-content">
+          <h4>₹24,999 Pro</h4>
+          <h5>The Pan-India D2C Powerhouse</h5>
+          <p>Our flagship choice for <strong>Growing Indian E-commerce Brands</strong>. Premium UI/UX, <strong>Razorpay/GST Ready</strong>, and AI-driven lead capture. Built on a serverless stack to handle thousands of simultaneous shoppers from every corner of India.</p>
+        </div>
+      </div>
+
+      <div class="pf-card tier-dark">
+        <div class="pf-icon">🏢</div>
+        <div class="pf-content">
+          <h4>₹50k+ Enterprise</h4>
+          <h5>The Industrial Scale System</h5>
+          <p>Custom software for <strong>Manufacturers in Jaipur & Corporate Hubs in Hyderabad/Bangalore</strong>. We automate complex workflows, API integrations, and multi-warehouse logistics for India’s largest business sectors.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.perfect-for-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --pf-primary: var(--primary-color, #4f46e5);
+    --pf-success: var(--accent-success, #10b981);
+    --pf-dark: var(--text-dark, #0f172a);
+    --pf-slate: var(--text-light, #64748b);
+    
+    padding: 100px 20px;
+    background: #ffffff;
+    font-family: var(--font-main, 'Inter', sans-serif);
+}
+
+.pf-container { max-width: 1200px; margin: 0 auto; }
+
+.pf-header { text-align: center; margin-bottom: 60px; }
+.pf-pill { 
+    display: inline-block; 
+    background: rgba(79, 70, 229, 0.08); 
+    color: var(--pf-primary); 
+    padding: 8px 20px; 
+    border-radius: 100px; 
+    font-size: 0.8rem; 
+    font-weight: 800; 
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.pf-header h2 { font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--pf-dark); font-weight: 900; line-height: 1.1; }
+.pf-header h2 strong { color: var(--pf-primary); }
+.pf-header p { color: var(--pf-slate); font-size: 1.15rem; max-width: 700px; margin: 20px auto 0; line-height: 1.6; }
+
+/* Grid Layout */
+.pf-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.pf-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 40px;
+    border-radius: var(--radius-lg, 32px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pf-icon {
+    font-size: 2.5rem;
+    min-width: 70px;
+    height: 70px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.pf-content h4 { 
+    font-size: 0.8rem; 
+    color: var(--pf-primary); 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    margin-bottom: 8px;
+}
+
+.pf-content h5 { font-size: 1.6rem; color: var(--pf-dark); font-weight: 900; margin-bottom: 15px; }
+.pf-content p { font-size: 1.05rem; color: var(--pf-slate); line-height: 1.8; margin: 0; }
+.pf-content p strong { color: var(--pf-dark); font-weight: 700; }
+
+/* --- NATIONAL TONE VARIATIONS --- */
+
+/* SEO Tier - Purple Tint */
+.pf-card.tier-hook { background: #f5f3ff; border-style: dashed; border-color: var(--pf-primary); }
+
+/* Basic Tier - Green Tint (Trust & Growth) */
+.pf-card.tier-success { background: #f0fdf4; border-color: #bbf7d0; }
+.pf-card.tier-success h4 { color: #15803d; }
+
+/* Pro Tier - Featured Premium */
+.pf-card.featured {
+    background: #ffffff;
+    border: 3px solid var(--pf-primary);
+    box-shadow: 0 30px 60px -20px rgba(79, 70, 229, 0.15);
+}
+
+/* Enterprise - Dark Mode National Power */
+.pf-card.tier-dark {
+    background: var(--pf-dark);
+    border-color: var(--pf-dark);
+    grid-column: 1 / -1; /* Full width */
+}
+.pf-card.tier-dark h5, .pf-card.tier-dark h4 { color: white; }
+.pf-card.tier-dark p { color: rgba(255,255,255,0.7); }
+.pf-card.tier-dark .pf-icon { background: rgba(255,255,255,0.1); }
+
+/* RESPONSIVE BREAKS */
+@media (min-width: 992px) {
+    .pf-grid { grid-template-columns: 1fr 1fr; }
+    .pf-card:hover { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+    .pf-card { flex-direction: column; text-align: center; align-items: center; padding: 40px 20px; }
+    .pf-header h2 { font-size: 2rem; }
+}
+</style>
+
+   <section class="addons-dark-v1">
+    <div class="a-container">
+        
+        <div class="a-header">
+            <span class="a-pill">Scale Your System</span>
+            <h2>Digital Growth Add-ons</h2>
+            <p>Premium specialized services for <strong>Indian D2C Brands</strong> & <strong>Jaipur Enterprises</strong>.</p>
+        </div>
+
+        <div class="a-grid">
+            
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-palette"></i></div>
+                <div class="a-info">
+                    <h4>Logo & Identity</h4>
+                    <p>Modern branding for <strong>Indian Startups</strong>.</p>
+                </div>
+                <div class="a-price">₹3,000</div>
+            </div>
+
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-paint-brush"></i></div>
+                <div class="a-info">
+                    <h4>Premium UI/UX</h4>
+                    <p>Custom Mobile-first design for <strong>Pan-India</strong> reach.</p>
+                </div>
+                <div class="a-price">₹10,000</div>
+            </div>
+
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-images"></i></div>
+                <div class="a-info">
+                    <h4>Social Graphics</h4>
+                    <p>Monthly <strong>Instagram/LinkedIn</strong> design packs.</p>
+                </div>
+                <div class="a-price">₹5,000<span>/mo</span></div>
+            </div>
+
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-edit"></i></div>
+                <div class="a-info">
+                    <h4>SEO Copywriting</h4>
+                    <p>High-converting <strong>Hindi/English</strong> content.</p>
+                </div>
+                <div class="a-price">₹500<span>/pg</span></div>
+            </div>
+
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-code"></i></div>
+                <div class="a-info">
+                    <h4>Custom Features</h4>
+                    <p>Advanced <strong>API & CRM</strong> integrations.</p>
+                </div>
+                <div class="a-price">₹15,000</div>
+            </div>
+
+            <div class="a-card">
+                <div class="a-icon"><i class="fas fa-rocket"></i></div>
+                <div class="a-info">
+                    <h4>Full Care Plan</h4>
+                    <p>Updates & <strong>Priority Support</strong> from Jaipur.</p>
+                </div>
+                <div class="a-price">₹2,000<span>/mo</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.addons-dark-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --a-primary: var(--primary-color, #6366f1);
+    --a-dark: var(--text-dark, #0f172a);
+    --a-card-bg: #1e293b; /* Premium Dark Slate */
+    --a-text: #f8fafc;
+    --a-slate: #94a3b8;
+    
+    padding: 100px 20px;
+    background: var(--a-dark);
+    font-family: var(--font-main, 'Inter', sans-serif);
+    color: var(--a-text);
+}
+
+.a-container { max-width: 1100px; margin: 0 auto; }
+
+.a-header { text-align: center; margin-bottom: 60px; }
+.a-pill { 
+    display: inline-block; 
+    background: rgba(99, 102, 241, 0.2); 
+    color: var(--a-primary); 
+    padding: 6px 16px; 
+    border-radius: 100px; 
+    font-size: 0.75rem; 
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.a-header h2 { font-size: clamp(2rem, 5vw, 3rem); color: #ffffff; font-weight: 900; margin-bottom: 15px; }
+.a-header p { color: var(--a-slate); font-size: 1.1rem; }
+.a-header p strong { color: var(--a-primary); }
+
+/* Grid & Cards */
+.a-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.a-card {
+    background: var(--a-card-bg);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 25px 30px;
+    border-radius: var(--radius-md, 20px);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.a-card:hover {
+    transform: translateX(10px);
+    background: #334155;
+    border-color: var(--a-primary);
+}
+
+.a-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    min-width: 55px;
+    height: 55px;
+    background: var(--a-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.a-info { flex: 1; text-align: left; }
+.a-info h4 { font-size: 1.15rem; color: #ffffff; font-weight: 800; margin-bottom: 6px; }
+.a-info p { font-size: 0.95rem; color: var(--a-slate); margin: 0; line-height: 1.5; }
+.a-info p strong { color: #ffffff; font-weight: 600; }
+
+.a-price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: right;
+    white-space: nowrap;
+}
+.a-price span { font-size: 0.85rem; color: var(--a-slate); font-weight: 400; display: block; }
+
+/* Desktop Adjustment */
+@media (min-width: 850px) {
+    .a-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 550px) {
+    .a-card { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 40px 20px; 
+    }
+    .a-info { text-align: center; }
+    .a-price { 
+        text-align: center; 
+        margin-top: 15px; 
+        width: 100%; 
+        padding-top: 15px; 
+        border-top: 1px solid rgba(255,255,255,0.1); 
+    }
+    .a-card:hover { transform: translateY(-5px); }
+}
+</style>
+
+
+<section class="local-jaipur-v1">
+    <div class="l-container">
+        <div class="l-card">
+            <div class="l-content">
+                <span class="l-badge"><i class="fas fa-map-marker-alt"></i> Local Expertise</span>
+                <h2>Your Partner for <strong>Website Design in Jaipur</strong></h2>
+                
+                <div class="l-grid">
+                    <div class="l-main-para">
+                        <p>
+                            EzyGoDigi is a <strong>Jaipur-based website development company</strong> dedicated to helping 
+                            Pink City entrepreneurs scale. From <strong>Vaishali Nagar</strong> to <strong>Sitapura Industrial Area</strong>, 
+                            we build high-speed systems for local legends.
+                        </p>
+                    </div>
+                    
+                    <ul class="l-locations">
+                        <li><i class="fas fa-check"></i> Mansarovar & Malviya Nagar</li>
+                        <li><i class="fas fa-check"></i> Jagatpura & Sitapura</li>
+                        <li><i class="fas fa-check"></i> Vaishali & C-Scheme</li>
+                    </ul>
+                </div>
+
+                <div class="l-footer-note">
+                    <p>
+                        Looking for a <strong>website developer in Jaipur</strong> or a <strong>cheap website design company 
+                        near you</strong>? We launch local business sites in as little as <strong>24 hours</strong>, 
+                        serving brands across <strong>Rajasthan</strong> and <strong>Pan-India</strong>.
+                    </p>
+                </div>
+            </div>
+            <br>
+<p>Visit our <strong>website design company in Jaipur</strong> or contact us for affordable website development across India.</p>
+
+<div class="l-action">
+    <a href="/contact" class="l-btn" title="Website Design Company Jaipur Office Location">
+        <i class="fas fa-map-marker-alt"></i> Get Directions to Our Jaipur Office →
+    </a>
+</div>
+        </div>
+    </div>
+</section>
+
+<style>
+.local-jaipur-v1 {
+    /* --- THEME SYNC --- */
+    --l-primary: var(--primary-color, #4f46e5);
+    --l-dark: var(--text-dark, #1e293b);
+    --l-slate: var(--text-light, #64748b);
+    --l-bg: #f8fafc;
+    
+    padding: 80px 20px;
+    background: var(--l-bg);
+    font-family: var(--font-main, 'Inter', sans-serif);
+}
+
+.l-container { max-width: 1000px; margin: 0 auto; }
+
+.l-card {
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 60px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sublte Jaipur Accent Decor */
+.l-card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 150px; height: 150px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, transparent 100%);
+    border-radius: 0 0 0 100%;
+}
+
+.l-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #eff6ff;
+    color: var(--l-primary);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.l-content h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--l-dark);
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.l-content h2 strong { color: var(--l-primary); }
+
+.l-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.l-main-para p {
+    font-size: 1.1rem;
+    color: var(--l-slate);
+    line-height: 1.8;
+}
+
+.l-locations {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.l-locations li {
+    font-size: 0.95rem;
+    color: var(--l-dark);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.l-locations i { color: #10b981; font-size: 0.9rem; }
+
+.l-footer-note {
+    border-top: 1px solid #f1f5f9;
+    padding-top: 25px;
+}
+
+.l-footer-note p {
+    font-size: 1rem;
+    color: var(--l-slate);
+    line-height: 1.6;
+}
+
+.l-footer-note strong { color: var(--l-dark); }
+
+.l-action { margin-top: 40px; }
+.l-btn {
+    display: inline-block;
+    color: var(--l-primary);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.05rem;
+    border-bottom: 2px solid var(--l-primary);
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.l-btn:hover { color: var(--l-dark); border-color: var(--l-dark); padding-left: 10px; }
+
+/* Mobile Logic */
+@media (max-width: 768px) {
+    .l-card { padding: 40px 25px; }
+    .l-grid { grid-template-columns: 1fr; gap: 20px; }
+    .l-content h2 { font-size: 1.8rem; }
+}
+</style>
+
+ <section class="faq-light-v1">
+    <div class="f-container">
+        
+        <div class="f-header">
+            <span class="f-pill">Support & Clarity</span>
+            <h2>Frequently Asked Questions About Website Design in India</h2>
+            <p>Answers about <strong>affordable website design in India</strong> for startups, ecommerce brands, and <strong>Jaipur businesses</strong>.</p>
+        </div>
+
+        <div class="f-wrapper">
+            <details class="f-item" open>
+                <summary>What is included in your website design package?</summary>
+                <div class="f-answer">
+                    <p>Every project includes domain mapping, SSL security, and <strong>Cloudflare Edge</strong> configuration. We handle the technical heavy lifting so businesses from <strong>Jaipur to Bangalore</strong> can focus on sales, not servers.</p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>What is the ₹999 website design package in India?</summary>
+                <div class="f-answer">
+                    <p>The <strong>₹999 SEO Booster</strong> is a high-speed landing page designed for <strong>Google Ads & Meta Ads</strong>. It’s perfect for testing a new product or service in the Indian market with a mobile-first, "Zero-Lag" interface.</p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>How much does a website cost in India?</summary>
+                <div class="f-answer">
+                    <p>Yes. We follow a <strong>50/50 "Trust Model"</strong> for our Indian clients: 50% upfront to initiate the sprint and 50% only after the final delivery and your complete satisfaction.</p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>Do you provide website design services in Jaipur?</summary>
+                <div class="f-answer">
+                    <p>Yes, we are a <strong>local Jaipur-based team</strong>. While our roots are in the Pink City, our <strong>serverless technology stack</strong> allows us to build and manage high-performance systems for brands across <strong>Delhi, Mumbai, and all of India</strong>.</p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>Is there any monthly maintenance cost?</summary>
+                <div class="f-answer">
+                    <p>You can manage the site via your custom dashboard or opt for our <strong>₹2,000/month Maintenance Plan</strong>. This includes 24/7 monitoring, security patches, and priority <strong>WhatsApp support</strong>.</p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>Do your websites include SEO optimization?</summary>
+                <div class="f-answer">
+                    <p>All our sites are built with <strong>On-Page SEO</strong> as a standard. For aggressive growth, our <strong>₹500/page Copywriting</strong> service ensures your content is optimized for local keywords like <i>"Best [Your Service] in Jaipur"</i> or <i>"Affordable [Your Product] India."</i></p>
+                </div>
+            </details>
+
+            <details class="f-item">
+                <summary>How fast will my website load in India and Jaipur?</summary>
+                <div class="f-answer">
+                    <p>We use <strong>Cloudflare's India Network</strong> (nodes in Mumbai, Chennai, Delhi). This ensures your site loads in under 1.5 seconds even on 4G/5G mobile networks across the country.</p>
+                </div>
+            </details>
+
+			<details class="f-item">
+<summary>What is the cheapest website design company in India?</summary>
+<div class="f-answer">
+<p>EzyGoDigi offers one of the most affordable website design packages in India starting at ₹999. Our solutions are designed for startups, small businesses and local companies in Jaipur and across India.</p>
+</div>
+</details>
+        </div>
+
+        <div class="f-footer">
+            <p>Still have questions? <a href="https://wa.me/917039509783?text=Hello!%20I%20saw%20your%20web%20solutions%20on%20EzyGoDigi.%20I%E2%80%99m%20looking%20for%20a%20custom%20quote%20for%20my%20business.%20Can%20we%20connect%3F" target="_blank" rel="noopener">Chat with our EzyGoDigi team on WhatsApp →</a></p>
+        </div>
+    </div>
+</section>
+
+<style>
+.faq-light-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --f-primary: var(--primary-color, #4f46e5);
+    --f-dark: var(--text-dark, #0f172a);
+    --f-slate: var(--text-light, #64748b);
+    --f-border: #e2e8f0;
+    
+    padding: 100px 20px;
+    background: #ffffff;
+    font-family: var(--font-main, 'Inter', system-ui, sans-serif);
+}
+
+.f-container { max-width: 850px; margin: 0 auto; }
+
+.f-header { text-align: center; margin-bottom: 60px; }
+.f-pill { 
+    display: inline-block; 
+    background: rgba(79, 70, 229, 0.1); 
+    color: var(--f-primary); 
+    padding: 8px 20px; 
+    border-radius: 100px; 
+    font-size: 0.8rem; 
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.f-header h2 { font-size: clamp(2rem, 5vw, 2.8rem); color: var(--f-dark); font-weight: 900; margin-bottom: 15px; }
+.f-header p { color: var(--f-slate); font-size: 1.15rem; }
+.f-header p strong { color: var(--f-primary); }
+
+/* Accordion Styles */
+.f-wrapper { display: flex; flex-direction: column; gap: 15px; }
+
+.f-item {
+    border: 1px solid var(--f-border);
+    border-radius: 20px;
+    background: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.f-item[open] {
+    border-color: var(--f-primary);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.08);
+    transform: scale(1.01);
+}
+
+summary {
+    padding: 25px 30px;
+    font-weight: 700;
+    color: var(--f-dark);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide default marker */
+summary::-webkit-details-marker { display: none; }
+
+summary::after {
+    content: '\f067'; /* FontAwesome Plus */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: var(--f-slate);
+    transition: 0.3s;
+}
+
+.f-item[open] summary::after {
+    content: '\f068'; /* FontAwesome Minus */
+    color: var(--f-primary);
+    transform: rotate(180deg);
+}
+
+.f-answer {
+    padding: 0 30px 30px 30px;
+    color: var(--f-slate);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.f-answer strong { color: var(--f-dark); border-bottom: 1px solid rgba(79, 70, 229, 0.2); }
+
+/* Footer Link */
+.f-footer { text-align: center; margin-top: 50px; }
+.f-footer p { color: var(--f-slate); font-size: 1.1rem; }
+.f-footer a { 
+    color: var(--f-primary); 
+    text-decoration: none; 
+    font-weight: 800; 
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.f-footer a:hover { border-color: var(--f-primary); }
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .f-header h2 { font-size: 2rem; }
+    summary { padding: 20px; font-size: 1rem; }
+    .f-answer { padding: 0 20px 20px 20px; }
+}
+</style>
+
+
+<section class="final-cta-v1">
+    <div class="c-container">
+        
+        <div class="ref-banner" onclick="window.location.href='/refer'">
+            <span class="ref-icon">🚀</span>
+            <div class="ref-text">
+                <strong>Refer & Earn ₹1,000</strong>
+                <p>Help an Indian business go digital and get rewarded.</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <div class="c-content">
+            <h2>Ready to Build Your <strong>Digital Empire?</strong></h2>
+            <p>From local shops in <strong>Jaipur</strong> to scaling <strong>D2C brands across India</strong>, we build high-speed systems that convert. Get your professional site live in just 14 days.</p>
+            
+            <div class="c-action-group">
+                <a href="https://wa.me/917039509783?text=Hi%20Pankaj%2C%20I%20want%20to%20book%20a%20Free%20Consultation%20for%20my%20business.%20I%20saw%20your%20EzyGoDigi%20portfolio." 
+                   class="c-btn-main" 
+                   target="_blank" 
+                   rel="noopener">
+                   Start Your Free Consultation →
+                </a>
+                <p class="c-subtext">No hidden costs • WhatsApp Support • Free Tech Audit</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.final-cta-v1 {
+    /* --- THEME ALIGNMENT --- */
+    --c-primary: var(--primary-color, #4f46e5);
+    --c-primary-dark: #4338ca;
+    --c-dark: var(--text-dark, #0f172a);
+    --c-slate: var(--text-light, #64748b);
+    
+    padding: 120px 20px;
+    background: #ffffff;
+    font-family: var(--font-main, 'Inter', sans-serif);
+    text-align: center;
+    overflow: hidden;
+}
+
+.c-container { max-width: 900px; margin: 0 auto; }
+
+/* Referral Banner Styling */
+.ref-banner {
+    display: flex;
+    align-items: center;
+    background: #f0fdf4;
+    border: 1.5px solid #dcfce7;
+    padding: 12px 28px;
+    border-radius: 100px;
+    margin: 0 auto 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+.ref-banner:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 25px rgba(22, 101, 52, 0.1);
+    background: #dcfce7;
+}
+.ref-icon { font-size: 1.4rem; margin-right: 12px; }
+.ref-text { text-align: left; margin-right: 20px; }
+.ref-text strong { color: #166534; font-size: 0.95rem; display: block; font-weight: 800; }
+.ref-text p { color: #15803d; font-size: 0.85rem; margin: 0; font-weight: 500; }
+.ref-banner i { color: #166534; font-size: 0.8rem; }
+
+/* CTA Content */
+.c-content h2 { 
+    font-size: clamp(2.2rem, 5vw, 3.5rem); 
+    color: var(--c-dark); 
+    font-weight: 900; 
+    line-height: 1.1; 
+    margin-bottom: 25px;
+    letter-spacing: -0.02em;
+}
+.c-content h2 strong {
+    background: linear-gradient(135deg, var(--c-primary), #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.c-content p { 
+    color: var(--c-slate); 
+    font-size: 1.2rem; 
+    line-height: 1.7; 
+    margin-bottom: 45px; 
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Group */
+.c-btn-main {
+    display: inline-block;
+    background: var(--c-primary);
+    color: white;
+    padding: 22px 50px;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.c-btn-main:hover {
+    background: var(--c-primary-dark);
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(79, 70, 229, 0.4);
+}
+
+.c-subtext {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--c-slate);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .final-cta-v1 { padding: 80px 20px; }
+    .c-content h2 { font-size: 2.2rem; }
+    .ref-banner {
+        border-radius: 20px;
+        padding: 15px 20px;
+        text-align: left;
+    }
+    .c-btn-main { width: 100%; padding: 20px 20px; font-size: 1.1rem; }
+}
+</style>
+
+	<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/common.js"></script>
+<!-- just before closing </body> -->
+<script src="https://ezygodigi.in/analytic/analytics.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    Analytics.init({ siteKey: "pk_live_ezygodigi" });
+  }, 1500);
+});
+</script>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@graph":[
+
+{
+"@type":"Organization",
+"@id":"https://ezygodigi.in/#organization",
+"name":"EzyGoDigi",
+"url":"https://ezygodigi.in",
+"logo":"https://ezygodigi.in/ez-32x32.png",
+"description":"Affordable website design company in India offering websites starting at ₹999 for startups, ecommerce brands and small businesses.",
+"contactPoint":[
+{
+"@type":"ContactPoint",
+"telephone":"+91-7039509783",
+"contactType":"customer support",
+"areaServed":"IN",
+"availableLanguage":["English","Hindi"]
+},
+{
+"@type":"ContactPoint",
+"telephone":"+91-141-3180080",
+"contactType":"office",
+"areaServed":"IN",
+"availableLanguage":["English","Hindi"]
+}
+],
+"sameAs":[
+"https://wa.me/917039509783"
+]
+},
+
+{
+"@type":"LocalBusiness",
+"@id":"https://ezygodigi.in/#localbusiness",
+"name":"EzyGoDigi",
+"image":"https://ezygodigi.in/ez-32x32.png",
+"url":"https://ezygodigi.in",
+"telephone":"+91-7039509783",
+"priceRange":"₹999 - ₹49,999",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Jaipur",
+"addressRegion":"Rajasthan",
+"addressCountry":"IN"
+},
+"areaServed":[
+{
+"@type":"City",
+"name":"Jaipur"
+},
+{
+"@type":"Country",
+"name":"India"
+}
+]
+},
+
+{
+"@type":"Service",
+"name":"Website Design Services",
+"serviceType":"Website Design & Development",
+"provider":{
+"@id":"https://ezygodigi.in/#organization"
+},
+"areaServed":"India",
+"description":"Affordable website design services in India including landing pages, business websites and ecommerce websites."
+},
+
+{
+"@type":"Offer",
+"name":"₹999 Website Design Package",
+"price":"999",
+"priceCurrency":"INR",
+"url":"https://ezygodigi.in/pricing",
+"availability":"https://schema.org/InStock",
+"description":"High speed landing page website package for startups and small businesses in India starting at ₹999."
+},
+
+{
+"@type":"FAQPage",
+"mainEntity":[
+
+{
+"@type":"Question",
+"name":"What is included in your website design package?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Every website design project includes domain mapping, SSL security and Cloudflare Edge configuration so businesses in Jaipur and across India can run high performance websites."
+}
+},
+
+{
+"@type":"Question",
+"name":"What is the ₹999 website design package in India?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"The ₹999 website design package is a high speed landing page designed for Google Ads and Meta Ads campaigns. It helps startups and small businesses launch a professional website quickly."
+}
+},
+
+{
+"@type":"Question",
+"name":"How much does a website cost in India?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Website costs in India vary depending on features. Basic landing pages can start at ₹999 while business websites and ecommerce systems may cost more depending on complexity."
+}
+},
+
+{
+"@type":"Question",
+"name":"Do you provide website design services in Jaipur?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. EzyGoDigi is a Jaipur based website design company serving businesses in Jaipur including Mansarovar, Vaishali Nagar, Jagatpura and Sitapura."
+}
+},
+
+{
+"@type":"Question",
+"name":"Is there any monthly maintenance cost?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Most websites do not require monthly maintenance because they are built using serverless architecture. Optional maintenance support plans are also available."
+}
+},
+
+{
+"@type":"Question",
+"name":"Do your websites include SEO optimization?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. All websites include on page SEO setup including meta tags, Google Search Console integration and mobile optimization."
+}
+},
+
+{
+"@type":"Question",
+"name":"How fast will my website load in India and Jaipur?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Websites are delivered through Cloudflare's India network which ensures loading speeds typically under 1.5 seconds on mobile and desktop devices."
+}
+},
+
+{
+"@type":"Question",
+"name":"What is the cheapest website design company in India?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"EzyGoDigi provides one of the most affordable website design solutions in India with packages starting at ₹999 for startups and small businesses."
+}
+}
+
+]
+}
+
+]
+}
+</script>
+
+</body>
+</html>

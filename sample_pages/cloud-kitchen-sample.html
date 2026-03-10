@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithora Kitchen - Fresh Food in 30 Min | Jaipur</title>
+    <style>
+        :root{--neon:#10b981;--dark:#111827;--light:#f9fafb;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Poppins',sans-serif;background:var(--dark);}
+        .gradient-bg{background:linear-gradient(135deg,var(--neon),#059669,#047857);}
+        .hero{padding:120px 20px;text-align:center;color:white;position:relative;overflow:hidden;}
+        .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%2310b981"/><stop offset="100%" stop-color="rgba(16,185,129,0.3)"/></radialGradient></defs><circle fill="url(%23a)" cx="20" cy="20" r="8"/><circle fill="url(%23a)" cx="80" cy="80" r="6"/><circle fill="url(%23a)" cx="60" cy="30" r="4"/></svg>') repeat;background-size:100px;}
+        .hero-content{position:relative;z-index:2;max-width:1000px;margin:0 auto;}
+        .hero h1{font-size:clamp(3.5rem,10vw,7rem);font-weight:800;margin-bottom:1rem;}
+        .live-orders{background:var(--neon);color:var(--dark);padding:12px 24px;border-radius:50px;font-weight:600;display:inline-flex;align-items:center;gap:10px;animation:neon-glow 2s infinite;}
+        @keyframes neon-glow{0%,100%{box-shadow:0 0 20px var(--neon);}50%{box-shadow:0 0 40px var(--neon),0 0 60px var(--neon);}}
+        .menu-section{padding:100px 20px;background:var(--light);color:var(--dark);}
+        .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;max-width:1200px;margin:0 auto;}
+        .food-card{background:white;border-radius:24px;overflow:hidden;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:all 0.4s;}
+        .food-card:hover{transform:translateY(-15px);box-shadow:0 35px 70px rgba(0,0,0,0.25);}
+        .food-image{height:280px;background:linear-gradient(45deg,var(--neon),#34d399);position:relative;overflow:hidden;}
+        .food-image::before{content:attr(data-emoji);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:5rem;}
+        .food-content{padding:30px;}
+        .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px;}
+        .tag{background:var(--neon);color:var(--dark);padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:500;}
+        .price-display{font-size:2.5rem;font-weight:800;color:var(--neon);margin:15px 0;}
+        .order-btn{width:100%;background:var(--neon);color:var(--dark);border:none;padding:18px;border-radius:16px;font-size:1.1rem;font-weight:600;cursor:pointer;transition:all 0.3s;}
+        .order-btn:hover{background:#059669;transform:scale(1.02);}
+        .coverage{padding:80px 20px;background:linear-gradient(135deg,#f3f4f6,#e5e7eb);}
+        .map-placeholder{height:400px;background:linear-gradient(45deg,#ddd6fe,#c7d2fe);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;color:#6b7280;margin:40px auto;max-width:800px;}
+    </style>
+</head>
+<body>
+    <section class="hero gradient-bg">
+        <div class="hero-content">
+            <div class="live-orders">
+                <span>🔥 Live Orders Today:</span>
+                <span id="liveCounter">127</span>
+            </div>
+            <h1>Homemade Happiness<br>Delivered Hot</h1>
+            <p style="font-size:1.4rem;margin:2rem 0 3rem;opacity:0.95;">Murlipura • Jhotwara • Free Delivery (7km) • Pure Veg</p>
+            <button class="order-btn" style="font-size:1.3rem;padding:22px 60px;border-radius:50px;">Order Now (30 min)</button>
+        </div>
+    </section>
+    
+    <section class="menu-section">
+        <div class="menu-grid">
+            <div class="food-card" data-emoji="🍛">
+                <div class="food-image"></div>
+                <div class="food-content">
+                    <div class="tags">
+                        <span class="tag">Tiffin Special</span>
+                        <span class="tag">Pure Veg</span>
+                        <span class="tag">No Garlic</span>
+                    </div>
+                    <h3>Daily Thali Delight</h3>
+                    <div class="price-display">₹129</div>
+                    <p>2 Roti + Dal + Sabji + Rice + Papad + Salad<br><small>Most popular order today!</small></p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="food-card" data-emoji="🥗">
+                <div class="food-image"></div>
+                <div class="food-content">
+                    <div class="tags">
+                        <span class="tag">Healthy</span>
+                        <span class="tag">Low Oil</span>
+                    </div>
+                    <h3>Fresh Salad Bowl</h3>
+                    <div class="price-display">₹89</div>
+                    <p>Cucumber + Tomato + Carrot + Beetroot + Lemon dressing</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="food-card" data-emoji="🍵">
+                <div class="food-image"></div>
+                <div class="food-content">
+                    <div class="tags">
+                        <span class="tag">Hot Drink</span>
+                        <span class="tag">Evening Special</span>
+                    </div>
+                    <h3>Premium Masala Chai</h3>
+                    <div class="price-display">₹25</div>
+                    <p>Authentic spices + Elaichi + Adrak + Perfect evening companion</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="coverage">
+        <div style="text-align:center;max-width:800px;margin:0 auto 3rem;">
+            <h2 style="font-size:3rem;margin-bottom:1rem;color:var(--dark);">Free Delivery Areas</h2>
+            <p style="font-size:1.2rem;color:#6b7280;">Murlipura, Jhotwara, Vidhyadhar Nagar, Bani Park, Shastri Nagar</p>
+        </div>
+        <div class="map-placeholder">📍 Google Maps Coverage (7km radius)</div>
+    </section>
+
+    <script>
+        // Live order counter
+        let orderCount = 127;
+        setInterval(() => {
+            orderCount += Math.floor(Math.random() * 3) + 1;
+            document.getElementById('liveCounter').textContent = orderCount;
+        }, 8000);
+    </script>
+</body>
+</html>

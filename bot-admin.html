@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot Admin – EzyGoDigi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; 
+      margin: 0; background: #f5f5f7; color: #111; height: 100vh; overflow: hidden; 
+    }
+    header { 
+      background: #111827; color: #f9fafb; padding: 12px 20px; display: flex; 
+      justify-content: space-between; align-items: center; 
+    }
+    header h1 { margin: 0; font-size: 16px; }
+    header .bot-select { display: flex; gap: 8px; align-items: center; }
+
+    .layout { display: flex; height: calc(100vh - 48px); }
+    nav { 
+      width: 220px; background: #111827; color: #e5e7eb; padding: 12px 0; 
+    }
+    nav button { 
+      width: 100%; text-align: left; border: 0; background: transparent; color: inherit;
+      padding: 10px 16px; cursor: pointer; font-size: 14px; 
+    }
+    nav button.active, nav button:hover { background: #1f2937; }
+
+    main { flex: 1; padding: 16px 20px; overflow: auto; }
+
+    .card { 
+      background: #ffffff; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; 
+      box-shadow: 0 1px 2px rgba(15,23,42,.08); 
+    }
+    .card-header { 
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; 
+    }
+    .card-header h2 { margin: 0; font-size: 15px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+    th, td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+    th { background: #f9fafb; font-weight: 600; }
+    .status-empty { 
+      font-style: italic; color: #6b7280; padding: 40px 20px; text-align: center; 
+    }
+
+    input[type="text"], input[type="number"], textarea, select {
+      width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid #d1d5db;
+      background: #fff; font-size: 13px; margin-bottom: 8px;
+    }
+    textarea { min-height: 80px; resize: vertical; }
+    .row { display: flex; gap: 12px; margin-bottom: 12px; }
+    .row > div { flex: 1; }
+    .pill { 
+      font-size: 11px; padding: 4px 8px; border-radius: 20px; background: #eef2ff; 
+      color: #4338ca; display: inline-block; 
+    }
+    .pill.active { background: #ecfdf5; color: #166534; }
+
+    .btn { 
+      border: 0; border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer; 
+      margin: 0 4px 4px 0; transition: all 0.2s;
+    }
+    .btn-primary { background: #2563eb; color: #fff; }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-ghost { background: transparent; color: #374151; border: 1px solid #d1d5db; }
+    .btn-ghost:hover { background: #f3f4f6; }
+    .btn-sm { padding: 4px 12px; font-size: 12px; }
+    .btn-danger { background: #ef4444; color: #fff; }
+    .btn-danger:hover { background: #dc2626; }
+
+    .tagline { font-size: 12px; color: #6b7280; margin-top: 4px; }
+    .status { font-size: 12px; color: #6b7280; }
+
+    /* Login */
+    #login-screen { 
+      display: flex; height: 100vh; align-items: center; justify-content: center; 
+      background: linear-gradient(135deg, #020617 0%, #0b1120 100%); 
+    }
+    #login-card { 
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); 
+      padding: 40px; border-radius: 20px; width: 100%; max-width: 400px; 
+      border: 1px solid rgba(255,255,255,0.2); 
+    }
+    #login-card h1 { color: #fff; margin: 0 0 8px; font-size: 28px; }
+    #login-card .tagline { color: rgba(255,255,255,0.8); }
+    #login-card label { color: #e5e7eb; font-size: 14px; margin-bottom: 8px; display: block; }
+    #login-card input { 
+      width: 100%; padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.3); 
+      background: rgba(255,255,255,0.1); color: #fff; font-size: 16px; 
+    }
+    #login-card input::placeholder { color: rgba(255,255,255,0.6); }
+    #login-card button { 
+      margin-top: 20px; width: 100%; padding: 14px; border-radius: 12px; border: 0; 
+      background: linear-gradient(135deg, #22c55e, #16a34a); color: white; 
+      cursor: pointer; font-size: 16px; font-weight: 600; 
+    }
+
+    #app { display: none; }
+    .tab { display: none; }
+    .tab.active { display: block; }
+
+    /* Modal */
+    #modal { 
+      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+      background: rgba(0,0,0,0.6); z-index: 1000; align-items: center; justify-content: center; 
+      backdrop-filter: blur(4px);
+    }
+    #modal-content { 
+      background: #fff; border-radius: 16px; width: 90%; max-width: 700px; 
+      max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.25); 
+    }
+    .modal-header { 
+      padding: 24px 28px; border-bottom: 1px solid #e5e7eb; display: flex; 
+      justify-content: space-between; align-items: center; 
+    }
+    .modal-header h3 { margin: 0; font-size: 20px; color: #111; }
+    .modal-body { padding: 24px 28px; }
+    .modal-actions { 
+      padding: 0 28px 24px; text-align: right; border-top: 1px solid #e5e7eb; 
+    }
+    .row-modal { display: flex; gap: 16px; margin-bottom: 16px; }
+    .row-modal > div { flex: 1; }
+    .row-modal input, .row-modal textarea, .row-modal select { 
+      padding: 12px 16px; border-radius: 8px; border: 1px solid #d1d5db; 
+      font-size: 14px; width: 100%; 
+    }
+    .row-modal textarea { min-height: 120px; }
+    .row-modal label { font-size: 13px; color: #374151; margin-bottom: 6px; display: block; font-weight: 500; }
+	.logs-controls { padding: 0 14px 12px; border-bottom: 1px solid #e5e7eb; }
+.pagination { display: flex; gap: 8px; align-items: center; justify-content: flex-end; font-size: 12px; }
+#page-info { min-width: 60px; text-align: center; color: #6b7280; }
+
+  </style>
+</head>
+<body>
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen">
+    <div id="login-card">
+      <h1>🔧 Chatbot Admin</h1>
+      <p class="tagline">Manage rules, knowledge base & conversation logs</p>
+      <label for="admin-token">Admin Token</label>
+      <input id="admin-token" type="password" placeholder="Enter your admin key" autocomplete="off" />
+      <button id="login-btn">Enter Admin Panel</button>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="app">
+    <header>
+      <h1>Chatbot Admin</h1>
+      <div class="bot-select">
+        <span class="tagline">Bot:</span>
+<select id="bot-select">
+  <!-- Remove static options - loadBotSelect() fills it -->
+</select>
+
+        <button class="btn btn-ghost btn-sm" id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav>
+		<button data-tab="bots-tab">🤖 Bots</button>
+        <button class="active" data-tab="rules-tab">📋 Rules</button>
+        <button data-tab="knowledge-tab">📚 Knowledge</button>
+		<button data-tab="sessions-tab">👥 Sessions</button>
+		<!-- ADD THIS BUTTON after sessions-tab button -->
+		<button data-tab="leads-tab">📞 Contact Leads</button>
+        <button data-tab="logs-tab">💬 Conversations</button>
+		
+		
+
+      </nav>
+      <main>
+        <!-- Rules Tab -->
+        <section id="rules-tab" class="tab active">
+          <div class="card">
+            <div class="card-header">
+              <h2>Rules Management</h2>
+              <button class="btn btn-primary btn-sm" id="add-rule-btn">+ New Rule</button>
+            </div>
+            <p class="tagline">Instant FAQ responses using keyword matching</p>
+            <div id="rules-list">Loading...</div>
+          </div>
+        </section>
+
+        <!-- Knowledge Tab -->
+        <section id="knowledge-tab" class="tab">
+          <div class="card">
+            <div class="card-header">
+              <h2>Knowledge Base</h2>
+              <button class="btn btn-primary btn-sm" id="add-knowledge-btn">+ New Article</button>
+            </div>
+            <p class="tagline">AI context for complex queries</p>
+            <div id="knowledge-list">Loading...</div>
+          </div>
+        </section>
+
+        <!-- Logs Tab -->
+        <!-- Conversations Tab -->
+<section id="logs-tab" class="tab">
+  <div class="card">
+    <div class="card-header">
+      <h2>Recent Conversations</h2>
+      <div>
+        <span class="status" id="logs-status">Loading...</span>
+        <button class="btn btn-primary btn-sm" id="export-logs-btn">📥 Export CSV</button>
+      </div>
+    </div>
+    <div class="logs-controls">
+      <div class="pagination">
+        <button class="btn btn-ghost btn-sm" id="prev-page">← Prev</button>
+        <span id="page-info">Page 1</span>
+        <button class="btn btn-ghost btn-sm" id="next-page">Next →</button>
+        <select id="page-size">
+          <option value="25">25</option>
+          <option value="50" selected>50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+    </div>
+    <div id="logs-list"></div>
+  </div>
+</section>
+
+
+<!-- Bots Tab -->
+<section id="bots-tab" class="tab">
+  <div class="card">
+    <div class="card-header">
+      <h2>Bot Management</h2>
+      <button class="btn btn-primary btn-sm" id="add-bot-btn">+ New Bot</button>
+    </div>
+    <p class="tagline">Manage chatbot instances (mithora, ezygodigi, etc.)</p>
+    <div id="bots-list">Loading...</div>
+  </div>
+</section>
+
+<!-- Sessions Tab -->
+<section id="sessions-tab" class="tab">
+  <div class="card">
+    <div class="card-header">
+      <h2>Active Sessions</h2>
+      <span class="status" id="sessions-status">Loading...</span>
+    </div>
+    <p class="tagline">Current user sessions with location data</p>
+    <div id="sessions-list"></div>
+  </div>
+</section>
+
+<!-- ADD THIS ENTIRE SECTION after </section> of sessions-tab -->
+<section id="leads-tab" class="tab">
+  <div class="card">
+    <div class="card-header">
+      <h2>Contact Leads</h2>
+      <span class="status" id="leads-status">Loading...</span>
+    </div>
+    <p class="tagline">All contact form submissions from website + chatbot</p>
+    <div id="leads-list"></div>
+  </div>
+</section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal">
+    <div id="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">New Rule</h3>
+        <button class="btn btn-ghost btn-sm" id="modal-close">×</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modal-cancel">Cancel</button>
+        <button class="btn btn-primary" id="modal-save">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = 'https://ezygodigi.in';
+    const STORAGE_KEY = 'chat_admin_token';
+//bot test
+let allBots = [];
+
+// 🔥 COMPACT IST CONVERTER (add this once)
+// 🔥 BULLETPROOF IST CONVERTER - Works with ANY UTC format
+// 🔥 UPDATED IST CONVERTER
+const toIST = (utcTime) => {
+  if (!utcTime) return '-';
+  
+  // Force UTC interpretation by appending 'Z' if it's missing
+  const dateString = utcTime.includes('Z') || utcTime.includes('+') 
+    ? utcTime 
+    : utcTime.replace(' ', 'T') + 'Z';
+    
+  const date = new Date(dateString);
+  if (isNaN(date.getTime())) return '-'; 
+  
+  return date.toLocaleString('en-IN', { 
+    timeZone: 'Asia/Kolkata',
+    weekday: 'short', 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric',
+    hour: '2-digit', 
+    minute: '2-digit',
+    hour12: true 
+  });
+};
+
+
+async function loadBot() {
+  if (!allBots.length) allBots = await apiRequest('/admin/bots');
+  const bot = allBots.find(b => b.bot_key === botSelect.value);
+  if (!bot?.token) return;
+  
+  // 🔥 CLEAN OLD SCRIPTS
+  document.querySelectorAll('script[src*="ezygodigi-chatbot-sdk"]').forEach(s => s.remove());
+  
+  window.EZY_BOT_CONFIG = {bot: bot.bot_key, token: bot.token, title: bot.name || `${bot.bot_key} Support`, welcomeMessage: "Hi 👋"};
+  
+  // 🔥 FORCE RELOAD
+  window.__EZYGODIGI_CHAT_LOADED__ = false;
+  
+  const s = document.createElement("script"); 
+  s.src = "https://ezygodigi.in/sdk/ezygodigi-chatbot-sdk.js?" + Date.now();
+  s.async = true; 
+  document.body.appendChild(s);
+}
+
+
+
+    // Elements
+    const loginScreen = document.getElementById('login-screen');
+    const app = document.getElementById('app');
+    const loginInput = document.getElementById('admin-token');
+    const loginBtn = document.getElementById('login-btn');
+    const logoutBtn = document.getElementById('logout-btn');
+    const botSelect = document.getElementById('bot-select');
+    const modal = document.getElementById('modal');
+    
+    // Modal elements
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const modalSave = document.getElementById('modal-save');
+    const modalClose = document.getElementById('modal-close');
+    const modalCancel = document.getElementById('modal-cancel');
+
+    // Lists
+    const rulesList = document.getElementById('rules-list');
+    const knowledgeList = document.getElementById('knowledge-list');
+    const logsList = document.getElementById('logs-list');
+    const logsStatus = document.getElementById('logs-status');
+
+    // Close modal
+    function closeModal() { modal.style.display = 'none'; }
+    modalClose.onclick = closeModal;
+    modalCancel.onclick = closeModal;
+    modal.onclick = (e) => { if (e.target === modal) closeModal(); };
+
+    // API helpers
+// API helpers - FIXED
+async function apiRequest(path, options = {}) {
+  const token = localStorage.getItem(STORAGE_KEY) || '';
+  const url = `${API_BASE}${path}${path.includes('?') ? '&' : '?'}admin_token=${encodeURIComponent(token)}`;
+  
+  const config = {
+    headers: { 'Content-Type': 'application/json' },
+    ...options
+  };
+
+  const res = await fetch(url, config);
+  if (res.status === 401) {
+    localStorage.removeItem(STORAGE_KEY);
+    alert('❌ Invalid admin token. Please check your key.');
+    showLogin();
+    throw new Error('Unauthorized');
+  }
+  if (!res.ok) throw new Error(`API error: ${res.status}`);
+  return res.json();
+}
+
+
+    // Auth
+    function showApp() {
+      loginScreen.style.display = 'none';
+      app.style.display = 'block';
+	  loadBotSelect();  // ✅ #1 Login
+      loadRules();
+	  loadBot();  // ✅ SDK bubble
+    }
+
+    function showLogin() {
+      app.style.display = 'none';
+      loginScreen.style.display = 'flex';
+      loginInput.value = '';
+      loginInput.focus();
+    }
+
+    loginBtn.onclick = () => {
+      const token = loginInput.value.trim();
+      if (!token) return alert('Please enter admin token');
+      localStorage.setItem(STORAGE_KEY, token);
+      showApp();
+    };
+
+    logoutBtn.onclick = () => {
+      localStorage.removeItem(STORAGE_KEY);
+      showLogin();
+    };
+
+    // Check existing token
+    if (localStorage.getItem(STORAGE_KEY)) showApp();
+
+    // Navigation
+    document.querySelectorAll('nav button').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+        
+        if (btn.dataset.tab === 'rules-tab') loadRules();
+        else if (btn.dataset.tab === 'knowledge-tab') loadKnowledge();
+        else if (btn.dataset.tab === 'logs-tab') loadLogs();
+		else if (btn.dataset.tab === 'bots-tab') loadBots();
+		else if (btn.dataset.tab === 'sessions-tab') loadSessions();
+		// In the navigation onclick function, ADD this line:
+		else if (btn.dataset.tab === 'leads-tab') loadLeads();
+
+      };
+    });
+
+    botSelect.onchange = () => {
+		//loadBotSelect();  // ✅ #3 Refresh after change
+      const activeTab = document.querySelector('.tab.active');
+      if (activeTab?.id === 'rules-tab') loadRules();
+      else if (activeTab?.id === 'knowledge-tab') loadKnowledge();
+      else if (activeTab?.id === 'logs-tab') loadLogs();
+	  		else if (btn.dataset.tab === 'bots-tab') loadBots();
+		else if (btn.dataset.tab === 'sessions-tab') loadSessions();
+					else if (btn.dataset.tab === 'leads-tab') loadLeads();
+
+		 loadBot(); // test bot load
+    };
+
+    // RULES
+    document.getElementById('add-rule-btn').onclick = () => showRuleEditor({});
+
+    async function loadRules() {
+      try {
+        rulesList.innerHTML = '<div class="status-empty">Loading rules...</div>';
+        const data = await apiRequest(`/admin/rules?bot_key=${botSelect.value}`);
+        renderRulesTable(data);
+      } catch (e) {
+        rulesList.innerHTML = '<div class="status-empty">Failed to load rules. Check token.</div>';
+      }
+    }
+
+    function renderRulesTable(data) {
+      if (!data?.length) {
+        rulesList.innerHTML = `
+          <div class="status-empty">
+            No rules found. 
+            <button class="btn btn-primary btn-sm" onclick="document.getElementById('add-rule-btn').click()">
+              Add first rule
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      let html = `
+        <table>
+          <thead>
+            <tr>
+              <th>Intent</th>
+              <th>Keywords</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      data.forEach(rule => {
+        const keywords = rule.keywords ? rule.keywords.split(',').slice(0,3).join(', ') + '...' : '-';
+        html += `
+          <tr>
+            <td><strong>${rule.intent || 'general'}</strong><br><span class="tagline">#${rule.id}</span></td>
+            <td>${keywords}</td>
+            <td>${rule.priority || 1}</td>
+            <td><span class="pill ${rule.is_active ? 'active' : ''}">${rule.is_active ? 'Active' : 'Inactive'}</span></td>
+            <td>
+              <button class="btn btn-ghost btn-sm" onclick="editRule(${rule.id})">Edit</button>
+              <button class="btn btn-danger btn-sm" onclick="deleteRule(${rule.id})">Delete</button>
+            </td>
+          </tr>
+        `;
+      });
+
+      html += '</tbody></table>';
+      rulesList.innerHTML = html;
+    }
+
+    async function editRule(id) {
+      try {
+        const data = await apiRequest(`/admin/rules?bot_key=${botSelect.value}`);
+        const rule = data.find(r => r.id == id) || {};
+        showRuleEditor(rule);
+      } catch(e) {
+        alert('Failed to load rule');
+      }
+    }
+
+// FIXED Delete (use DELETE method now)
+async function deleteRule(id) {
+  if (!confirm('Delete this rule?')) return;
+  try {
+    await fetch(`${API_BASE}/admin/rules?id=${id}&bot_key=${botSelect.value}&admin_token=${localStorage.getItem(STORAGE_KEY)}`, {
+      method: 'DELETE'
+    });
+    loadRules();
+  } catch(e) {
+    alert('Delete failed');
+  }
+}
+
+    function showRuleEditor(rule) {
+      modalTitle.textContent = rule.id ? 'Edit Rule' : 'New Rule';
+      modalBody.innerHTML = `
+        <div class="row-modal">
+          <div>
+            <label>Keywords (comma separated)</label>
+            <textarea class="form-keywords">${rule.keywords || ''}</textarea>
+          </div>
+        </div>
+        <div class="row-modal">
+          <div>
+            <label>Reply Text</label>
+            <textarea class="form-reply">${rule.reply || ''}</textarea>
+          </div>
+        </div>
+        <div class="row-modal">
+          <div>
+            <label>Intent</label>
+            <input type="text" class="form-intent" value="${rule.intent || 'general'}" />
+          </div>
+          <div>
+            <label>Priority</label>
+            <input type="number" class="form-priority" value="${rule.priority || 10}" min="1" max="100" />
+          </div>
+          <div>
+            <label>Active</label>
+            <select class="form-active">
+              <option value="1" ${rule.is_active == 1 ? 'selected' : ''}>Yes</option>
+              <option value="0" ${rule.is_active != 1 ? 'selected' : ''}>No</option>
+            </select>
+          </div>
+        </div>
+      `;
+      modal.style.display = 'flex';
+      
+      modalSave.onclick = async () => {
+        const payload = {
+          id: rule.id || null,
+          bot_key: botSelect.value,
+          keywords: modalBody.querySelector('.form-keywords').value.trim(),
+          reply: modalBody.querySelector('.form-reply').value.trim(),
+          intent: modalBody.querySelector('.form-intent').value.trim(),
+          priority: Number(modalBody.querySelector('.form-priority').value),
+          is_active: Number(modalBody.querySelector('.form-active').value)
+        };
+        try {
+          await apiRequest('/admin/rules', {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          });
+          closeModal();
+          loadRules();
+        } catch(e) {
+          alert('Failed to save rule');
+        }
+      };
+    }
+
+    // KNOWLEDGE (similar pattern)
+    document.getElementById('add-knowledge-btn').onclick = () => showKnowledgeEditor({});
+
+    async function loadKnowledge() {
+      try {
+        knowledgeList.innerHTML = '<div class="status-empty">Loading...</div>';
+        const data = await apiRequest(`/admin/knowledge?bot_key=${botSelect.value}`);
+        renderKnowledgeTable(data);
+      } catch(e) {
+        knowledgeList.innerHTML = '<div class="status-empty">Failed to load knowledge.</div>';
+      }
+    }
+
+    function renderKnowledgeTable(data) {
+      if (!data?.length) {
+        knowledgeList.innerHTML = `
+          <div class="status-empty">
+            No knowledge articles.
+            <button class="btn btn-primary btn-sm" onclick="document.getElementById('add-knowledge-btn').click()">
+              Add first article
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      let html = `
+        <table>
+          <thead>
+            <tr>
+              <th>Intent</th>
+              <th>Page</th>
+              <th>Preview</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      data.forEach(item => {
+        const preview = (item.content || '').slice(0, 60) + '...';
+        html += `
+          <tr>
+            <td><strong>${item.intent || 'general'}</strong></td>
+            <td>${item.page || 'global'}</td>
+            <td>${preview}</td>
+            <td><span class="pill ${item.is_active ? 'active' : ''}">${item.is_active ? 'Active' : 'Inactive'}</span></td>
+            <td>
+              <button class="btn btn-ghost btn-sm" onclick="editKnowledge(${item.id})">Edit</button>
+              <button class="btn btn-danger btn-sm" onclick="deleteKnowledge(${item.id})">Delete</button>
+            </td>
+          </tr>
+        `;
+      });
+      html += '</tbody></table>';
+      knowledgeList.innerHTML = html;
+    }
+
+    async function editKnowledge(id) {
+      try {
+        const data = await apiRequest(`/admin/knowledge?bot_key=${botSelect.value}`);
+        const item = data.find(r => r.id == id) || {};
+        showKnowledgeEditor(item);
+      } catch(e) {
+        alert('Failed to load knowledge');
+      }
+    }
+
+async function deleteKnowledge(id) {
+  if (!confirm('Delete this knowledge article?')) return;
+  try {
+    await fetch(`${API_BASE}/admin/knowledge?id=${id}&bot_key=${botSelect.value}&admin_token=${localStorage.getItem(STORAGE_KEY)}`, {
+      method: 'DELETE'
+    });
+    loadKnowledge();
+  } catch(e) {
+    alert('Delete failed');
+  }
+}
+
+    function showKnowledgeEditor(item) {
+      modalTitle.textContent = item.id ? 'Edit Knowledge' : 'New Article';
+      modalBody.innerHTML = `
+        <div class="row-modal">
+          <div>
+            <label>Intent</label>
+            <input type="text" class="form-intent" value="${item.intent || 'general'}" />
+          </div>
+          <div>
+            <label>Page (optional)</label>
+            <input type="text" class="form-page" value="${item.page || ''}" placeholder="/pricing" />
+          </div>
+          <div>
+            <label>Active</label>
+            <select class="form-active">
+              <option value="1" ${item.is_active == 1 ? 'selected' : ''}>Yes</option>
+              <option value="0" ${item.is_active != 1 ? 'selected' : ''}>No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-modal">
+          <div>
+            <label>Content (used by AI)</label>
+            <textarea class="form-content">${item.content || item.content_preview || ''}</textarea>
+
+          </div>
+        </div>
+      `;
+      modal.style.display = 'flex';
+      
+      modalSave.onclick = async () => {
+        const payload = {
+          id: item.id || null,
+          bot_key: botSelect.value,
+          content: modalBody.querySelector('.form-content').value.trim(),
+          intent: modalBody.querySelector('.form-intent').value.trim(),
+          page: modalBody.querySelector('.form-page').value.trim() || null,
+          is_active: Number(modalBody.querySelector('.form-active').value)
+        };
+        try {
+          await apiRequest('/admin/knowledge', {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          });
+          closeModal();
+          loadKnowledge();
+        } catch(e) {
+          alert('Failed to save knowledge');
+        }
+      };
+    }
+
+    // LOGS
+    let currentPage = 1;
+let pageSize = 50;
+let totalLogs = 0;
+
+async function loadLogs() {
+  try {
+    logsStatus.textContent = 'Loading...';
+    const data = await apiRequest(`/admin/messages?bot_key=${botSelect.value}&page=${currentPage}&limit=${pageSize}`);
+    
+    // Handle pagination info
+    totalLogs = data.total || data.length;
+    logsStatus.textContent = `Page ${currentPage} of ${Math.ceil(totalLogs / pageSize)} (${totalLogs} total)`;
+    
+    renderLogsTable(data.data || data);
+    updatePagination();
+  } catch(e) {
+    logsList.innerHTML = '<div class="status-empty">Failed to load logs.</div>';
+  }
+}
+
+function renderLogsTable(data) {
+  if (!data?.length) {
+    logsList.innerHTML = `
+      <div class="status-empty">
+        No conversations found.
+        <button class="btn btn-primary btn-sm" onclick="loadLogs()">Refresh</button>
+      </div>
+    `;
+    return;
+  }
+
+  let html = `
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Session</th>
+          <th>Message</th>
+          <th>Intent</th>
+          <th>Page</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  data.forEach(row => {
+    const msg = (row.message || '').slice(0, 40) + (row.message?.length > 40 ? '...' : '');
+    html += `
+      <tr>
+        <td>${toIST(row.created_at)}</td>
+        <td>${row.session_id?.slice(-8) || '-'}</td>
+        <td title="${row.message || ''}">${msg}</td>
+        <td>${row.intent || '-'}</td>
+        <td>${row.page || '-'}</td>
+        <td><span class="pill">${row.reply_source || '-'}</span></td>
+      </tr>
+    `;
+  });
+  html += '</tbody></table>';
+  logsList.innerHTML = html;
+}
+
+function updatePagination() {
+  const totalPages = Math.ceil(totalLogs / pageSize);
+  document.getElementById('prev-page').disabled = currentPage <= 1;
+  document.getElementById('next-page').disabled = currentPage >= totalPages;
+  document.getElementById('page-info').textContent = `Page ${currentPage}`;
+}
+
+// Pagination controls
+document.getElementById('prev-page').onclick = () => {
+  if (currentPage > 1) {
+    currentPage--;
+    loadLogs();
+  }
+};
+
+document.getElementById('next-page').onclick = () => {
+  const totalPages = Math.ceil(totalLogs / pageSize);
+  if (currentPage < totalPages) {
+    currentPage++;
+    loadLogs();
+  }
+};
+
+document.getElementById('page-size').onchange = (e) => {
+  pageSize = parseInt(e.target.value);
+  currentPage = 1;
+  loadLogs();
+};
+
+// Export CSV
+// Export CSV - CLIENT SIDE (no backend needed!)
+document.getElementById('export-logs-btn').onclick = async () => {
+  try {
+    const allData = await apiRequest(`/admin/messages?bot_key=${botSelect.value}&limit=1000`); // Get more data
+    const csvContent = convertToCSV(allData);
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.setAttribute('href', url);
+    link.setAttribute('download', `conversations-${botSelect.value}-${new Date().toISOString().slice(0,10)}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch(e) {
+    alert('Export failed: ' + e.message);
+  }
+};
+
+// CSV Converter
+function convertToCSV(data) {
+  if (!data?.length) return '';
+  
+  const headers = ['created_at', 'session_id', 'message', 'intent', 'page', 'reply_source', 'bot_key'];
+  const csvRows = [];
+  
+  // Headers
+  csvRows.push(headers.join(','));
+  
+  // Data rows
+  data.forEach(row => {
+    const rowData = headers.map(header => {
+      let value = row[header] || '';
+      if (typeof value === 'string') {
+        value = value.replace(/"/g, '""'); // Escape quotes
+      }
+      return `"${value}"`;
+    });
+    csvRows.push(rowData.join(','));
+  });
+  
+  return csvRows.join('\n');
+}
+
+
+
+// BOTS
+document.getElementById('add-bot-btn').onclick = () => showBotEditor({});
+
+async function loadBots() {
+  try {
+    const botsList = document.getElementById('bots-list');
+    botsList.innerHTML = '<div class="status-empty">Loading bots...</div>';
+    const data = await apiRequest('/admin/bots');
+    renderBotsTable(data);
+	loadBotSelect();  // ✅ #2 Bots tab
+  } catch(e) {
+    document.getElementById('bots-list').innerHTML = '<div class="status-empty">Failed to load bots.</div>';
+  }
+}
+
+async function loadBotSelect() {
+  try {
+    const bots = await apiRequest('/admin/bots');
+    botSelect.innerHTML = '';  // ✅ Clears static + fills dynamic
+    bots.forEach(bot => {
+      const option = document.createElement('option');
+      option.value = bot.bot_key;                    // "ezygodigi"
+      option.textContent = bot.name || bot.bot_key;  // "EzyGoDigi Support"
+      botSelect.appendChild(option);
+    });
+  } catch(e) {
+    console.error('Failed to load bot dropdown');
+  }
+}
+
+
+function renderBotsTable(data) {
+  const botsList = document.getElementById('bots-list');
+  if (!data?.length) {
+    botsList.innerHTML = `
+      <div class="status-empty">
+        No bots found. 
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('add-bot-btn').click()">
+          Add first bot
+        </button>
+      </div>
+    `;
+    return;
+  }
+
+  let html = `
+    <table>
+      <thead>
+        <tr>
+          <th>Bot Key</th>
+          <th>Name</th>
+		  <th>Token</th>        <!-- ADD THIS -->
+          <th>AI</th>
+          <th>Status</th>
+          <th>Onboarding</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  data.forEach(bot => {
+    html += `
+      <tr>
+        <td><strong>${bot.bot_key}</strong><br><span class="tagline">#${bot.id}</span></td>
+        <td>${bot.name || '-'}</td>
+		 <td><code style="font-size:11px;background:#f3f4f6;padding:4px 8px;border-radius:6px;">${bot.token ? bot.token.slice(0,12)+'...' : 'No token'}</code></td>  <!-- ADD THIS -->
+        <td>${bot.ai_enabled ? '✅' : '❌'}</td>
+        <td><span class="pill ${bot.is_active ? 'active' : ''}">${bot.is_active ? 'Active' : 'Inactive'}</span></td>
+        <td><span class="pill">${bot.onboarding_enabled ? 'On' : 'Off'}</span></td>
+        <td>
+          <button class="btn btn-ghost btn-sm" onclick="editBot(${bot.id})">Edit</button>
+          <button class="btn btn-danger btn-sm" onclick="deleteBot(${bot.id})">Delete</button>
+        </td>
+      </tr>
+    `;
+  });
+  html += '</tbody></table>';
+  botsList.innerHTML = html;
+}
+
+async function editBot(id) {
+  try {
+    const data = await apiRequest('/admin/bots');
+    const bot = data.find(b => b.id == id) || {};
+    showBotEditor(bot);
+  } catch(e) {
+    alert('Failed to load bot');
+  }
+}
+
+async function deleteBot(id) {
+  if (!confirm('Delete this bot?')) return;
+  try {
+    await fetch(`${API_BASE}/admin/bots?id=${id}&admin_token=${localStorage.getItem(STORAGE_KEY)}`, {
+      method: 'DELETE'
+    });
+    loadBots();
+  } catch(e) {
+    alert('Delete failed');
+  }
+}
+
+function showBotEditor(bot) {
+  modalTitle.textContent = bot.id ? 'Edit Bot' : 'New Bot';
+  modalBody.innerHTML = `
+    <div class="row-modal">
+      <div>
+        <label>Bot Key (unique)</label>
+        <input type="text" class="form-bot_key" value="${bot.bot_key || ''}" />
+      </div>
+      <div>
+        <label>Name</label>
+        <input type="text" class="form-name" value="${bot.name || ''}" placeholder="Mithora Kitchen" />
+      </div>
+    </div>
+    <div class="row-modal">
+      <div>
+        <label>Token <span style="font-size:11px;color:#6b7280;">(ezy-ABC123)</span></label>
+        <input type="text" class="form-token" value="${bot.token || ''}" placeholder="ezy-8xK29sPq" />
+        <p style="font-size:11px;color:#6b7280;margin-top:4px;">Used by SDK. Generate: ezy-[botkey]-[random]</p>
+      </div>
+    </div>
+    <div class="row-modal">
+      <div>
+        <label>AI Enabled</label>
+        <select class="form-ai_enabled">
+          <option value="1" ${bot.ai_enabled == 1 ? 'selected' : ''}>Yes</option>
+          <option value="0" ${bot.ai_enabled != 1 ? 'selected' : ''}>No</option>
+        </select>
+      </div>
+      <div>
+        <label>Status</label>
+        <select class="form-is_active">
+          <option value="1" ${bot.is_active == 1 ? 'selected' : ''}>Active</option>
+          <option value="0" ${bot.is_active != 1 ? 'selected' : ''}>Inactive</option>
+        </select>
+      </div>
+      <div>
+        <label>Onboarding</label>
+        <select class="form-onboarding_enabled">
+          <option value="1" ${bot.onboarding_enabled == 1 ? 'selected' : ''}>On</option>
+          <option value="0" ${bot.onboarding_enabled != 1 ? 'selected' : ''}>Off</option>
+        </select>
+      </div>
+    </div>
+  `;
+  modal.style.display = 'flex';
+  
+  modalSave.onclick = async () => {
+  const payload = {
+    id: bot.id || null,
+    bot_key: modalBody.querySelector('.form-bot_key').value.trim(),
+    name: modalBody.querySelector('.form-name').value.trim(),
+    token: modalBody.querySelector('.form-token').value.trim(),  // ✅ Ensure this is included
+    ai_enabled: Number(modalBody.querySelector('.form-ai_enabled').value),
+    is_active: Number(modalBody.querySelector('.form-is_active').value),
+    onboarding_enabled: Number(modalBody.querySelector('.form-onboarding_enabled').value)
+  };
+  
+  console.log('Saving bot:', payload); // DEBUG - check F12 console
+  
+  try {
+    await apiRequest('/admin/bots', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+    closeModal();
+    loadBots();
+  } catch(e) {
+    console.error('Save error:', e); // DEBUG
+    alert('Failed to save bot: ' + e.message);
+  }
+};
+
+}
+
+
+// SESSIONS
+async function loadSessions() {
+  try {
+    const sessionsList = document.getElementById('sessions-list');
+    const sessionsStatus = document.getElementById('sessions-status');
+    sessionsStatus.textContent = 'Loading...';
+    
+    const data = await apiRequest('/admin/sessions?limit=50');
+    sessionsStatus.textContent = `Showing ${data.length} active sessions`;
+    
+    let html = `
+      <table>
+        <thead>
+          <tr>
+            <th>Session ID</th>
+            <th>Bot</th>
+            <th>User Info</th>
+            <th>Location</th>
+            <th>Page</th>
+            <th>Created</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    data.forEach(session => {
+      const location = `${session.city || ''}, ${session.region || ''}, ${session.country || ''}`.trim() || '-';
+      html += `
+        <tr>
+          <td>${session.session_id?.slice(-8) || '-'}</td>
+          <td>${session.bot_key}</td>
+          <td>${session.name || session.phone || '-'}</td>
+          <td title="${location}">${location.slice(0, 20)}${location.length > 20 ? '...' : ''}</td>
+          <td>${session.page || '/'}</td>
+          <td>${toIST(session.created_at)}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" onclick="deleteSession('${session.session_id}')">Clear</button>
+          </td>
+        </tr>
+      `;
+    });
+    html += '</tbody></table>';
+    sessionsList.innerHTML = html;
+  } catch(e) {
+    document.getElementById('sessions-list').innerHTML = '<div class="status-empty">Failed to load sessions.</div>';
+  }
+}
+
+async function deleteSession(sessionId) {
+  if (!confirm('Clear this user session?')) return;
+  try {
+    await fetch(`${API_BASE}/admin/sessions?session_id=${sessionId}&admin_token=${localStorage.getItem(STORAGE_KEY)}`, {
+      method: 'DELETE'
+    });
+    loadSessions();
+  } catch(e) {
+    alert('Clear failed');
+  }
+}
+
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'Enter' && e.ctrlKey && loginInput === document.activeElement) {
+        loginBtn.click();
+      }
+    });
+
+    loginInput.onkeypress = (e) => {
+      if (e.key === 'Enter') loginBtn.click();
+    };
+
+	// CONTACT LEADS
+async function loadLeads() {
+  try {
+    const leadsList = document.getElementById('leads-list');
+    const leadsStatus = document.getElementById('leads-status');
+    
+    leadsStatus.textContent = 'Loading...';
+    
+    const data = await apiRequest('/api/contact_leads?limit=50');
+    console.log('✅ LEADS DATA:', data);
+    
+    leadsStatus.textContent = `Showing ${data.length || 0} leads`;
+    
+    if (!data?.length) {
+      leadsList.innerHTML = `
+        <div class="status-empty">
+          No contact leads yet.
+        </div>
+      `;
+      return;
+    }
+    
+    let html = `
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Name</th><th>Contact</th><th>Business</th>
+            <th>Source</th><th>Created</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+    
+    data.forEach(lead => {
+      html += `
+        <tr>
+          <td>#${lead.id}</td>
+          <td><strong>${lead.name}</strong></td>
+          <td>${lead.email}<br><small>${lead.phone}</small></td>
+          <td>${lead.business || '-'}</td>
+          <td><span class="pill">${lead.source}</span></td>
+       <td>${toIST(lead.created_at)}</td>
+          <td>
+            <!-- ✅ FIXED: Quotes around function calls! -->
+            <!-- Replace onclick="viewLead(${lead.id})" with: -->
+<td>
+  <button class="btn btn-ghost btn-sm" onclick="viewLead(${lead.id})" title="View details">👁️</button>
+  <button class="btn btn-danger btn-sm" onclick="deleteLead(${lead.id})" title="Delete lead">🗑️</button>
+</td>
+
+          </td>
+        </tr>
+      `;
+    });
+    
+    html += '</tbody></table>';
+    leadsList.innerHTML = html;
+    
+  } catch(e) {
+    console.error('LEADS ERROR:', e);
+    document.getElementById('leads-list').innerHTML = `<div class="status-empty">Error: ${e.message}</div>`;
+  }
+}
+
+
+// ✅ View single lead details
+// ✅ REPLACE viewLead() with BEAUTIFUL MODAL
+// ✅ 1. MAIN MODAL FUNCTION
+function viewLead(id) {
+  console.log('Opening lead modal for ID:', id); // DEBUG
+  
+  // Remove existing modal
+  const existing = document.getElementById('lead-modal');
+  if (existing) existing.remove();
+  
+  // Create new modal
+  const modalHTML = `
+    <div id="lead-modal" class="modal-overlay" style="
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.5); z-index: 9999; display: flex;
+      align-items: center; justify-content: center; padding: 20px;
+    ">
+      <div style="
+        background: white; border-radius: 16px; width: 100%; max-width: 600px;
+        max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+      ">
+        <div style="padding: 24px 28px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+          <h3 style="margin: 0; font-size: 20px; color: #111;">📋 Lead Details</h3>
+          <button onclick="closeLeadModal()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666; padding: 0;">×</button>
+        </div>
+        <div id="lead-details-loading" style="padding: 40px 28px; text-align: center; color: #666;">
+          Loading lead details...
+        </div>
+        <div style="padding: 20px 28px; text-align: right; border-top: 1px solid #e5e7eb;">
+          <button onclick="closeLeadModal()" style="
+            padding: 8px 16px; border: 1px solid #d1d5db; background: white;
+            border-radius: 6px; cursor: pointer; margin-right: 8px;
+          ">Close</button>
+          <button onclick="deleteLead(${id})" style="
+            padding: 8px 16px; background: #ef4444; color: white;
+            border: none; border-radius: 6px; cursor: pointer;
+          ">🗑️ Delete Lead</button>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+  loadLeadData(id);
+}
+
+// ✅ 2. LOAD DATA INTO MODAL
+async function loadLeadData(id) {
+  try {
+    console.log('Loading lead data for ID:', id);
+    
+    const detailsDiv = document.querySelector('#lead-modal #lead-details-loading');
+    if (!detailsDiv) return console.error('No details div found');
+    
+    detailsDiv.id = 'lead-details';
+    detailsDiv.style.textAlign = 'left';
+    
+    const data = await apiRequest(`/api/contact_leads?id=${id}`);
+    console.log('Lead data:', data);
+    
+    const lead = Array.isArray(data) ? data[0] : data;
+    if (!lead) {
+      detailsDiv.innerHTML = '<p style="color: #ef4444; text-align: center;">Lead not found</p>';
+      return;
+    }
+    
+    detailsDiv.innerHTML = `
+      <div style="padding: 20px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+          <div style="background: #f8fafc; padding: 16px; border-radius: 8px;">
+            <h4 style="margin: 0 0 12px; font-size: 14px;">👤 Contact</h4>
+            <div><strong>Name:</strong> ${lead.name || 'N/A'}</div>
+            <div><strong>Phone:</strong> ${lead.phone || 'N/A'}</div>
+            <div><strong>Email:</strong> ${lead.email || 'N/A'}</div>
+          </div>
+          <div style="background: #f8fafc; padding: 16px; border-radius: 8px;">
+            <h4 style="margin: 0 0 12px; font-size: 14px;">💼 Business</h4>
+            <div><strong>Business:</strong> ${lead.business || 'N/A'}</div>
+            <div><strong>Service:</strong> ${lead.service || 'N/A'}</div>
+            <div><strong>Budget:</strong> ${lead.budget || 'N/A'}</div>
+          </div>
+        </div>
+        <div style="background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+          <h4 style="margin: 0 0 12px; font-size: 14px;">💬 Message</h4>
+          <div style="background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #3b82f6; min-height: 60px;">
+            ${lead.message || 'No message provided'}
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 13px; color: #666;">
+          <div><strong>ID:</strong> #${lead.id}</div>
+          <div><strong>Source:</strong> ${lead.source}</div>
+          <div><strong>IP:</strong> ${lead.ip || 'N/A'}</div>
+          <div><strong>Created:</strong> ${lead.created_at ? new Date(lead.created_at).toLocaleString() : 'N/A'}</div>
+          <div><strong>Location:</strong> ${lead.city || ''}${lead.city && lead.region ? ', ' : ''}${lead.region || ''}</div>
+        </div>
+      </div>
+    `;
+    
+  } catch(e) {
+    console.error('Load lead error:', e);
+    const detailsDiv = document.querySelector('#lead-modal #lead-details');
+    if (detailsDiv) {
+      detailsDiv.innerHTML = `<p style="color: #ef4444; text-align: center;">Error: ${e.message}</p>`;
+    }
+  }
+}
+
+// ✅ 3. CLOSE MODAL
+function closeLeadModal() {
+  const modal = document.getElementById('lead-modal');
+  if (modal) modal.remove();
+}
+
+// ✅ 4. ESCAPE KEY SUPPORT
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLeadModal();
+  }
+});
+
+
+// ✅ Delete lead
+async function deleteLead(id) {
+  if (!confirm('Delete this lead permanently?')) return;
+  
+  try {
+    await fetch(`${API_BASE}/api/contact_leads?id=${id}&admin_token=${localStorage.getItem('chat_admin_token')}`, {
+      method: 'DELETE'
+    });
+    loadLeads(); // Refresh table
+    alert('✅ Deleted!');
+  } catch(e) {
+    alert('Delete failed: ' + e.message);
+  }
+}
+
+
+  </script>
+
+</body>
+</html>

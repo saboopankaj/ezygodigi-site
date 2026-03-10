@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Nest - Premium 3BHK Apartments | Ready to Move</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Space Grotesk', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); color: white; overflow-x: hidden; }
+        .hero { padding: 140px 20px 100px; text-align: center; position: relative; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 400px; background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255,255,255,0.1) 0%, transparent 50%); }
+        .hero h1 { font-size: clamp(48px, 8vw, 68px); font-weight: 700; margin-bottom: 16px; position: relative; z-index: 2; }
+        .location { font-size: clamp(20px, 3vw, 28px); font-weight: 500; margin-bottom: 32px; opacity: 0.95; }
+        .hero p { font-size: clamp(16px, 2.5vw, 20px); max-width: 700px; margin: 0 auto 48px; line-height: 1.6; opacity: 0.9; }
+        .cta-btn { background: rgba(255,255,255,0.95); color: #2c3e50; padding: 20px 56px; border-radius: 12px; font-size: 20px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 15px 40px rgba(0,0,0,0.3); transition: all 0.3s; position: relative; z-index: 2; }
+        .cta-btn:hover { transform: translateY(-4px); box-shadow: 0 25px 60px rgba(0,0,0,0.4); }
+        .features { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        .features h2 { font-size: 36px; text-align: center; margin-bottom: 60px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .feature { background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 32px; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s; }
+        .feature:hover { background: rgba(255,255,255,0.2); transform: translateY(-6px); }
+        .feature-icon { font-size: 48px; margin-bottom: 20px; }
+        .feature h3 { font-size: 22px; margin-bottom: 12px; font-weight: 600; }
+        @media (max-width: 768px) { .hero { padding: 100px 20px 80px; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Urban Nest</h1>
+        <div class="location">Malviya Nagar, Jaipur</div>
+        <p>Premium 3BHK apartments • Ready to move • Vastu compliant • Clubhouse + pool</p>
+        <a href="tel:+919999999999" class="cta-btn">🏠 Schedule Site Visit</a>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Urban Nest</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">📏</div>
+                <h3>Spacious 1450 sqft</h3>
+                <p>3 bedrooms • 3 bathrooms • 2 balconies • Modular kitchen</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏊</div>
+                <h3>5-Star Amenities</h3>
+                <p>Infinity pool • Gym • Kids play area • 24/7 security</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>₹85 Lac Onwards</h3>
+                <p>Ready to move • No GST • Bank loan available • Possession now</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

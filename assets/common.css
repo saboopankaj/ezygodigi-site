@@ -1,0 +1,861 @@
+﻿/* --- FIXED STICKY HEADER --- */
+.main-nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* */
+    position: fixed; /* Force Sticky always visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; /* */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Change this in common.css */
+body { 
+    padding-top: 0; /* Remove the global gap */
+    margin: 0;
+}
+
+/* Ensure your first section on every page compensates for the fixed header */
+main section:first-of-type, 
+/* Ensure this is in your common.css to protect all pages */
+.ezy-hero-section {
+    padding-top: 80px !important; 
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* */
+}
+
+/* --- BUTTONS & ACTIONS --- */
+.desktop-cta-btn, .mobile-cta-btn {
+    background: #ffffff;
+    color: #667eea !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-transform: uppercase; /* */
+}
+
+.desktop-cta-btn:hover, .mobile-cta-btn:hover {
+    background: #f8fafc;
+    transform: translateY(-2px); /* */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* */
+}
+
+/* --- SIDE DRAWER --- */
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 10001;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 30px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+}
+
+.side-drawer.active { right: 0; }
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.drawer-logo { font-weight: 800; color: #764ba2; font-size: 20px; }
+.close-drawer { font-size: 30px; border: none; background: none; color: #1e293b; cursor: pointer; }
+
+.nav-menu { list-style: none; }
+.nav-menu li { margin-bottom: 20px; }
+.nav-menu a { text-decoration: none; color: #1e293b; font-weight: 600; font-size: 16px; }
+
+/* Mobile Dropdown */
+.mobile-sub-menu { 
+    display: none; 
+    list-style: none; 
+    padding: 15px 0 0 15px; 
+}
+.mobile-sub-menu.active { display: block; }
+
+.dropdown-header { display: flex; justify-content: space-between; cursor: pointer; color: #1e293b; font-weight: 600; }
+
+/* --- HAMBURGER --- */
+.hamburger-btn {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-btn span {
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+/* --- NEW UPDATED FOOTER & WHATSAPP --- */
+.main-footer {
+    background: #0f172a; /* Deep navy background */
+    color: #94a3b8;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand h4 { 
+    color: #ffffff; 
+    margin-bottom: 15px; 
+    font-size: 1.5rem; 
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-nav { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.footer-nav h5 { 
+    color: #ffffff; 
+    margin-bottom: 5px; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-nav a { 
+    color: #94a3b8; 
+    text-decoration: none; 
+    transition: 0.3s; 
+    font-size: 14px;
+}
+
+.footer-nav a:hover { color: #ffffff; }
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social svg {
+    width: 24px;
+    height: 24px;
+    fill: #94a3b8;
+    transition: 0.3s;
+}
+
+.footer-social a:hover svg { fill: #ffffff; }
+
+.footer-bottom { 
+    text-align: center; 
+    margin-top: 40px; 
+    border-top: 1px solid rgba(255,255,255,0.05); 
+    padding-top: 20px; 
+    font-size: 13px;
+}
+
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366; /* Official WhatsApp Green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 10001;
+    transition: 0.3s;
+}
+
+.whatsapp-sticky:hover { transform: scale(1.1); }
+
+/* --- VISIBILITY RULES --- */
+@media (min-width: 769px) {
+    .mobile-cta-btn { display: none; }
+}
+
+@media (max-width: 768px) {
+    .desktop-cta-btn { display: none; }
+}
+
+/* --- NEW DESKTOP NAV STYLES --- */
+.desktop-nav {
+    display: none; /* Hidden on mobile by default */
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Desktop Dropdown Logic */
+.desktop-has-dropdown { position: relative; }
+.desktop-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    list-style: none;
+    z-index: 10002;
+}
+
+.desktop-sub-menu a {
+    color: #1e293b;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.desktop-sub-menu a:hover { background: #f1f5f9; color: #764ba2; }
+.desktop-has-dropdown:hover .desktop-sub-menu { display: block; }
+
+/* --- UPDATED VISIBILITY RULES --- */
+@media (min-width: 992px) {
+    .hamburger-btn { display: none !important; }
+    .mobile-cta-btn { display: none !important; }
+    .desktop-nav { display: flex; }
+    .desktop-cta-btn { display: block; }
+}
+
+@media (max-width: 991px) {
+    .desktop-nav { display: none !important; }
+    .desktop-cta-btn { display: none !important; }
+    .hamburger-btn { display: flex; }
+    .mobile-cta-btn { display: block; }
+}
+/* Ensure the social icons are visible and spaced */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+}
+
+/* Ensure the links in the bottom area are spaced correctly */
+.footer-links {
+    margin-top: 10px;
+    display: block;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* --- THEME-ALIGNED WHATSAPP STACK --- */
+
+.cta-stack-container {
+    position: fixed;
+    bottom: 95px; /* Sits above Bot */
+    right: 25px;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-main);
+}
+
+.wa-icon-box {
+    width: 55px;
+    height: 55px;
+    /* Uses your global theme gradient */
+    background: var(--primary-gradient); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.3);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-sticky:hover .wa-icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.wa-peek-bubble {
+    background: var(--white);
+    color: var(--secondary-color);
+    padding: 7px 16px;
+    border-radius: var(--radius-pill); /* Aligned with theme.css */
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    white-space: nowrap;
+    animation: fadeOutLabel 6s forwards;
+}
+
+/* Ensure Chatbot SDK stays at the very bottom */
+#ezy-chatbot-container {
+    bottom: 20px !important;
+    right: 25px !important;
+}
+
+@keyframes fadeOutLabel {
+    0% { opacity: 0; transform: translateX(10px); }
+    10% { opacity: 1; transform: translateX(0); }
+    85% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(10px); visibility: hidden; }
+}
+
+/* Responsive Sync */
+@media (max-width: 992px) {
+    .cta-stack-container {
+        bottom: 85px;
+        right: 16px; /* Matches --section-padding in theme.css */
+    }
+    .wa-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+    .wa-peek-bubble { display: none; }
+}
+
+/* get in touch WA */
+/* Ensure the button looks like a branded WhatsApp button */
+.wa-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--white) !important;
+    color: var(--secondary-color) !important;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* --- MOBILE LOGIC --- */
+@media (max-width: 992px) {
+    .desktop-cta-btn { 
+        display: none !important; /* Hide Desktop Button */
+    }
+    .mobile-cta-btn {
+        display: flex !important; /* Show Mobile Button */
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* --- DESKTOP LOGIC --- */
+@media (min-width: 993px) {
+    .mobile-cta-btn { 
+        display: none !important; /* Hide Mobile Button */
+    }
+    .desktop-cta-btn {
+        display: flex !important; /* Show Desktop Button */
+    }
+}
+
+/* Logo Text & Animation Frame */
+
+/* --- 1. REMOVE UNDERLINE --- */
+.logo-link {
+    text-decoration: none !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* --- 2. FLEX ALIGNMENT --- */
+.logo-flex-container {
+    display: flex;
+    align-items: center; /* THIS CENTERS THE CIRCLE VERTICALLY */
+    gap: 12px;
+    height: 100%;
+}
+
+.icon-side {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --- 3. BRAND TEXT --- */
+.brand-name {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1; /* Slightly more height for the tagline gap */
+    text-decoration: none !important;
+    display: block;
+}
+
+/* --- 4. TAGLINE WINDOW --- */
+.tag-window {
+    height: 11px;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.tag-track {
+    display: flex;
+    flex-direction: column;
+    animation: slideTags 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite !important;
+}
+
+.tag-track span {
+    font-size: 8.5px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    height: 11px;
+    line-height: 11px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* --- 5. HEADER & HERO OVERLAP FIX --- */
+header, .nav-container {
+    height: 65px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* This pushes your Hero Section down so the badge shows */
+#hero, .hero-section {
+    padding-top: 90px !important;
+}
+
+/* Animation Logic */
+@keyframes slideTags {
+    0%, 25% { transform: translateY(0); }
+    33%, 58% { transform: translateY(-11px); }
+    66%, 91% { transform: translateY(-22px); }
+    100% { transform: translateY(-33px); }
+}
+
+/* --- New To be look PREMIUM SMOOTH SIDE DRAWER --- */
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 10001;
+    /* Smooth "Pop" effect using cubic-bezier */
+    transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1); 
+    padding: 40px 30px;
+    box-shadow: -15px 0 40px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-drawer.active {
+    right: 0;
+}
+
+/* Overlay for when drawer is open (Recommended addition) */
+.drawer-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0; visibility: hidden;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.drawer-overlay.active { opacity: 1; visibility: visible; }
+
+/* --- MOBILE MENU & SUB-MENU REFINEMENT --- */
+.nav-menu {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-menu li {
+    margin-bottom: 12px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+    padding: 10px 0;
+}
+
+/* Distinct Sub-menu Look */
+.mobile-sub-menu {
+    display: none;
+    list-style: none;
+    background: #f8fafc; /* Light gray tint to differentiate */
+    border-radius: 8px;
+    margin: 5px 0 15px 0;
+    padding: 10px 15px;
+    border-left: 3px solid #764ba2; /* Accent line for depth */
+}
+
+.mobile-sub-menu.active {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+.mobile-sub-menu a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #475569;
+    padding: 8px 0;
+}
+
+/* --- WHATSAPP GREEN DRAWER CTA --- */
+.drawer-cta {
+    margin-top: 30px;
+    background: #25D366 !important; /* Official WhatsApp Green */
+    color: #ffffff !important;
+    text-align: center;
+    padding: 14px !important;
+    border-radius: 8px;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Get in touch animated */
+/* =====================================================
+   HEADER ACTIONS (DESKTOP & MOBILE)
+===================================================== */
+
+/* Container for all right-side elements */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spacing between the icons group and hamburger */
+}
+
+/* --- DESKTOP ACTION GROUP --- */
+.desktop-action-group {
+    display: flex;
+    gap: 10px;
+}
+
+.desktop-cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    background: white;
+}
+
+.call-btn { color: #2563eb !important; }
+.wa-btn { color: #16a34a !important; }
+
+.desktop-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --- MOBILE ACTION GROUP --- */
+.mobile-action-group {
+    display: none; /* Hidden by default on desktop */
+    align-items: center;
+    gap: 8px;
+    order: 1; /* Ensures it stays to the LEFT of the hamburger */
+}
+
+.mobile-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.call-color { background: #2563eb; }
+.wa-color { background: #16a34a; }
+
+/* --- HAMBURGER BUTTON --- */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10001;
+    order: 2; /* Ensures it stays to the far RIGHT */
+}
+
+.hamburger-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/* =====================================================
+   RESPONSIVE QUERIES
+===================================================== */
+
+@media (max-width: 991px) {
+    .desktop-nav, 
+    .desktop-action-group {
+        display: none !important;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .mobile-action-group {
+        display: flex; /* Shows icons on mobile */
+    }
+    
+    .nav-container {
+        padding: 10px 15px;
+    }
+}
+
+/* Optional: Adjust logo size for smaller screens to make room */
+@media (max-width: 360px) {
+    .brand-name {
+        font-size: 18px;
+    }
+    .header-actions {
+        gap: 8px;
+    }
+}
+/* =====================================================
+   💎 EZYGODIGI PREMIUM MOBILE DRAWER & NAV (SCROLL FIX)
+   ===================================================== */
+
+/* 1. SIDE DRAWER - Layout & Glassmorphism */
+.side-drawer {
+    position: fixed !important;
+    top: 65px !important;    /* Positioned exactly below the header */
+    right: -320px !important; /* Start hidden off-screen */
+    left: auto !important;
+    width: 300px !important;
+    
+    /* FIX: Use 100% height to avoid mobile browser address bar clipping */
+    height: calc(100% - 65px) !important;
+    
+    /* FIX: Flex column allows the menu to grow while keeping CTA at bottom */
+    display: flex !important;
+    flex-direction: column !important;
+    
+    /* Premium Glass & Brand Gradient */
+    background: linear-gradient(135deg, #f8f7ff 0%, #ffffff 100%) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    
+    z-index: 10999 !important;
+    transition: right 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    
+    box-shadow: -10px 0 40px rgba(118, 75, 162, 0.12) !important;
+    border-left: 1px solid rgba(118, 75, 162, 0.1);
+    
+    /* Prevent the main container from scrolling so the inner menu can */
+    overflow: hidden !important; 
+    padding: 0 !important;
+}
+
+.side-drawer.active {
+    right: 0 !important;
+}
+
+/* 2. NAVIGATION MENU - The Scrolling Engine */
+.nav-menu {
+    list-style: none;
+    padding: 10px 0 !important;
+    margin: 0;
+    
+    /* FIX: This makes the menu take up space and scroll internally */
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scroll for iOS */
+}
+
+.nav-menu li {
+    border-bottom: 1px solid rgba(118, 75, 162, 0.06);
+}
+
+.nav-menu li a, .dropdown-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 25px !important;
+    color: #1e293b !important;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-menu li a:hover, .dropdown-header:hover {
+    background: rgba(118, 75, 162, 0.07);
+    color: #764ba2 !important;
+    padding-left: 32px !important;
+}
+
+/* 3. NESTED SERVICES SUB-MENU */
+.mobile-sub-menu {
+    display: none; 
+    background: linear-gradient(to bottom, #fcfbff, #ffffff);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(118, 75, 162, 0.05);
+}
+
+.mobile-sub-menu.active {
+    display: block !important;
+    border-left: 4px solid #764ba2;
+    animation: premiumFadeIn 0.4s ease-out forwards;
+}
+
+.mobile-sub-menu li a {
+    padding: 14px 45px !important;
+    font-size: 15px;
+    font-weight: 500;
+    color: #475569 !important;
+    border: none !important;
+}
+
+/* 4. THE HAMBURGER (Animates to X) */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 11000 !important;
+    padding: 0;
+}
+
+.hamburger-btn span {
+    width: 26px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hamburger-btn.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger-btn.active span:nth-child(2) { opacity: 0; transform: scale(0); }
+.hamburger-btn.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* 5. TOGGLE INDICATOR */
+.toggle-indicator {
+    font-size: 18px;
+    color: #764ba2;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+/* 6. WHATSAPP CTA - Fixed at bottom of list */
+.drawer-cta {
+    margin: 20px !important;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    text-align: center;
+    padding: 16px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2) !important;
+    font-size: 15px;
+    flex-shrink: 0 !important; /* Prevents button from being squashed */
+    text-decoration: none;
+    display: block;
+}
+
+/* 7. HIDDEN ELEMENTS */
+.drawer-header, .close-drawer, .drawer-logo {
+    display: none !important;
+}
+
+@keyframes premiumFadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

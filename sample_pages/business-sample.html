@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithora Digital - Jaipur Business Websites</title>
+    <style>
+        :root{--primary:#1e3a8a;--secondary:#3b82f6;--accent:#06b6d4;--glass: rgba(255,255,255,0.1);}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',system-ui;background:linear-gradient(135deg,#0f172a,#1e293b);color:white;overflow-x:hidden;}
+        .glass{background:var(--glass);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.2);border-radius:24px;}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 20px;background:radial-gradient(circle at 20% 80%,#3b82f6,#1e3a8a);}
+        .hero-content{max-width:800px;}
+        .hero h1{font-size:clamp(3rem,8vw,6rem);font-weight:800;margin-bottom:1.5rem;letter-spacing:-0.02em;}
+        .hero p{font-size:1.3rem;margin-bottom:3rem;opacity:0.9;}
+        .cta{padding:18px 40px;font-size:1.2rem;font-weight:600;border:none;border-radius:50px;cursor:pointer;transition:all 0.3s;}
+        .cta-primary{background:linear-gradient(45deg,var(--secondary),var(--accent));box-shadow:0 10px 30px rgba(59,130,246,0.4);}
+        .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;padding:100px 20px;}
+        .stat-card{text-align:center;padding:2rem;background:var(--glass);transform:translateY(50px);animation:slideUp 1s forwards;}
+        .stat-number{font-size:3rem;font-weight:800;background:linear-gradient(45deg,var(--secondary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        @keyframes slideUp{to{transform:translateY(0);}}
+        .features{padding:100px 20px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:3rem;}
+        .feature-icon{width:80px;height:80px;background:var(--glass);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1.5rem;}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Websites That Convert</h1>
+            <p>Live in 48 hours • Mobile-first • Starting ₹9,999<br>Trusted by 500+ Jaipur businesses</p>
+            <div>
+                <button class="cta cta-primary">Get Free Quote →</button>
+                <button class="cta" style="background:transparent;border:2px solid rgba(255,255,255,0.3);margin-left:1rem;">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="stats">
+        <div class="stat-card" style="animation-delay:0.1s">
+            <div class="stat-number" data-target="500">0</div>
+            <div>Websites Delivered</div>
+        </div>
+        <div class="stat-card" style="animation-delay:0.2s">
+            <div class="stat-number" data-target="48">0</div>
+            <div>Hours Delivery</div>
+        </div>
+        <div class="stat-card" style="animation-delay:0.3s">
+            <div class="stat-number" data-target="99">0</div>
+            <div>% Satisfaction</div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature-card glass p-8">
+            <div class="feature-icon">🚀</div>
+            <h3 style="font-size:2rem;margin-bottom:1rem;">Lightning Fast</h3>
+            <p>Complete websites delivered in 48 hours with payment integration and SEO optimization.</p>
+        </div>
+        <div class="feature-card glass p-8">
+            <div class="feature-icon">📱</div>
+            <h3 style="font-size:2rem;margin-bottom:1rem;">Mobile-First</h3>
+            <p>Perfect on phones - where 85% of your Jaipur customers search and order.</p>
+        </div>
+        <div class="feature-card glass p-8">
+            <div class="feature-icon">💰</div>
+            <h3 style="font-size:2rem;margin-bottom:1rem;">Budget Friendly</h3>
+            <p>₹9,999 complete solution - domain, hosting, payments, WhatsApp leads included.</p>
+        </div>
+    </section>
+
+    <script>
+        // Stats counter animation
+        const counters = document.querySelectorAll('.stat-number');
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const increment = target / 100;
+                let current = 0;
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        };
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) animateCounters();
+        });
+    </script>
+</body>
+</html>
