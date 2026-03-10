@@ -470,65 +470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 }
 
-/* =====================================================
-   📱 GALAXY S8 & COMPACT DEVICE HEADER FIX
-   ===================================================== */
 
-@media screen and (max-width: 380px) {
-    /* 1. Prevent the logo container from taking 100% width */
-    .logo-link {
-        flex-shrink: 1 !important;
-        min-width: 0 !important;
-        margin-right: 5px !important;
-    }
-
-    .logo-flex-container {
-        display: flex !important;
-        align-items: center !important;
-        max-width: 100% !important;
-    }
-
-    /* 2. Hide the icon to save ~30px immediately */
-    .icon-side {
-        display: none !important;
-    }
-
-    /* 3. PROTECT THE BADGE: Force it to stay visible */
-    .tag-window {
-        flex-shrink: 0 !important; /* Forces browser NOT to hide it */
-        width: 90px !important;    /* Specific width for 360px screens */
-        display: block !important;
-        margin-left: 2px !important;
-    }
-
-    /* 4. Shrink Brand Name for S8 width */
-    .brand-name {
-        font-size: 14px !important;
-        white-space: nowrap !important;
-    }
-
-    /* 5. Tighten Right Side Actions */
-    .header-actions {
-        gap: 5px !important;
-        flex-shrink: 0 !important;
-    }
-
-    .mobile-icon-btn {
-        width: 28px !important;
-        height: 28px !important;
-        padding: 5px !important;
-    }
-}
-
-/* Special Case: If the screen is even smaller (320px) */
-@media screen and (max-width: 320px) {
-    .brand-name {
-        display: none !important; /* Hide name to keep Badge visible */
-    }
-    .tag-window {
-        width: 110px !important;
-    }
-}
 
 </style>
 
